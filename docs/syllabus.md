@@ -15,16 +15,35 @@
 # Syllabus
 
 
+## TL;DR
+
+
+- No exams (weekly in-class quiz). 
+- Teams of 4. 
+- Focused on process, not tools (code in any language you like).
+- Three projects on requirements engineering (RE + AI)
+  1. play with LLMs;
+  2. build requirements tools that use AI;
+  3. maintain + extend tools from others.
+
+
+## Schedule
+
+
 |Details      | Section | Notes                           |
 |------------:|---------|:--------------------------------|
-|When         |     1   |Mon Wed 11:45AM - 1:00PM           |
-|             |     1   |Mon Wed 11:45AM - 1:00PM           |
-|Where        |     2   |rm 01011  Engineering Building I |
-|             |     2   |rm 01011  Engineering Building I |
+|When         |     1   |Mon, Wed 1:30pm- 2:45pm, EE2 1025 |
+|             |     2   |Mon, Wed 4:30pm - 5:45pm, Unt 1103|
 |Prerequisites|         |CSC 316 and CSC 226 (or equivalent |
 
 
  
+Consult hours:
+
+
+| Who        | Role | When              | Where                                                                        | Email|
+|------------|------|-------------------|------------------------------------------------------------------------------|--------------|
+|Tim Menzies | Prof | Tues,  11:45-1:15 | In my office ([by appointment](https://calendar.app.google/sPWF6bDk1ZMzjuwz8)| timm@ieee.org| 
 
 
 |Lecturer      | About                           |
