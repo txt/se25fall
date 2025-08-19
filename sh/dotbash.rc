@@ -1,0 +1,87 @@
+Here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+Xdir="$(basename "$(dirname "$Here")")"  # bold "x" marker from enclosing folder
+
+# Silence macOS deprecation warnings
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Add custom scripts to PATH
+export PATH="$Here:$PATH"
+
+# Styling: colors and bold
+bold=$(tput bold)
+col0=$(tput sgr0)
+col1=$(tput setaf 6)  # cyan
+col2=$(tput setaf 3)  # yellow
+col3=$(tput setaf 2)  # green
+
+# Prompt Git branch (if any)
+branch() {
+  git branch 2>/dev/null | awk '/^\*/ {print $2}'
+}
+
+# 🧠 Dynamic, colored prompt with bold "x" marker, parent/current dir, and Git branch
+PROMPT_COMMAND='
+  pdir=$(basename "$(dirname "$PWD")")
+  cdir=$(basename "$PWD")
+  gbr=$(branch)
+  PS1="👀 ${bold}${col1}${Xdir}${col0} ${col1}${pdir}/${bold}${cdir}${col0} ${col2}${gbr}${col0} ▶ "
+'
+
+# Aliases: directory nav
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias c='clear'
+alias Q='exit'
+
+# Aliases: ls enhancements
+alias ls='ls -G'
+alias l='ls -lh'
+alias la='ls -la'
+alias t='tree -L 1'
+
+# Aliases: Git shortcuts
+alias gs='git status -sb'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
+alias gl='git log --oneline --graph --all --decorate'
+
+# Aliases: misc
+alias ezr='python3 -m ezr '
+alias h='history'
+alias vi="nvim -u '$Here/init.lua'"  # Load custom Neovim config
+
+# ⌨️ QoL: quick edit and reload
+alias reload="source '$Here/ell' && echo ✅ ell reloaded"
+
+# Only show banner in interactive shells
+# For other ascii graphcs, see https://www.asciiart.eu/
+# or search at https://emojicombos.com/panda
+if [[ $- == *i* ]]; then
+  clear
+  bold=$(tput bold)
+  col0=$(tput sgr0)
+  col1=$(tput setaf 6)  # cyan
+  col2=$(tput setaf 5)  # magenta
+  col3=$(tput setaf 3)  
+  echo "${bold}${col3}"
+  cat<<'EOF'
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⠁⠀⠿⢿⣿⡿⣿⣿⡆⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣦⣤⣴⣿⠃⠀⠿⣿⡇⠀   there is no escape ...
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⡿⠋⠁⣿⠟⣿⣿⢿⣧⣤⣴⣿⡇⠀      ... from sh/ell !!!
+⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠘⠁⢸⠟⢻⣿⡿⠀⠀
+⠀⠀⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣴⣇⢀⣤⠀⠀⠀⠀⠘⣿⠃⠀⠀
+⠀⠀⠀⠀⠀⢈⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣴⣿⢀⣴⣾⠇⠀⠀⠀
+⠀⠀⣀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀
+⠀⠀⠉⠉⠉⠉⣡⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⡿⠟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⣴⡾⠿⠿⠿⠛⠋⠉⠀⢸⣿⣿⣿⣿⠿⠋⢸⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡿⠟⠋⠁⠀⠀⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+EOF
+alias | grep --color=always -E 'alias|='
+fi
+
