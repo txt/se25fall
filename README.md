@@ -10,3 +10,6 @@
  <br><img width="300"   alt="image" src="https://github.com/user-attachments/assets/eae90393-bdd9-4cea-88cb-63dbfe12916e"><br></p>
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
 <p align="center"><b>This subject:</b>Work in groups, maintain other people's code, accelerate SE with AI.</p>
+
+
+REdme
