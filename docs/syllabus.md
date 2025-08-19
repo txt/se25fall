@@ -37,61 +37,47 @@
 |Prerequisites|         |CSC 316 and CSC 226 (or equivalent |
 
 
- 
+Maintenance 
 Consult hours:
 
 
 | Who        | Role | When              | Where                                                                        | Email|
 |------------|------|-------------------|------------------------------------------------------------------------------|--------------|
-|Tim Menzies | Prof | Tues,  11:45-1:15 | In my office ([by appointment](https://calendar.app.google/sPWF6bDk1ZMzjuwz8)| timm@ieee.org| 
-
-
-|Lecturer      | About                           |
-|------------:|:--------------------------------|
-| Prof. Tim Menzies | <img   src="/img/tim.png">|
-|Office hours | 2pm to 4pm Monday<br> in my office ([by appointment](https://calendar.app.google/GwzbUmsiCSvGQ27dA)) |
-|Office       | Room: 3304:EB2|
-|Email        | timm@ieee.org|
-
-
- 
-
-
-|Tutor      | About                           |
-|------------:|:--------------------------------|
-|Katerina Vilkomir| <img  e src="/img/katerina.png"> |
-|Office hours | 9:30 - 10:30<br>  Monday and Tuesday<br> ([by appointment](https://calendar.app.google/CnF6PRCzPkkT4oiT7)) |
-|Email        | evilkom@ncsu.edu |
+|Tim Menzies | Prof | Tues,  11:45 - 1:15pm | In my office, [by appointment](https://calendar.app.google/sPWF6bDk1ZMzjuwz8)| timm@ieee.org| 
+|Amirali Rayegan| Tutor| Mon, 2:30 - 4pm | On-line [by appointment](https://calendar.app.google/rZo3faRYMTd6mBym6) | arayega@ncsu.edu|
+| Rishi Singhal | Tutor | Wed, 9:30 - 11am | On-line [by appointment](https://calendar.app.google/tfA1QVhxiyknREyo8) | rsingha4@ncsu.edu |
+| Manali Teke | Tutor |  Thurs, 10 - 11:30am | On-line [by appointment](https://calendar.app.google/XwuvPCJ76pxWDfdy6) | mkteke@ncsu.edu |
+| Rishabh Jain | Tutor |  Fri, 12 - 1:30pm  | On-line [by appointment]() |  rjain29@ncsu.edu |
 
 
 **Preferred method of communication and Response Times:**
 
 
-- For private queries, use the above  email
+- For private queries, use the above  emails
 - But or most queries, use the discord server 
-- IMPORTANT: If you receive a subject-related message outside of   office hours (e.g. 2am Saturday mornng), do
-  not feel required to answer this till the next working day (e.g. Monday morning). Exception: just before deadlines of exams.
+- IMPORTANT: If you receive a subject-related message outside of   office hours (e.g. 2am Saturday moring), do
+  not feel required to answer this till the next working day (e.g. Monday morning). Exception: just before deadlines.
 
 
 **Asking questions about the course:**
 
 
-- It is each student's responsibility to join the class Discord group "SE spring'25".
-  - Till Friday week1, the link to join there is [here](https://discord.gg/DkaZw4zM)
+- It is each student's responsibility to join the class Discord group "SE fall'25".
+  - Join here: [here](https://discord.gg/YnAw7uZxAD)
 - Use the Discord server
 - All class communication from staff to students will be via this Discord group.
 - Students are strongly encouraged to contribute their questions and answers to that shared resource. 
   - You should expect to receive a response within two business days (i.e. not over the weekend). 
   - If I email/message you directly, please strive to respond within two business days.
+- Remember, all your public here are public.  These may be viewed and reviewed by future employees (or government services). Always be professional and polite. 
 
 
-**Email guidelines:**
+**Communication guidelines:**
 
 
 - Always include a descriptive, specific but concise subject. 
 - Include your course number and section in your email, and provide adequate context for your question in order to ensure full understanding of your email. 
 - Be sure to use your NC State email account, and sign in with your name and Student ID number.
- 
 
 
 ## Details
@@ -100,15 +86,15 @@ Consult hours:
 |What               | Notes |
 |:------------------|:------|
 |Course Credit Hours| 3     |
-|Course website     | [https://github.com/txt/se25](https://github.com/txt/se25) |
+|Course website     | [https://github.com/txt/se25fall](https://github.com/txt/se25fall) |
 |Catalog Description| An introduction to software life cycle models; size estimation; cost and schedule estimation; project management; risk management; formal technical reviews; analysis, design, coding and testing methods; configuration management and change control; and software reliability estimation. Emphasis on large development projects. A group project is required following good software engineering practices throughout the semester. |
-|Textbook           | [Software Engineering: A Modern Approach](https://softengbook.org/)  |
+|Textbook (optional)| [Software Engineering: A Modern Approach](https://softengbook.org/)  |
 |Structure          | The majority of this course is synchronous, delivered through real-time, face-to-face class sessions. |
-|Instructions       | Learning activities in this course will include  five homeworks, 2 exams, three projects.|
+|Instructions       | Learning activities in this course will include  three projects and weekly in-class quizes.|
 |Tool used          | All grades will be recorded in Moodle.<br> All student work will be in Github (public GH, not the NCSU version).|
 |Auditing           | not permitted |
 |Attendance         | not mandatory |
-|Technical requirements | A laptop computer is required for students taking this course.  NC State’s Online and Distance Education provides technology requirements and recommendations for computer hardware, and NC State’s Office of Information Technology provides recommendations for your computer . But as a rule-of-thumb, your computer is adequate if you can edit and run code using the  Github codespaces environment.|
+|Technical requirements | A laptop computer is required in each lecture for students taking this course.  NC State’s Online and Distance Education provides technology requirements and recommendations for computer hardware, and NC State’s Office of Information Technology provides recommendations for your computer . But as a rule-of-thumb, your computer is adequate if you can edit and run code using the  Github codespaces environment.|
 
 
  
@@ -127,65 +113,52 @@ Consult hours:
  
 
 
-### Assessment
+## Assessment
  
 - Multiple mini-review questions on Moodle
-  - 2-3 questions about the lectures that week
-  - Posted every Wednesday, due Friday 9am.
-  - Zero marks for getting them right or wrong
-  - Minus 1 mark for not attempting them
-    - "Attempt" = a few lines for each question.
-- 3 projects
-- 1 mid-session exam
-- 5 homeworks (testing software guru skills)
-- 1 final exam (for those that want to replace the mark on one of their mid-term and homework).
-- 1 essay  on SE ethics. 
-- Exams and essays are done individually. Everything else is done in groups of 3.
-  - Important note: while homeworks are done in groups of 3, you will be examined individually
-    about that content. So make sure you understand **all** the homework material.
+  - 1 questions about the lectures that week
+  - Run at a random time during class each week.
+- 3 projects, 2 of which have live demos.
+- Quizes are done individually. Everything else is done in groups of 3.
 
 
  
 
 
-Projects comprise large maintenance tasks where you have to extend someone else'e code (groups of 3 people, working in public Github repos-- not NCSU GH): 
+Projects:
 
 
-- This will demonstrate the important of documentation, design purity, regression tests, etc.
+- First two  projects design and build a system.
+- Last project maintains and extends someone else's system.
+  - This will demonstrate the important of documentation, design purity, regression tests, etc.
 
 
-Each project will generate "brag" documents that sell the project work in version _i_ 
-for those who want to work in _i+1_.
+>  :warning:  **IMPORTANT** : Projects 2 and 3 will be assessed in
+live demo sessions with the tutor/grader. These sessions will occur
+the weeks of Mar3-XXX and Apr21-XXX.  We ask for students for their help
+in  scheduling all these demo sessions. Our graders/tutors are
+students with their own exams and assignment to complete.   Hence,
+they might  suggest demo times outside of normal working hours
+(evenings, weekends).  Please do them the  courtesy of considering
+those times. That said, if those proposed times are inconvenient,
+**you can, should, and must ask for other times**.
 
 
-- Project1: 
-  - You review nine projects done previously in this subjects elect two, then boast of its accomplishments.
-  - Select wisely. You have a 25% chance that, in project2, you will have to work on your Project1 selections.
-- Project2: 
-  - You will switch projects and significantly extend some project
-- Projects3: 
-  - You will swtich to someone else's project2 code 
+## Grades
 
 
->  :warning:  **IMPORTANT** : Projects 2 and 3 will be assessed in live demo sessions with the tutor/grader. These sessions will occur the weeks of Mar3 and Apr21.  We ask for students for their help in  scheduling all these demo sessions. Our graders/tutors are students with their own exams and assignment to complete.   Hence, they might  suggest demo times outside of normal working hours (evenings, weekends).  Please do them the  courtesy of considering those times. That said, if those proposed times are inconvenient, **you can, should, and must ask for other times**.
-
-
-### Grades
-
-
-|group	|mark|notes|
-|-------|----|-----|
-|essay (solo)	|         22 |  |
-|homework (5\*1)|       5| Students are marked -1,0,1 for homeworks: -1 = no submission;  0 = needs fixing; 1 = passed. <br> Homeworks can be resubmitted twice, for up to 3 weeks after the first submission.  | 
-|mid-term exam (solo)	| 25|  |
-|3  projects (group)|	      10+15+23	| |
-| final exam (optional) | 25| Also, there is an optional final exam which students can attend if they want to replace  their mid-term mark.<br> Please note that if you get a lower mark on this final then your  lowest mid-term mark will then decrease. <br>Caveat Emptor.|
+|group	|mark|notes|total|
+|-------|----|-|----|
+|Project| 22\*3| | 66|
+|Project bonus (if someone uses your code) | 5 | 5|
+|Quizes | 13\*3| |39|
+|       | total| | 110|
 
 
 With the final grades, the following grade scale will be used: 
 
 
-     A+ (97-100),  A (93-97),   A-(90-92)
+     A+ (97-110),  A (93-97),   A-(90-92)
      B+ (87-89),   B (83-87),   B-(80-82)
      C+ (77-79),   C (73-77),   C-(70-72)
      D+ (67-69),   D (63-67),   D-(60-62)
@@ -198,7 +171,7 @@ With the final grades, the following grade scale will be used:
 Submissions score one late mark per day (but only -1 for the weekend).
 
 
-### Expectations for learner participation and interaction
+## Expectations for learner participation and interaction
 
 
 Course activities will require you to interact with other students in the course. 
@@ -211,15 +184,15 @@ For masters students, some evidence must be generated that you are actively enga
   Projects were all group members are not active in discussions  will either lose marks    (or the offending student will be expelled from that group).
 
 
-### Attendance
+## Attendance
 
 
 - Lectures are twice a week. 
 - Lectures will be recorded.
-- Attendance is not mandatory, but highly recommended. 
+- Attendance is not mandatory, but if you do not attend, you cannot do the quizes.
 
 
-If, for a quiz, you must be absence for a reason sanction by the university, contact the lecturer before time and other arrangements will be made.
+If, any activity, you must be absence for a reason sanction by the university, contact the lecturer before time and other arrangements will be made.
 Those sanctioned events are:
 
 
@@ -239,7 +212,39 @@ Sometimes, the lecturer/tutor will require you to attend  mandatory office hours
 There, students may be asked to review code, concepts, or comment on the structure of the course. Those sessions are mandatory and failure to attend will result in marks being deducted.
 
 
-### Disabilities
+## Use of AI tools
+
+
+Knock yourself out. Go to town.
+
+
+But always verify. Anything you hand in that is wrong (from the AI) will be counted against you.
+
+
+## Other Student Expenses
+
+
+Textbooks are optional for this subject, so expect $0.
+
+
+Depending on what LLMs you use, this will incur a cost. Project teams should discuss how much they can spend, then plan accordingly. For exampe, for
+three projects at $80 of LLM each,
+that would be $240 divided by 4 people in a team ($60 each, for the whole semester, which is less than the cost of a textbook).
+
+
+## Community guidelines 
+
+
+- Use a respectful tone in all forms of communication (email, written, oral, visual).
+- Maintain professionalism (avoid slang, poor grammar, etc.) in your written communication.
+- Respect regional dialects and culturally embedded ways of oral communication.
+- Stay home or in your dorm room if you are exhibiting symptoms of a contagious illness (fever, chills, etc.).
+- Enter our virtual and/or physical classroom community respectfully by refraining from lewd or indecent speech or behavior, helping to maintain a safe physical environment, not using your cell phone for voice or text communication except when explicitly given leave to do so, and not attending class under the influence of any substance.
+- Treat each community member with respect by not recording others without their consent or engaging in any form of hazing, harassment, intimidation, or abuse.
+- Respect cultural differences that may influence communication styles and needs.]
+
+
+## Disabilities
 
 
 Reasonable accommodations will be made for students with verifiable
@@ -251,50 +256,7 @@ with disabilities, please see the
 and [REG 02.20.01 Academic Accommodations for Students with Disabilities](https://policies.ncsu.edu/regulation/reg-02-20-01/).
 
 
-### Non-Discrimination Policy
-
-
-All students at North Carolina State University (“NC State” or the “University”) are
-responsible for conducting themselves in a manner that helps enhance an environment
-of learning in which the rights, dignity, worth, and freedom of each member of the
-academic community are respected.
-
-
-NC State prohibits unlawful discrimination and harassment based on a person’s protected status in University programs and activities. NC State also prohibits retaliation for any protected activity.
-
-
-“Protected Status” is defined as an individual’s actual or perceived:
-
-
-- race, color, or national origin, including shared ancestry or ethnic characteristics,
-- sex, including sexual orientation, gender identity, and pregnancy or related conditions,
-- age,
-- disability,
-- genetic information,
-- religion, and
-- veteran’s status.
-
-
-+ Note that, as a lecturer, I am legally required to
-**report** all such acts to the appropriate campus authority,
-
-
-### Respecting our learning community
-The NC State Code of Student Conduct outlines expectations for behavior in the classroom (whether virtual or physical) and the
-consequences for students who violate these expectations. Any behavior that impacts other students’ ability to learn and succeed will be addressed, but expressing diverse viewpoints and interpretations of course content is welcome.
-Community guidelines for this course include:
-
-
-- Use a respectful tone in all forms of communication (email, messages, written, oral, visual)
-- Maintain professionalism (avoid slang, poor grammar, etc.) in your written communication.
-- Respect regional dialects and culturally embedded ways of oral communication.
-- Stay home or in your dorm room if you are exhibiting symptoms of a contagious illness (fever, chills, etc.).
-- Enter our virtual and/or physical classroom community respectfully by refraining from lewd or indecent speech or behavior, helping to maintain a safe physical environment, not using your cell phone for voice or text communication except when explicitly given leave to do so, and not attending class under the influence of any substance.
-- Treat each community member with respect by not recording others without their consent or engaging in any form of hazing, harassment, intimidation, or abuse.
-- Respect cultural differences that may influence communication styles and needs.]
-
-
-### Academic Integrity
+## Academic Integrity
 
 
 Students are required to comply with the university policy on academic integrity found in the i
