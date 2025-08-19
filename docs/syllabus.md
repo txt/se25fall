@@ -7,20 +7,21 @@
   <a href="https://moodle-courses2527.wolfware.ncsu.edu/course/view.php?id=4691&bp=s"><img src="https://img.shields.io/badge/Two-%23b22222?style=flat-square&logo=moodle&logoColor=white" /></a>
   <a href="https://discord.gg/YnAw7uZxAD"><img src="https://img.shields.io/badge/Chat-%23008080?style=flat-square&logo=discord&logoColor=white" /></a>
   <a href="https://ncsu.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=7b1bbb56-937c-42a1-96b4-b33e0134710f"><img src="https://img.shields.io/badge/Vids-%23ffa500?style=flat-square&logo=youtube&logoColor=white" /></a>
-  <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a>
-  <br><img width="300" alt="image" src="https://github.com/user-attachments/assets/eae90393-bdd9-4cea-88cb-63dbfe12916e"><br>
-</p>
+  <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
+ 
 
 
 
 # Syllabus
 
 
-|Details      | Notes                           |
-|------------:|:--------------------------------|
-|When         | Mon Wed 11:45AM - 1:00PM           |
-|Where        | rm 01011  Engineering Building I |
-| Prerequisites |CSC 316 and CSC 226 (or equivalent |
+|Details      | Section | Notes                           |
+|------------:|---------|:--------------------------------|
+|When         |     1   |Mon Wed 11:45AM - 1:00PM           |
+|             |     1   |Mon Wed 11:45AM - 1:00PM           |
+|Where        |     2   |rm 01011  Engineering Building I |
+|             |     2   |rm 01011  Engineering Building I |
+|Prerequisites|         |CSC 316 and CSC 226 (or equivalent |
 
 
  

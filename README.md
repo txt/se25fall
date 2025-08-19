@@ -13,7 +13,7 @@
 
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
 <p align="center"> <img width="250" alt="image" src="https://github.com/user-attachments/assets/722a9bfc-730d-435c-8b8f-82bd4633a727" /></p>
-<p align="center"><b>This subject:</b> Work in groups, maintain other people's code, accelerate SE with AI<br>
+<p align="center">Work in groups, , maintain alien code, SE + AI, make on-line profile<br>
 (and for more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>).</p>
 
 
