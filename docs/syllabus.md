@@ -33,7 +33,7 @@
 | Section | Notes                           |
 |---------|:--------------------------------|
 |    1   |Mon, Wed 1:30pm- 2:45pm, EE2 1025 |
-|    2   |Mon, Wed 4:30pm - 5:45pm, Unt 1103|
+|    2   |Mon, Wed 4:30pm - 5:45pm, Hunt 1103|
 |Prerequisites         |CSC 316 and CSC 226 (or equivalent |
 
 
@@ -46,15 +46,15 @@ Consult hours:
 |Tim Menzies | Prof | Tues,  11:45 - 1:15pm | In my office, [by appointment](https://calendar.app.google/z5eRNUTPm9X9PgDL8)| timm@ieee.org| 
 | Rishi Singhal | Tutor | Wed, 9:30 - 11am | On-line [by appointment](https://calendar.app.google/tfA1QVhxiyknREyo8) | rsingha4@ncsu.edu |
 | Manali Teke | Tutor |  Thurs, 10 - 11:30am | On-line [by appointment](https://calendar.app.google/XwuvPCJ76pxWDfdy6) | mkteke@ncsu.edu |
-| Rishabh Jain | Tutor |  Fri, 12 - 1:30pm  | On-line [by appointment]() |  rjain29@ncsu.edu |
+| Rishabh Jain | Tutor |  Fri, 12 - 1:30pm  | On-line [by appointment](https://calendar.app.google/C69jUEDuUb34gKA87) |  rjain29@ncsu.edu |
 
 
 **Preferred method of communication and Response Times:**
 
 
 - For private queries, use the above  emails
-- But or most queries, use the discord server 
-- IMPORTANT: If you receive a subject-related message outside of   office hours (e.g. 2am Saturday moring), do
+- But or most queries, use our [discord](https://discord.gg/YnAw7uZxAD) server.
+- IMPORTANT: If you receive a subject-related message outside of   office hours (e.g. 2am Saturday morning), do
   not feel required to answer this till the next working day (e.g. Monday morning). Exception: just before deadlines.
 
 
@@ -62,7 +62,7 @@ Consult hours:
 
 
 - It is each student's responsibility to join the class Discord group "SE fall'25".
-  - Join here: [here](https://discord.gg/YnAw7uZxAD)
+  - Join [here](https://discord.gg/YnAw7uZxAD)
 - Use the Discord server
 - All class communication from staff to students will be via this Discord group.
 - Students are strongly encouraged to contribute their questions and answers to that shared resource. 
@@ -89,7 +89,7 @@ Consult hours:
 |Catalog Description| An introduction to software life cycle models; size estimation; cost and schedule estimation; project management; risk management; formal technical reviews; analysis, design, coding and testing methods; configuration management and change control; and software reliability estimation. Emphasis on large development projects. A group project is required following good software engineering practices throughout the semester. |
 |Textbook (optional)| [Software Engineering: A Modern Approach](https://softengbook.org/)  |
 |Structure          | The majority of this course is synchronous, delivered through real-time, face-to-face class sessions. |
-|Instructions       | Learning activities in this course will include  three projects and weekly in-class quizes.|
+|Instructions       | Learning activities in this course will include  three projects and weekly in-class quizzes.|
 |Tool used          | All grades will be recorded in Moodle.<br> All student work will be in Github (public GH, not the NCSU version).|
 |Auditing           | not permitted |
 |Attendance         | not mandatory |
@@ -118,7 +118,7 @@ Consult hours:
   - 1 questions about the lectures that week
   - Run at a random time during class each week.
 - 3 projects, 2 of which have live demos.
-- Quizes are done individually. Everything else is done in groups of 3.
+- Quizzes are done individually. Everything else is done in groups of 3.
 
 
  
@@ -147,11 +147,11 @@ those times. That said, if those proposed times are inconvenient,
 
 
 |group	|mark|notes|total|
-|-------|----|-|----|
+|-------|---:|-|----|
 |Project| 22\*3| | 66|
 |Project bonus (if someone uses your code) | 5 | 5|
-|Quizes | 13\*3| |39|
-|       | total| | 110|
+|Quizzes | 13\*3| |39|
+|       | |total | 110|
 
 
 With the final grades, the following grade scale will be used: 
@@ -188,7 +188,7 @@ For masters students, some evidence must be generated that you are actively enga
 
 - Lectures are twice a week. 
 - Lectures will be recorded.
-- Attendance is not mandatory, but if you do not attend, you cannot do the quizes.
+- Attendance is not mandatory, but if you do not attend, you cannot do the quizzes.
 
 
 If, any activity, you must be absence for a reason sanction by the university, contact the lecturer before time and other arrangements will be made.
@@ -204,7 +204,7 @@ Those sanctioned events are:
   - Death or serious illnesses in the family when documented appropriately.   
 
 
-Absence Verification: The [Absence Verification office](https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/) will provide student absence verifications for deaths, legal obligations, military duty, and serious illnesses like surgery and hospitalizations.  
+Absence Verification: The [Absence Verification office](https://dasa.ncsu.edu/support-and-advocacy/find-help/absence-notification/) will provide student absence verification for deaths, legal obligations, military duty, and serious illnesses like surgery and hospitalizations.  
 
 
 Sometimes, the lecturer/tutor will require you to attend  mandatory office hours session.
@@ -226,7 +226,7 @@ But always verify. Anything you hand in that is wrong (from the AI) will be coun
 Textbooks are optional for this subject, so expect $0.
 
 
-Depending on what LLMs you use, this will incur a cost. Project teams should discuss how much they can spend, then plan accordingly. For exampe, for
+Depending on what LLMs you use, this will incur a cost. Project teams should discuss how much they can spend, then plan accordingly. For example, for
 three projects at $80 of LLM each,
 that would be $240 divided by 4 people in a team ($60 each, for the whole semester, which is less than the cost of a textbook).
 
@@ -261,7 +261,7 @@ and [REG 02.20.01 Academic Accommodations for Students with Disabilities](https:
 Students are required to comply with the university policy on academic integrity found in the i
 [What is Academic Misconduct?](https://studentconduct.dasa.ncsu.edu/academic-integrity-overview/).
 Therefore, students are required to uphold the Pack Pledge: 
-" “I have neither given nor received unauthorized aid on this test or assignment,” on all syllabi, assignments, examinations, or other academic evaluations is encouraged."
+" “I have neither given nor received unauthorized aid on this test or assignment,” on all syllabus, assignments, examinations, or other academic evaluations is encouraged."
 
 
 Cheating will be punished to [the full extent possible](https://studentconduct.dasa.ncsu.edu/academic-misconduct/). 
@@ -287,7 +287,7 @@ and marks will be deducted if the person who is doing the reuse:
 + Does not significantly extend the product.
 
 
-#### Student Privacy
+## Student Privacy
 
 
 - In-class sessions are recorded in such a way that might also record students in this course.
@@ -295,7 +295,7 @@ and marks will be deducted if the person who is doing the reuse:
 - Contact your instructor if you have concerns.
 
 
-### Syllabus Modification Statement
+## Syllabus Modification Statement
 
 
 Our syllabus represents a flexible agreement. It outlines the topics we will cover and the order in which we will cover them. Dates for assignments represent the earliest possible time they would be due. The pace of the class depends on student mastery and interests. Thus minor changes in the syllabus can occur if we need to slow down or speed up the pace of instruction.
