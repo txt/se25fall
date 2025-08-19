@@ -7,12 +7,14 @@
   <a href="https://moodle-courses2527.wolfware.ncsu.edu/course/view.php?id=4691&bp=s"><img src="https://img.shields.io/badge/Two-%23b22222?style=flat-square&logo=moodle&logoColor=white" /></a>
   <a href="https://discord.gg/YnAw7uZxAD"><img src="https://img.shields.io/badge/Chat-%23008080?style=flat-square&logo=discord&logoColor=white" /></a>
   <a href="https://ncsu.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=7b1bbb56-937c-42a1-96b4-b33e0134710f"><img src="https://img.shields.io/badge/Vids-%23ffa500?style=flat-square&logo=youtube&logoColor=white" /></a>
-  <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a>
-  <br><img width="300" alt="image" src="https://github.com/user-attachments/assets/eae90393-bdd9-4cea-88cb-63dbfe12916e"><br>
-</p>
+  <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
+ 
+
 
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
-<p align="center"><b>This subject:</b> Work in groups, maintain other people's code, accelerate SE with AI.</p>
+<p align="center"> <img width="250" alt="image" src="https://github.com/user-attachments/assets/722a9bfc-730d-435c-8b8f-82bd4633a727" /></p>
+<p align="center"><b>This subject:</b> Work in groups, maintain other people's code, accelerate SE with AI<br>
+(and for more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>).</p>
 
 
 
