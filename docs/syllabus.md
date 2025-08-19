@@ -30,14 +30,13 @@
 ## Schedule
 
 
-|Details      | Section | Notes                           |
-|------------:|---------|:--------------------------------|
-|When         |     1   |Mon, Wed 1:30pm- 2:45pm, EE2 1025 |
-|             |     2   |Mon, Wed 4:30pm - 5:45pm, Unt 1103|
-|Prerequisites|         |CSC 316 and CSC 226 (or equivalent |
+| Section | Notes                           |
+|---------|:--------------------------------|
+|    1   |Mon, Wed 1:30pm- 2:45pm, EE2 1025 |
+|    2   |Mon, Wed 4:30pm - 5:45pm, Unt 1103|
+|Prerequisites         |CSC 316 and CSC 226 (or equivalent |
 
 
-Maintenance 
 Consult hours:
 
 
