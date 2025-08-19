@@ -43,8 +43,8 @@ Consult hours:
 
 | Who        | Role | When              | Where                                                                        | Email|
 |------------|------|-------------------|------------------------------------------------------------------------------|--------------|
-|Tim Menzies | Prof | Tues,  11:45 - 1:15pm | In my office, [by appointment](https://calendar.app.google/sPWF6bDk1ZMzjuwz8)| timm@ieee.org| 
 |Amirali Rayegan| Tutor| Mon, 2:30 - 4pm | On-line [by appointment](https://calendar.app.google/rZo3faRYMTd6mBym6) | arayega@ncsu.edu|
+|Tim Menzies | Prof | Tues,  11:45 - 1:15pm | In my office, [by appointment](https://calendar.app.google/z5eRNUTPm9X9PgDL8)| timm@ieee.org| 
 | Rishi Singhal | Tutor | Wed, 9:30 - 11am | On-line [by appointment](https://calendar.app.google/tfA1QVhxiyknREyo8) | rsingha4@ncsu.edu |
 | Manali Teke | Tutor |  Thurs, 10 - 11:30am | On-line [by appointment](https://calendar.app.google/XwuvPCJ76pxWDfdy6) | mkteke@ncsu.edu |
 | Rishabh Jain | Tutor |  Fri, 12 - 1:30pm  | On-line [by appointment]() |  rjain29@ncsu.edu |
