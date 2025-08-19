@@ -12,7 +12,7 @@
 
 
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
-<p align="center"><em>"If you thought vibe coding was fun, try <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">vibe maintenance</a>."</em><br> <img width="250" alt="image" src="https://github.com/user-attachments/assets/722a9bfc-730d-435c-8b8f-82bd4633a727" /></p>
+<p align="center"><a href="https://x.com/karpathy/status/1886192184808149383?lang=en">Vibe code</a> = <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">pain maintain</a>?<br> <img width="250" alt="image" src="https://github.com/user-attachments/assets/722a9bfc-730d-435c-8b8f-82bd4633a727" /></p>
 <p align="center"><b>This subject:</b> work in groups; write <b>quality</b> code; maintain alien code; use SE + AI; establish on-line profile.<br>
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
