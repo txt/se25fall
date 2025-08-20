@@ -16,6 +16,8 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 # Where we are...
 
+## Changes to the "Cost to innovate"
+
 <img width="1318" height="450" alt="image" src="https://github.com/user-attachments/assets/fe86ac9f-1d73-492f-914c-692434318348" />
 
  
@@ -28,13 +30,19 @@ From 1954 to 2017, there was relative stability in tax incentives for innovation
     - (Aside: Capitalization and amortization requirements, over 15 years, continue as related to foreign R&E expenditures) 
   - So the picture for programemrs may change, very much, evry soon.
 
-
-<img width="1164" height="680" alt="image" src="https://github.com/user-attachments/assets/97c28d8a-1aef-4297-8d7e-9723013661b3" />
+##   Hype Cycles
 
 
 <img width="433" height="776" alt="image" src="https://github.com/user-attachments/assets/e58bc647-5542-4f8e-a5fa-b4923f2075b1" />
 
+<img width="1164" height="680" alt="image" src="https://github.com/user-attachments/assets/97c28d8a-1aef-4297-8d7e-9723013661b3" />
+
+
+## Dot-Com Bubble
+
 <img width="1005" height="594" alt="image" src="https://github.com/user-attachments/assets/641a7dfb-ff31-49fc-a9eb-23d2cd48bd92" />
+
+## AI and SE productivity
 
 <img width="749" height="478" alt="image" src="https://github.com/user-attachments/assets/5337b062-ed5a-49e0-9f89-1ec0559c8561" />
 
@@ -42,5 +50,6 @@ From 1954 to 2017, there was relative stability in tax incentives for innovation
 
 <img width="634" height="668" alt="image" src="https://github.com/user-attachments/assets/ce73934c-d301-474c-a451-8f272ce9aea9" />
 
+## Cost of Complexity
 <img width="751" height="549" alt="image" src="https://github.com/user-attachments/assets/dc4e9cb7-0c3a-4e93-a559-d32a989f8045" />
 
