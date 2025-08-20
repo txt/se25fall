@@ -13,7 +13,6 @@
 <p align="center"><b>This subject:</b> work in groups; write <b>quality</b> code;
 maintain alien code; use SE + AI; establish on-line profile. 
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
-<hr>
 
 
 
