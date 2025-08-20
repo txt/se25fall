@@ -44,3 +44,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 **What to hand in**:  
   - PDF uploaded to you public GitHub 
+
+
+<hr>
+Dont read this. Its all the [health and tax and other info](https://docs.google.com/spreadsheets/d/1jn8bz5E7RaAFuLjlwO486Xmi-z0yO9cq/edit?gid=324604352#gid=324604352) realting to food delivery. A veritable tsunami of information, only some of which is relevant to the food delivey problem. Is there anyway to auhtomatically explore all this info to find relevant bits? I wonder..
