@@ -15,4 +15,36 @@ maintain alien code; use SE + AI; establish on-line profile.
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
 
-Subject
+# Schedule
+
+<table>
+  <thead>
+    <tr>
+      <th>📅  Week of...</th>
+      <th>🎓 Lecture</th>
+      <th>🛠️ Submission<br>(due at noon) </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Aug18</td><td>Mon: No  class</td><td></td></tr>
+    <tr><td>Aug25</td><td></td><td></td></tr>
+    <tr><td>Sep01</td><td>Mon: Labor Day (no lecture)</td><td></td></tr>
+    <tr><td>Sep08</td><td></td><td></td></tr>
+    <tr><td>Sep15</td><td> </td><td></td></tr>
+    <tr><td>Sep22</td><td></td><td></td></tr>
+    <tr><td>Sep29</td><td></td><td>Thurs: Proj1</td></tr>
+    <tr><td>Oct06</td><td></td><td></td></tr>
+    <tr><td>Oct13</td><td>Mon : Fall Break (no lecture)</td><td></td></tr>
+    <tr><td>Oct20</td><td>Wed: no lecture</td><td></td></tr>
+    <tr><td>Oct27</td><td></td><td></td></tr>
+    <tr><td>Nov03</td><td></td><td>Thurs: Proj2</td></tr>
+    <tr><td>Nov10</td><td></td><td></td></tr>
+    <tr><td>Nov17</td><td></td><td></td></tr>
+    <tr><td>Nov24</td><td>Wed: Thanksgiving (no lecture)</td><td></td></tr>
+    <tr><td>Dec01</td><td> </td><td></td></tr>
+    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Thurs: Proj3</td></tr>
+    <tr><td>Dec15</td><td>Finals week</td><td></td></tr>
+  </tbody>
+</table>
+
+
