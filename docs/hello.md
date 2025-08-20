@@ -16,6 +16,18 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 # Where we are...
 
+<img width="1318" height="450" alt="image" src="https://github.com/user-attachments/assets/fe86ac9f-1d73-492f-914c-692434318348" />
+
+ 
+From 1954 to 2017, there was relative stability in tax incentives for innovation.
+- After that, such incentives were treated as temporary, negotiable, and expendable—subject to repeal, sunset, and sudden reversal.
+  - R&D (developer) costs had to be amoritzed over 10-15 years
+  - Which makes no sense to start ups (which may not even be here next year)
+- Now, 2025, Congress has written immediate expensing back into permanent law
+  - Immediate deduction of domestic R&E expenditures
+    - (Aside: Capitalization and amortization requirements, over 15 years, continue as related to foreign R&E expenditures) 
+  - So the picture for programemrs may change, very much, evry soon.
+
 
 <img width="1164" height="680" alt="image" src="https://github.com/user-attachments/assets/97c28d8a-1aef-4297-8d7e-9723013661b3" />
 
