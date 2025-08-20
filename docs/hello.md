@@ -28,3 +28,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 <img width="767" height="474" alt="image" src="https://github.com/user-attachments/assets/b4f331c9-b22d-477a-b1bd-d6749e70aaa4" />
 
+<img width="634" height="668" alt="image" src="https://github.com/user-attachments/assets/ce73934c-d301-474c-a451-8f272ce9aea9" />
+
+<img width="751" height="549" alt="image" src="https://github.com/user-attachments/assets/dc4e9cb7-0c3a-4e93-a559-d32a989f8045" />
+
