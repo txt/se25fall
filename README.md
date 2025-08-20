@@ -37,11 +37,11 @@ maintain alien code; use SE + AI; establish on-line profile.
     <tr><td>Oct20</td><td>Wed: no lecture</td><td></td></tr>
     <tr><td>Oct27</td><td></td><td></td></tr>
     <tr><td>Nov03</td><td></td><td>Thurs: Proj2</td></tr>
-    <tr><td>Nov10</td><td></td><td></td></tr>
+    <tr><td>Nov10</td><td></td><td> Demo to tutor</td></tr>
     <tr><td>Nov17</td><td></td><td></td></tr>
     <tr><td>Nov24</td><td>Wed: Thanksgiving (no lecture)</td><td></td></tr>
     <tr><td>Dec01</td><td> </td><td></td></tr>
-    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Mon: Proj3</td></tr>
+    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Mon: Proj3<br>Demo to tutor</td></tr>
     <tr><td>Dec15</td><td>Finals week</td><td></td></tr>
   </tbody>
 </table>
