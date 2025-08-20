@@ -41,7 +41,7 @@ maintain alien code; use SE + AI; establish on-line profile.
     <tr><td>Nov17</td><td></td><td></td></tr>
     <tr><td>Nov24</td><td>Wed: Thanksgiving (no lecture)</td><td></td></tr>
     <tr><td>Dec01</td><td> </td><td></td></tr>
-    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Thurs: Proj3</td></tr>
+    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Mon: Proj3</td></tr>
     <tr><td>Dec15</td><td>Finals week</td><td></td></tr>
   </tbody>
 </table>
