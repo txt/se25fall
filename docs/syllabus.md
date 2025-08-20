@@ -96,7 +96,7 @@ Consult hours:
 |Instructions       | Learning activities in this course will include  three projects and weekly in-class quizzes.|
 |Tool used          | All grades will be recorded in Moodle.<br> All student work will be in Github (public GH, not the NCSU version).|
 |Auditing           | not permitted |
-|Attendance         | not mandatory |
+|Attendance         | not mandatory but there are in-class quizzes |
 |Technical requirements | A laptop computer is required in each lecture for students taking this course.  NC State’s Online and Distance Education provides technology requirements and recommendations for computer hardware, and NC State’s Office of Information Technology provides recommendations for your computer . But as a rule-of-thumb, your computer is adequate if you can edit and run code using the  Github codespaces environment.|
 
 
