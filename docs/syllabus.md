@@ -21,14 +21,14 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 ## TL;DR
 
-
-- No exams (weekly in-class quiz). 
-- Teams of 4. 
 - Focused on process, not tools (code in any language you like).
 - Three projects on requirements engineering (RE + AI)
   1. play with LLMs;
   2. build requirements tools that use AI;
   3. maintain + extend tools from others.
+- Teams of 4.
+- No exams (weekly in-class quiz).
+- Classes are in person. I’ll randomly give quizzes during lectures (do not panic: max score is 110, so you can miss 1 or 2 quizzes).
 
 
 ## Schedule
