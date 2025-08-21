@@ -29,7 +29,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 **What to do**:
   - Create a public github repo (not NCSU) with a subdirectory "proj1"
   - Read *“What is a use case”* (Slides 53–73)  
-    - https://docs.google.com/presentation/d/1LOUrkULtY9sp_W01VEIhinc1PHqiWXi1/edit?slide=id.p73#slide=id.p73  
+    - [re](pdf/re.pdf)
   - Read up on *“food delivery system”*:  
     - https://pages.github.ncsu.edu/engr-csc326-staff/326-course-page/team-project/#problem-overview  
     - https://pages.github.ncsu.edu/engr-csc326-staff/326-course-page/team-project/problem-stmt#done-criteria  
