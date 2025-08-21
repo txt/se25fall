@@ -71,6 +71,8 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 3. **Classical Software Engineering Process**  
    a. Define the *V-Model* and *Fred Brooks’ ratios* (planning, coding, testing).  
+   b. Under the v-model, how does planning improves testing?
+   c. Under the v-model, how does  testing improves planning?  
    b. Critique LLM-first “build immediately” approaches using the V-Model lens.  
       Where do they risk failure, and how could they be adapted to mitigate  
       those risks?  
