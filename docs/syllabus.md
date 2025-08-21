@@ -141,9 +141,9 @@ Projects:
 
 >  :warning:  **IMPORTANT** : Projects 2 and 3 will be assessed in
 live demo sessions with the tutor/grader. These sessions will occur
-the weeks of Mar3-XXX and Apr21-XXX.  We ask for students for their help
+the weeks of Nov10 and Dec8.  We ask for students for their help
 in  scheduling all these demo sessions. Our graders/tutors are
-students with their own exams and assignment to complete.   Hence,
+students with their own exams and assignments to complete.   Hence,
 they might  suggest demo times outside of normal working hours
 (evenings, weekends).  Please do them the  courtesy of considering
 those times. That said, if those proposed times are inconvenient,
