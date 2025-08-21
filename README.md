@@ -25,11 +25,11 @@ maintain alien code; use SE + AI; establish on-line profile.
     </tr>
   </thead>
   <tbody>
-    <tr><td>Aug18</td><td>Mon: No  class</td><td></td></tr>
-    <tr><td>Aug25</td><td></td><td></td></tr>
-    <tr><td>Sep01</td><td>Mon: Labor Day (no lecture)<br>
+    <tr><td>Aug18</td><td>Mon: No  class<br>
                           Wed: <a href="docs/hello.md">hello<br>
-                          <a href="docs/review1.md">Review1</a></td><td><a href="docs/proj1a1.md">1a1</a>: Tues<br><a href="docs/proj1a2.md">1a2</a>: Thurs</td></tr>
+                          <a href="docs/review1.md">Review1</a></td><td></td></tr>
+    <tr><td>Aug25</td><td></td><td></td></tr>
+    <tr><td>Sep01</td><td>Mon: Labor Day (no lecture)</td><td><a href="docs/proj1a1.md">1a1</a>: Tues<br><a href="docs/proj1a2.md">1a2</a>: Thurs</td></tr>
     <tr><td>Sep08</td><td></td><td></td></tr>
     <tr><td>Sep15</td><td> </td><td></td></tr>
     <tr><td>Sep22</td><td></td><td></td></tr>
