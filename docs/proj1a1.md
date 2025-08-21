@@ -9,17 +9,21 @@
   <a href="https://ncsu.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=7b1bbb56-937c-42a1-96b4-b33e0134710f"><img src="https://img.shields.io/badge/Vids-%23ffa500?style=flat-square&logo=youtube&logoColor=white" /></a>
   <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
-<p align="center"><a href="https://x.com/karpathy/status/1886192184808149383?lang=en">Vibe code</a> = <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">pain maintain</a>?<p align=center> <img width="400" alt="image" src="https://github.com/user-attachments/assets/acde700e-1d4d-4002-94a2-1d8aa08914e2"></p>
+<p align="center"><em>Q1: does <a href="https://x.com/karpathy/status/1886192184808149383?lang=en">vibe code</a> = <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">pain maintain?</a></em><br>
+<em> Q2: how much will AI change this<br>"standard model" of SE development?</em><br> <img width="400" alt="image" src="https://github.com/user-attachments/assets/acde700e-1d4d-4002-94a2-1d8aa08914e2"></p>
 <p align="center"><b>This subject:</b> work in groups; write <b>quality</b> code;
 maintain alien code; use SE + AI; establish on-line profile.
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
 
+
 <hr>
+
 
 **Project**: 1a1  
 **Due**: Tuesday, Sept 2, noon
 **What**: Problem familiarization  
+
 
 **What to do**:
   - Create a public github repo (not NCSU) with a subdirectory "proj1"
@@ -29,6 +33,7 @@ maintain alien code; use SE + AI; establish on-line profile.
     - https://pages.github.ncsu.edu/engr-csc326-staff/326-course-page/team-project/#problem-overview  
     - https://pages.github.ncsu.edu/engr-csc326-staff/326-course-page/team-project/problem-stmt#done-criteria  
       - (Note: incomplete, must fix)
+
 
 **What to hand in**: 
   - Create **list of stakeholders** (e.g., Admin, Staff, Customer, etc.)  
@@ -42,9 +47,12 @@ maintain alien code; use SE + AI; establish on-line profile.
     - Each with: Preconditions, Main Flow, Subflows, Alternative Flows.  
     - How to find? Feed structure to LLM as prompt, then provide examples from slides.  
 
+
 **What to hand in**:  
   - PDF uploaded to you public GitHub 
 
 
 <hr>
 Dont read this. Its all the [health and tax and other info](https://docs.google.com/spreadsheets/d/1jn8bz5E7RaAFuLjlwO486Xmi-z0yO9cq/edit?gid=324604352#gid=324604352) realting to food delivery. A veritable tsunami of information, only some of which is relevant to the food delivey problem. Is there anyway to auhtomatically explore all this info to find relevant bits? I wonder..
+
+
