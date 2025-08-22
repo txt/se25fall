@@ -10,7 +10,7 @@
   <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
 <h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
 <p align="center"><em>Q1: does <a href="https://x.com/karpathy/status/1886192184808149383?lang=en">vibe code</a> == <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">pain maintain</a>?</em><br>
-<em> Q2: How much will AI change this "standard model"?</em><br>
+<em> Q2: How much could/should AI change this "standard model"?</em><br>
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/acde700e-1d4d-4002-94a2-1d8aa08914e2"></p>
 <p align="center"><b>This subject:</b> work in groups; write <b>quality</b> code;
 maintain alien code; use SE + AI; establish on-line profile.
