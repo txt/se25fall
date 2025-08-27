@@ -1,43 +1,42 @@
 # Requirements
 
-# Table of Contents
-
 - [Requirements](#requirements)
   - [Glossary](#glossary)
     - [Requirements](#requirements-1)
-      - Functional Requirements
-      - Non-Functional Requirements
+      - [Functional Requirements](#functional-requirements)
+      - [Non-Functional Requirements](#non-functional-requirements)
     - [Requirements Engineering](#requirements-engineering)
-      - Identification
-      - Analysis
-      - Specification
-      - Validation
+      - [Identification](#identification)
+      - [Analysis](#analysis)
+      - [Specification](#specification)
+      - [Validation](#validation)
     - [Techniques for Requirements Specification and Validation](#techniques-for-requirements-specification-and-validation)
-      - User Stories
-      - Use Cases
-      - Minimum Viable Product (MVP)
-      - A/B Testing
+      - [User Stories](#user-stories)
+      - [Use Cases](#use-cases)
+      - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
+      - [AB Testing](#ab-testing)
   - [When](#when)
   - [(in)Famous Requirements Failures](#infamous-requirements-failures)
-    - Ariane 5 Rocket Explosion (1996)
-    - London Ambulance Service System Failure (1992)
-    - Heathrow Terminal 5 Baggage Handling System (2008)
-    - Denver International Airport Automated Baggage System (1995)
-    - Mars Climate Orbiter (1999)
-    - Venus Rocket Explosion (1962)
-    - Genesis Spacecraft (2004)
-    - Stardust Spacecraft (2006)
+    - [Ariane 5 Rocket Explosion (1996)](#1-ariane-5-rocket-explosion-1996)
+    - [London Ambulance Service System Failure (1992)](#2-london-ambulance-service-system-failure-1992)
+    - [Heathrow Terminal 5 Baggage Handling System (2008)](#3-heathrow-terminal-5-baggage-handling-system-2008)
+    - [Denver International Airport Automated Baggage System (1995)](#4-denver-international-airport-automated-baggage-system-1995)
+    - [Mars Climate Orbiter (1999)](#5-mars-climate-orbiter-1999)
+    - [Venus Rocket Explosion (1962)](#6-venus-rocket-explosion-1962)
+    - [Genesis Spacecraft (2004)](#7-genesis-spacecraft-2004)
+    - [Stardust Spacecraft (2006)](#8-stardust-spacecraft-2006)
   - [Stakeholders in Requirements Engineering](#stakeholders-in-requirements-engineering)
-    - Who Matters?
-    - Analyzing Influence: The Power/Interest Grid
-    - Elicitation & Management
+    - [Who Matters?](#who-matters)
+    - [Analyzing Influence: The PowerInterest Grid](#analyzing-influence-the-powerinterest-grid)
+    - [Elicitation  Management](#elicitation--management)
   - [Requirement Interactions](#requirement-interactions)
-    - Sample of Functional Requirements Interactions
-      - Explanation of Positive Interactions (+)
-      - Explanation of Negative Interactions (-)
-    - Sample of NonFunctional Requirements Interactions
-      - Explanation of `+` (Positive Interactions)
-      - Explanation of `-` (Negative Interactions)
+    - [Sample of Functional Requirements Interactions](#sample-of-functional-requirements-interactions)
+      - [Explanation of Positive Interactions (+)](#explanation-of-positive-interactions-)
+      - [Explanation of Negative Interactions (-)](#explanation-of-negative-interactions--)
+    - [Sample of NonFunctional Requirements Interactions](#sample-of-nonfunctional-requirements-interactions)
+      - [Explanation of + (Positive Interactions)](#explanation-of--positive-interactions)
+      - [Explanation of - (Negative Interactions)](#explanation-of--negative-interactions)
+
 
 
 ## When
