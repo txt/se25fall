@@ -2,20 +2,7 @@
 
 # Table of Contents
 
-- [Glossary](#glossary)
-  - [Requirements](#requirements-1)
-    - [Functional Requirements](#functional-requirements)
-    - [Non-Functional Requirements](#non-functional-requirements)
-  - [Requirements Engineering](#requirements-engineering)
-    - [Identification](#identification)
-    - [Analysis](#analysis)
-    - [Specification](#specification)
-    - [Validation](#validation)
-  - [Specification and Validation Techniques](#specification-and-validation-techniques)
-    - [User Stories](#user-stories)
-    - [Use Cases](#use-cases)
-    - [Minimum Viable Product MVP](#minimum-viable-product-mvp)
-    - [AB Testing](#ab-testing)
+
 - [When](#when)
 - [Famous Requirements Failures](#famous-requirements-failures)
   - [Ariane 5 Rocket Explosion 1996](#ariane-5-rocket-explosion-1996)
@@ -37,30 +24,6 @@
   - [Non Functional Requirements Interactions](#non-functional-requirements-interactions)
     - [Positive Interactions](#positive-interactions-1)
     - [Negative Interactions](#negative-interactions-1)
-
----
-
-## Glossary
-
-### Requirements
-
-#### Functional Requirements
-Examples: User Authentication, Flight Search, Flight Booking, Payment Processing, Booking Cancellation.
-
-#### Non-Functional Requirements
-Examples: Performance, Availability, Security, Portability, Privacy, Memory Usage, Disk Usage.
-
-### Requirements Engineering
-- Identification
-- Analysis
-- Specification
-- Validation
-
-### Specification and Validation Techniques
-- User Stories
-- Use Cases
-- Minimum Viable Product (MVP)
-- A/B Testing
 
 ---
 
