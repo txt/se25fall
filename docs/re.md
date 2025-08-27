@@ -225,16 +225,50 @@ Structured for object-oriented design:
 - Supports brainstorming sessions and emergent architecture design.
 
 **Example image of CRC cards:**  
-![CRC Cards Example](https://www.agilemodeling.com/artifacts/crcmodel.htm) :contentReference[oaicite:1]{index=1}
+
+<img width="318" height="244" alt="image" src="https://github.com/user-attachments/assets/f78771a5-6d07-4c6d-905f-78072aff3903" />
+
+<img width="887" height="379" alt="image" src="https://github.com/user-attachments/assets/4fd87dc4-f9a3-4c67-ab05-4db08d62d4ed" />
+
+
 
 ### Repertory Grids  
 A technique for eliciting personal constructs through comparisons:
 
 **Example image of a Repertory Grid:**  
-![Repertory Grid Example](https://www.researchgate.net/figure/A-sample-repertory-grid_fig1_237531361) :contentReference[oaicite:2]{index=2}
+<img width="589" height="456" alt="image" src="https://github.com/user-attachments/assets/743f932d-3b11-4c8b-a429-9deef1167797" />
 
 Developed from psychology, this method reveals implicit requirements by asking stakeholders to compare sets and rate them on a bipolar scale. :contentReference[oaicite:3]{index=3}
 
+1. A repertory grid is a **matrix** with elements (rows) and constructs (columns).  
+2. **Elements** = items being compared (e.g., tools, designs, products).  
+3. **Constructs** = bipolar distinctions (e.g., secure ↔ insecure).  
+4. Start by picking the **domain** and identifying relevant elements.  
+5. Then use the **triadic method**: find three things, then the dimension that separates two from the other.  
+6. This elicits new bipolar constructs to add as columns.  
+7. Stakeholders **rate each element** on each construct using a numeric scale.  
+8. The completed grid shows **patterns of similarity and difference**.  
+9. Analysis (clustering, factor analysis) reveals **groups of elements/constructs**.  
+10. Insights guide **requirements choices, prioritization, or design trade-offs**.  
+
+
+```gawk
+function cluster(elements):
+    if size(elements) <= 1:
+        return leaf(elements)
+
+    # Step 1: find most remote pair
+    (a, b) = argmax_distance(elements)
+
+    # Step 2: assign all elements to nearer of a or b
+    left, right = partition(elements, a, b)
+
+    # Step 3: recurse on each half
+    return node(
+        cluster(left),
+        cluster(right)
+    )
+```
 ---
 
 ## Requirements Traceability  
