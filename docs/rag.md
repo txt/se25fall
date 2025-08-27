@@ -95,6 +95,8 @@ def build_chunks(pdf_dir):
 
 ### 3) Distance & embedding note (why synonyms cluster)
 
+<img src="https://towardsdatascience.com/wp-content/uploads/2021/03/15F4TXdFYwqi-BWTToQPIfg.jpeg" width=500>
+
 Embeddings place **synonyms and related phrases close together** in a high-dimensional
 space (e.g., *car* ≈ *automobile*).
 We use **squared Euclidean distance** to measure closeness between vectors:
