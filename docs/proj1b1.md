@@ -22,4 +22,26 @@
   - Report the **total cost of LLM usage** (note: up to $80 is acceptable,  
     divided 4 ways between 4 team members = $25 each).  
 
-<hr>
+## Appendix:Prompts to train an LLM about “what is a use case”
+
+Show   an LLM example of the use case format (see slide 64 to 75 of these slides). 
+Hints:
+- Structure the prompt in markdown
+- Separate sections with
+
+“””.e.g 
+
+
+a use case Divides into predictions, main flow, subflows, alternatives. For example:
+
+
+Preconditions=”””
+The driver approaches the intersection.
+The driver checks the status [Check Status].
+The driver clears the intersection [Go].”””
+
+
+Subflows = 
+...
+```
+
