@@ -31,7 +31,7 @@ maintain alien code; use SE + AI; establish on-line profile.
                           Wed: <a href="docs/hello.md">hello</a><br>
                           Review: <a href="docs/review1.md">1</a></td><td></td></tr>
     <tr><td>Aug25</td><td>Mon: <a href="https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing">LLM prompting</a><br>
-                                     Wed: <a href="docs/re.md">RE</a> | <a href="docs/rag">RAG-ing</a><br>
+                                     Wed: <a href="docs/re.md">RE</a> | <a href="docs/rag.md">RAG-ing</a><br>
                                     Review: <a href="docs/review2.md">2</a></td><td></td></tr>
     <tr><td>Sep01</td><td>Mon: Labor Day (no lecture)</td><td><a href="docs/proj1a1.md">1a1</a>: Tues<br><a href="docs/proj1a2.md">1a2</a>: Thurs</td></tr>
     <tr><td>Sep08</td><td></td><td> <a href="docs/proj1b1.md">1b1</a>: Mon</td></tr>
