@@ -17,57 +17,25 @@ maintain alien code; use SE + AI; establish on-line profile.
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
   
+ 
 
-<table align="center">
-  <thead>
-    <tr>
-      <th align=center>📅 Week of...</th>
-      <th align=center>🎓 Lecture</th>
-      <th align=center>🛠️ Submission<br>(due at noon)</th>
-      <th align=center>📝 Review</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Aug18</td>
-      <td>Mon: No class<br>
-          Wed: <a href="docs/hello.md">hello</a></td>
-      <td></td>
-      <td> <a href="docs/review1.md">1</a></td>
-    </tr>
-    <tr>
-      <td>Aug25</td>
-      <td>Mon: <a href="https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing">LLM prompting</a><br>
-          Wed: <a href="docs/re.md">RE</a> | <a href="docs/rag.md">RAG-ing</a></td>
-      <td></td>
-      <td> <a href="docs/review2.md">2</a> |  <a href="docs/review3.md">3</a>
-</td>
-    </tr>
-    <tr>
-      <td>Sep01</td>
-      <td>Mon: Labor Day (no lecture)</td>
-      <td><a href="docs/proj1a1.md">1a1</a>: Tues<br>
-          <a href="docs/proj1a2.md">1a2</a>: Thurs</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sep08</td>
-      <td></td>
-      <td><a href="docs/proj1b1.md">1b1</a>: Mon</td>
-      <td></td>
-    </tr>
-    <tr><td>Sep15</td><td> </td><td></td><td></td></tr>
-    <tr><td>Sep22</td><td></td><td></td><td></td></tr>
-    <tr><td>Sep29</td><td></td><td>Thurs: Proj1</td><td></td></tr>
-    <tr><td>Oct06</td><td></td><td></td><td></td></tr>
-    <tr><td>Oct13</td><td>Mon : Fall Break (no lecture)</td><td></td><td></td></tr>
-    <tr><td>Oct20</td><td>Wed: no lecture</td><td></td><td></td></tr>
-    <tr><td>Oct27</td><td></td><td></td><td></td></tr>
-    <tr><td>Nov03</td><td></td><td>Thurs: Proj2</td><td></td></tr>
-    <tr><td>Nov10</td><td></td><td>Demo to tutor</td><td></td></tr>
-    <tr><td>Nov17</td><td></td><td></td><td></td></tr>
-    <tr><td>Nov24</td><td>Wed: Thanksgiving (no lecture)</td><td></td><td></td></tr>
-    <tr><td>Dec01</td><td> </td><td></td><td></td></tr>
-    <tr><td>Dec08</td><td>Mon: last lecture</td><td>Mon: Proj3<br>Demo to tutor</td><td></td></tr> 
-  </tbody>
-</table>
+| 📅 Week of... | 🎓 Lecture | 🛠️ Submission (due at noon) | 📝 Review |
+|:-------------:|:----------:|:---------------------------:|:---------:|
+| Aug18 | Mon: No class<br>Wed: [hello](docs/hello.md) |   | [1](docs/review1.md) |
+| Aug25 | Mon: [LLM prompting](https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing)<br>Wed: [RE](docs/re.md) \| [RAG-ing](docs/rag.md) |   | [2](docs/review2.md) \| [3](docs/review3.md) |
+| Sep01 | Mon: Labor Day (no lecture) | [1a1](docs/proj1a1.md): Tues<br>[1a2](docs/proj1a2.md): Thurs |   |
+| Sep08 |   | [1b1](docs/proj1b1.md): Mon |   |
+| Sep15 |   |   |   |
+| Sep22 |   |   |   |
+| Sep29 |   | Thurs: Proj1 |   |
+| Oct06 |   |   |   |
+| Oct13 | Mon : Fall Break (no lecture) |   |   |
+| Oct20 | Wed: no lecture |   |   |
+| Oct27 |   |   |   |
+| Nov03 |   | Thurs: Proj2 |   |
+| Nov10 |   | Demo to tutor |   |
+| Nov17 |   |   |   |
+| Nov24 | Wed: Thanksgiving (no lecture) |   |   |
+| Dec01 |   |   |   |
+| Dec08 | Mon: last lecture | Mon: Proj3<br>Demo to tutor |   |
+
