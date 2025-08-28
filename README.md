@@ -40,7 +40,8 @@ maintain alien code; use SE + AI; establish on-line profile.
       <td>Mon: <a href="https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing">LLM prompting</a><br>
           Wed: <a href="docs/re.md">RE</a> | <a href="docs/rag.md">RAG-ing</a></td>
       <td></td>
-      <td> <a href="docs/review2.md">2</a></td>
+      <td> <a href="docs/review2.md">2</a> |  <a href="docs/review3.md">3</a>
+</td>
     </tr>
     <tr>
       <td>Sep01</td>
