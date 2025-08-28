@@ -21,10 +21,10 @@ maintain alien code; use SE + AI; establish on-line profile.
 <table align="center">
   <thead>
     <tr>
-      <th>📅 Week of...</th>
-      <th>🎓 Lecture</th>
-      <th>🛠️ Submission<br>(due at noon)</th>
-      <th>📝 Review</th>
+      <th align=center>📅 Week of...</th>
+      <th align=center>🎓 Lecture</th>
+      <th align=center>🛠️ Submission<br>(due at noon)</th>
+      <th align=center>📝 Review</th>
     </tr>
   </thead>
   <tbody>
