@@ -19,7 +19,7 @@ maintain alien code; use SE + AI; establish on-line profile.
   
  <div align=center>
 
-| 📅 Week of... | 🎓 Lecture | 🛠️ Submission (due at noon) | 📝 Review |
+| 📅 Week of... | 🎓 Lecture | 🛠️ Submission <br>(due at noon) | 📝 Review |
 |:-------------:|:----------:|:---------------------------:|:---------:|
 | Aug18 | Mon: No class<br>Wed: [hello](docs/hello.md) |   | [1](docs/review1.md) |
 | Aug25 | Mon: [LLM prompting](https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing)<br>Wed: [RE](docs/re.md) \| [RAG-ing](docs/rag.md) |   | [2](docs/review2.md) \| [3](docs/review3.md) |
