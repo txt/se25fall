@@ -41,7 +41,7 @@ maintain alien code; use SE + AI; establish on-line profile.
   - The new use cases
   - Reflection document (max half page): differences you see in the LLM reports.  
   - Report the **total cost of LLM usage** (note: up to $80 is acceptable,  
-    divided 4 ways between 4 team members = $25 each).  
+    divided 4 ways between 4 team members = $20 each).  
 
 ## Appendix:Prompts to train an LLM about “what is a use case”
 
