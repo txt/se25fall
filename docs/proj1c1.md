@@ -22,12 +22,12 @@ maintain alien code; use SE + AI; establish on-line profile.
 **What**: Problem condensation  
 
 **What to do**:  
-  - Time to get serious, and minimal.  
-  - LLMs give you many choices. Which will you use?  
-  - Your goal is a **MVP (minimal viable product)**: the most basic version of a product that allows a team to collect the maximum amount of validated learning about customers with the least amount of effort.  
-  - Decide what from **1b1 you will NOT be doing**, and justify why you will not be doing that.  
-  - For this task, keep showing the two LLMs the current use cases and ask them for answers to parts 2, 3 (shown at right).  
-  - Generate **at least 10 new use cases** (5 pages total) describing the new design, each with:  
+  1. Time to get serious, and minimal.  
+  2. LLMs give you many choices. Which will you use?  
+  3. Your goal is a **MVP (minimal viable product)**: the most basic version of a product that allows a team to collect the maximum amount of validated learning about customers with the least amount of effort.  
+  4. Decide what from **1b1 you will NOT be doing**, and justify why you will not be doing that.  
+  5. For this task, keep showing the two LLMs the current use cases and ask them for answers to part  4 (in this list).  
+  6. Generate **at least 10 new use cases** (5 pages total) describing the new design, each with:  
     - Preconditions  
     - Main Flow  
     - Subflows  
