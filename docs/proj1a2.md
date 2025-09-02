@@ -37,6 +37,7 @@ maintain alien code; use SE + AI; establish on-line profile.
   - **0** → Incomplete, major issues  
   - **1** → Needs improvement, some issues  
   - **2** → Well-done
+  - **2** → Exceptionally great job (give this rating only when you feel the work done is extremely well done)
 - If there are issues
   -  A **short description/justification** for each score you assign
   -  Otherwise, leave the "issues" field blank.
