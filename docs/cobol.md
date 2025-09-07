@@ -19,6 +19,8 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 
 
+<img width="500"   alt="image" align=right src="https://github.com/user-attachments/assets/9d1e2141-ddf6-48fe-aecc-366d503819ce" />
+
 
 # COBOL: The Language That Refused to Die
 *A comprehensive analysis of the 65-year-old programming language that powers the global economy*
