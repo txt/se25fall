@@ -24,9 +24,9 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Aug18 | Mon: No class<br>Wed: [hello](docs/hello.md) |   | [1](docs/review1.md) |
 | Aug25 | Mon: [LLM prompting](https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing)<br>Wed: [RE](docs/re.md) \| [RAG-ing](docs/rag.md) |   | [2](docs/review2.md) \| [3](docs/review3.md) |
 | Sep01 | Mon: Labor Day (no lecture)<br>Wed: [Prompting](docs/prompting.md) | [1a1](docs/proj1a1.md): Tues<br>[1a2](docs/proj1a2.md): Thurs |   |
-| Sep08 | Mon: [process](docs/process.md) :: [cobol](docs/cobol.md)  | [1b1](docs/proj1b1.md): Mon <br> [1b2](docs/proj1b2.md): Thurs  |   |
+| Sep08 | [process](docs/process.md) :: [cobol](docs/cobol.md): Mod  | [1b1](docs/proj1b1.md): Mon <br> [1b2](docs/proj1b2.md): Thurs  |   |
 | Sep15 |   | [1c1](docs/proj1c1.md): Mon <br> [1c2](docs/proj1c2.md): Thurs |   |
-| Sep22 |   |   |   |
+| Sep22 |   | [1d1](docs/proj1d1.md): Mon <br> [1d2](docs/proj1d2.md): Thurs  |   |
 | Sep29 |   | Thurs: Proj1 |   |
 | Oct06 |   |   |   |
 | Oct13 | Mon : Fall Break (no lecture) |   |   |
