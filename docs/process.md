@@ -149,27 +149,10 @@ Version control also reflects choices about control vs speed.
 Lesson: process often follows politics, money, and risk.  
 
 
-## Section 6: The Strange Survival of COBOL (10 minutes)
-
-### COBOL: The Language That Refused to Die
-
-- **Origins**: created 1959, for business, readable English-like syntax.  
-- **Now**: still runs banks, airlines, government; billions of lines in use.  
-- **Why not replace**: stable, proven, replacement too costly and risky.  
-- **Recruitment crisis**: old devs retiring; firms pay premiums for COBOL skills.  
-
-Why it makes sense: boring but reliable; cost of change outweighs novelty.  
-
-
 ## Wrap-Up and Reflection (5 minutes)
 
 - Waterfall vs Agile → control vs flexibility  
 - Release cycles → speed vs stability  
 - Git Flow vs Main → collaboration safety vs iteration speed  
 - Boundaries → generalist openness vs specialist efficiency  
-- Strange processes survive for money, politics, risk  
-- COBOL shows legacy tech can outlast trends  
-
-**Final Question for Students:**  
-- Which "crazy" process decisions of today might still be with us in 50 years?
 
