@@ -17,11 +17,6 @@ maintain alien code; use SE + AI; establish on-line profile.
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
 
-
-
-
-
-
 # Lecture: Process, Version Control, and Strange Survivals
 
 
@@ -38,7 +33,6 @@ One emphasizes *planning and control*, the other *adaptation and feedback*.
   - Linear sequence: requirements → analysis → design → code → test  
   - Feedback flows only backward one step at a time  
   - Strong fit for long, predictable projects  
-  - Used in government, military, and large hardware–software contracts  
   - Benefits: efficiency, predictable costs, payment milestones  
   - Weaknesses: rigidity, costly pivots, analysis paralysis  
 
@@ -49,15 +43,49 @@ One emphasizes *planning and control*, the other *adaptation and feedback*.
   - Benefits: flexibility, early feedback, visible progress  
   - Weaknesses: risk of losing direction, messy architecture, budget creep  
 
+**When to pick**  
+- Waterfall: big gov/military contracts; well-defined requirements; staged payments.  
+- Agile: small trusted teams; evolving requirements; when feedback can change goals.  
+
+**Warning signs**  
+- Waterfall failing: mid-project pivots require re-engineering; late test shows major flaws.  
+- Agile failing: endless churn, architecture collapsing under too many fast changes.  
+
 ![image](https://github.com/txt/se23/assets/29195/78ceea76-1e54-44fa-9cbd-b333870545b2)
 
-### Discussion Prompt
-- Ask: Which approach would you choose for a space mission?  
-- Ask: Which for a student team building a prototype in one semester?  
 
----
+## Section 2: Release Cycles (10 minutes)
 
-## Section 2: Git Flow vs Commit to Main (10 minutes)
+### Short vs Long
+
+Release cadence is another process trade-off.  
+
+- **Short release cycles**  
+  - Frequent updates, quick feedback, agile alignment  
+  - Customers see progress often  
+  - Danger: rushed code, tech debt, breaking APIs  
+
+- **Long release cycles**  
+  - Years between major versions  
+  - Big integrated features, careful planning  
+  - Danger: late feedback, buggy “big bang” releases, market drift  
+
+**When to pick**  
+- Short: when requirements evolve, users want frequent updates.  
+- Long: when requirements are fixed, or system is safety-critical.  
+- Mixed: frequent internal releases, slower external milestones.  
+
+**Warning signs**  
+- Short failing: debt piles up, no refactoring time, brittle design.  
+- Long failing: feedback arrives too late, giant buggy releases, users lose interest.  
+
+**Adaptation for safety-critical**  
+- Use careful release branches, strong pre-commit hooks, broad test environments.  
+- Canary/training releases for new devs.  
+- Slow external releases to minimize risk.  
+
+
+## Section 3: Git Flow vs Commit to Main (10 minutes)
 
 ### Branching Choices
 
@@ -68,87 +96,79 @@ Version control also reflects choices about control vs speed.
 - **Git Flow**  
   - Each branch promises a feature, merged only after vetting  
   - Protects main branch from mistakes  
-  - Fits slow-moving open-source projects with many contributors  
   - Benefits: trust but verify, clear history  
-  - Weaknesses: pull request bottlenecks, slow iteration  
-
-![image](https://user-images.githubusercontent.com/29195/130552057-1891deda-3328-43c7-8fab-c139cff3d1ff.png)
+  - Weaknesses: bottlenecks, slow iteration  
 
 - **Commit to Main (Trunk-Based)**  
-  - All work merges into main (or master) branch quickly  
-  - Short-lived branches, automated testing to avoid breaking builds  
-  - Used at Google, Facebook, Amazon  
+  - All work merges quickly into main branch  
+  - Automated testing guards stability  
   - Benefits: fast iteration, reduced merge hell  
-  - Weaknesses: requires discipline, strong testing culture  
+  - Weaknesses: requires strong discipline + test culture  
 
-![image](https://user-images.githubusercontent.com/29195/130552454-aa8c1fc0-7927-4072-b31a-263677c5ca86.png)
+**When to pick**  
+- Git Flow: large open-source projects, many contributors.  
+- Main: fast-moving companies with strong testing pipelines.  
 
-### Discussion Prompt
-- Ask: Which would you prefer if your team has 3 experts?  
-- Ask: What if you have 30 interns?  
+**Warning signs**  
+- Git Flow failing: stalled pull requests, slow progress.  
+- Main failing: flaky builds, unstable releases.  
 
 ---
 
-## Section 3: Strange but Sensible Process Decisions (10 minutes)
+## Section 4: Team Boundaries (5 minutes)
+
+### Zero-Internal vs Specialized Teams
+
+- **Zero-internal boundaries**  
+  - Everyone uses same tools, can modify any code  
+  - Great for open projects, shared responsibility  
+  - Danger: confusion if tools/configs aren’t consistently available  
+
+- **Specialized teams**  
+  - Deep experts on small subsystems  
+  - Efficient when teams don’t need to cross boundaries  
+  - Danger: devs blocked fixing other parts just to make their own work  
+
+**When to pick**  
+- Zero-boundaries: public/open projects, shared tools, flexible contributors.  
+- Specialized: when super-specialists exist, and interfaces are stable.  
+
+**Warning signs**  
+- Zero-boundaries failing: tools missing, config chaos, cross-team frustration.  
+- Specialized failing: progress stalls because of cross-dependencies.  
+
+
+## Section 5: Strange but Sensible Process Decisions (10 minutes)
 
 ### When Bad Ideas Survive
 
-Sometimes decisions that *look crazy* make sense in context.  
+- **AgileFall**: companies *say* agile, but *do* waterfall.  
+- **Payment milestones**: accountants demand staged sign-offs.  
+- **Paperwork overload**: contracts, accountability, not engineering love.  
 
-- **AgileFall**: Companies *say* agile, but *do* waterfall.  
-  - Example: hardware–software projects need long cycles  
-  - Hardware teams want stable targets, not shifting sprint goals  
-  - So they mix agile rhetoric with waterfall practice  
+Lesson: process often follows politics, money, and risk.  
 
-- **Waterfall Payment Milestones**  
-  - Accountants demand checkpoints before releasing funds  
-  - Even if waterfall is rigid, staged sign-offs keep the cash flowing  
 
-- **Paperwork Overload**  
-  - Military and government often require thick documents  
-  - Not because developers love paperwork, but because  
-    it creates contracts, accountability, and traceability  
-
-Key lesson: sometimes process is less about *engineering* and more  
-about *politics, money, and risk management*.  
-
----
-
-## Section 4: The Strange Survival of COBOL (10 minutes)
+## Section 6: The Strange Survival of COBOL (10 minutes)
 
 ### COBOL: The Language That Refused to Die
 
-- **Origins**  
-  - Created in 1959 for business computing  
-  - Designed for readability: “common business-oriented language”  
+- **Origins**: created 1959, for business, readable English-like syntax.  
+- **Now**: still runs banks, airlines, government; billions of lines in use.  
+- **Why not replace**: stable, proven, replacement too costly and risky.  
+- **Recruitment crisis**: old devs retiring; firms pay premiums for COBOL skills.  
 
-- **Current Reality**  
-  - Still runs banks, airlines, government systems  
-  - Billions of lines of COBOL in daily use  
-  - Why not replace it?  
-    - Stable, proven, deeply embedded  
-    - Replacing would cost billions and risk failure  
+Why it makes sense: boring but reliable; cost of change outweighs novelty.  
 
-- **Recruitment Crisis**  
-  - Few universities teach COBOL today  
-  - Skilled programmers are retiring  
-  - Companies now train new hires or pay premiums  
-  - Example: some firms offering six-figure salaries  
-    for developers willing to work in COBOL  
-
-### Why It Makes Sense
-- COBOL is boring but reliable  
-- Mission-critical systems need stability over novelty  
-- The cost of change outweighs the benefits  
-
----
 
 ## Wrap-Up and Reflection (5 minutes)
 
-- Waterfall vs Agile shows the tension between control and flexibility  
-- Git Flow vs Main shows trade-offs in collaboration speed and safety  
-- Strange processes may survive because of money, contracts, or risk  
-- COBOL teaches us that legacy decisions can outlive expectations  
+- Waterfall vs Agile → control vs flexibility  
+- Release cycles → speed vs stability  
+- Git Flow vs Main → collaboration safety vs iteration speed  
+- Boundaries → generalist openness vs specialist efficiency  
+- Strange processes survive for money, politics, risk  
+- COBOL shows legacy tech can outlast trends  
 
 **Final Question for Students:**  
 - Which "crazy" process decisions of today might still be with us in 50 years?
