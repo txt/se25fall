@@ -20,7 +20,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 # Lecture: Process, Version Control, and Strange Survivals
 
 
-## Section 1: Waterfall vs Agile (15 minutes)
+## Section 1: Waterfall vs Agile 
 
 ### Two Extremes of Process
 
@@ -54,7 +54,7 @@ One emphasizes *planning and control*, the other *adaptation and feedback*.
 ![image](https://github.com/txt/se23/assets/29195/78ceea76-1e54-44fa-9cbd-b333870545b2)
 
 
-## Section 2: Release Cycles (10 minutes)
+## Section 2: Release Cycles  
 
 ### Short vs Long
 
@@ -85,7 +85,7 @@ Release cadence is another process trade-off.
 - Slow external releases to minimize risk.  
 
 
-## Section 3: Git Flow vs Commit to Main (10 minutes)
+## Section 3: Git Flow vs Commit to Main  
 
 ### Branching Choices
 
@@ -115,7 +115,7 @@ Version control also reflects choices about control vs speed.
 
 ---
 
-## Section 4: Team Boundaries (5 minutes)
+## Section 4: Team Boundaries 
 
 ### Zero-Internal vs Specialized Teams
 
@@ -138,7 +138,7 @@ Version control also reflects choices about control vs speed.
 - Specialized failing: progress stalls because of cross-dependencies.  
 
 
-## Section 5: Strange but Sensible Process Decisions (10 minutes)
+## Section 5: Strange but Sensible Process Decisions 
 
 ### When Bad Ideas Survive
 
@@ -149,7 +149,7 @@ Version control also reflects choices about control vs speed.
 Lesson: process often follows politics, money, and risk.  
 
 
-## Wrap-Up and Reflection (5 minutes)
+##  Reflection  
 
 - Waterfall vs Agile → control vs flexibility  
 - Release cycles → speed vs stability  
