@@ -38,4 +38,12 @@ maintain alien code; use SE + AI; establish on-line profile.
   - Reflection document (max 2 pages):
     - How did you decide what NOT to do?
     - What negative impacts or disappointments this MVP could have for your stakeholders.  
-    - What changes you made (and why) to the MVP to appease at least some of the stakeholders.  
+    - What changes you made (and why) to the MVP to appease at least some of the stakeholders.
+  - Prompt history:
+    - For commencrial systems:
+      - create and submit a link to each each chat
+      - note: this will lead to large number of prompts. welcome to a real limit to curret interfaces.
+    - If doing a "do it yourself" local LLM
+      - adjust your scripts to log inputs and outputs
+    - And if you msisi some prompts, be kind to us:
+      - Try to a reconstruction, after the fact.
