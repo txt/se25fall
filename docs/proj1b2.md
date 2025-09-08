@@ -34,7 +34,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 ---
 
 ### What to Do
-- Review the **Project 1a1** of a randomly assigned team.  
+- Review the **Project 1b1** of a randomly assigned team.  
 - The GitHub link to grade will be shared with your group in your **private Discord channel**.  
 - Score each of the 3 deliverables as:  
   - **0** → Incomplete, major issues  
