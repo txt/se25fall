@@ -27,7 +27,10 @@ maintain alien code; use SE + AI; establish on-line profile.
 **Evaluation Form:** [Google Form Link](https://forms.gle/quVDxhS73bdJkZ458)  
 
 ⚠️ **IMPORTANT:** Each group must submit only **ONE FORM**. If multiple group members submit the same form, marks will be deducted from that team's final score.  
+
+---
 ⚠️ **IMPORTANT:** You must paste the exact GitHub link shared with your group on Discord for evaluation. Submitting the wrong link will result in a score of 0 for the evaluation component.
+
 ---
 
 ### What to Do
