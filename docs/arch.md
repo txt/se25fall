@@ -33,8 +33,7 @@ Client-Server
 Manager-Agent  
 Pipe-Filter  
 LAMP  
-MEAN  
-Jamstack  
+MEAN   
 Serverless  
 Micro-Frontends  
 Hybrid Rendering  
@@ -66,6 +65,9 @@ MySQL with PostgreSQL. I recall projects where we changed database
 engines midstream — painful, but possible because the data layer was
 well-isolated.
 
+<img width="1176" height="653" alt="image" src="https://github.com/user-attachments/assets/941bd091-d12a-4182-a8c3-fe3b82cdba0d" />
+
+
 **Lessons Learned:**  
 Layering adds clarity but can ossify. Too many layers slow delivery.
 At one Fortune 500, I saw a layered insurance app with 13 tiers.
@@ -84,6 +86,8 @@ matters.
 - **IoT health monitors**: wearables send alerts when thresholds
   exceed.  
 - **Uber dispatch**: rider requests broadcast to drivers nearby.
+
+<img width="1317" height="685" alt="image" src="https://github.com/user-attachments/assets/71e7893a-cc3d-46d0-93f2-d2553ceaa0fe" />
 
 **Pitfalls:**  
 Debugging is hard. Once, we traced a bug in a logistics system for
@@ -106,6 +110,8 @@ a small stage where actors enter and leave.
 - **Eclipse IDE**: core editor with endless plug-ins.  
 - **VS Code**: modern descendent of the same idea.
 
+<img width="737" height="387" alt="image" src="https://github.com/user-attachments/assets/7f7bbe64-3c41-4eda-abb0-c01f02c730ec" />
+
 **Voice of Experience:**  
 I once built a GIS tool with a microkernel. It started lean. But
 within two years, plug-ins multiplied, each slightly different in API
@@ -117,6 +123,9 @@ jungles if governance is weak.
 ## Section 4: Microservices
 Microservices extend modularity to deployment. Each service is small,
 independently deployable, with its own database.
+
+
+<img width="1391" height="946" alt="image" src="https://github.com/user-attachments/assets/b046a763-93f8-482f-b3eb-e89ba7ed95e6" />
 
 **Case Study: Netflix**  
 Netflix migrated from a monolith to hundreds of microservices. Video
@@ -160,14 +169,22 @@ expensive. If you don't *need* it, avoid it.
 Client-server is simple: centralized server, many clients. Early email
 (POP3, IMAP) and file sharing worked this way.
 
+Client–server describes a distributed system where:
+
+- A client program runs on the user’s machine (browser, mobile app, desktop app, IoT device, etc.).
+- A server program runs on another machine, usually more powerful, managing data and shared services.
+
+They talk over a network protocol (HTTP for web apps, but also gRPC, WebSocket, MQTT, raw TCP/UDP, etc.).
+
+The server usually:
+- Holds the shared state (databases, files, computation engines).
+- Provides APIs or endpoints.
+- Serves multiple clients at once, enforcing security, concurrency, and consistency.
+
+
 Manager-agent extends it. A manager delegates to many agents. Example:
 **SNMP** for network monitoring — routers as agents, manager polls
-them.
-
-**Anecdote:**  
-In one telecom rollout, an agent misreported bandwidth. The manager
-trusted it. Network planning was wrong by 40%. This drilled into me:
-agents lie, managers must verify.
+them. 
 
 ---
 
@@ -182,10 +199,24 @@ Ken Thompson added `|` in 1973. Doug McIlroy dreamed it earlier:
 Every engineer should try chaining `grep | sort | uniq`. It shows how
 small tools scale better than one bloated app.
 
+Example:
+
+- ad hoc reporting    
+  `cat access.log | grep "ERROR" | cut -d' ' -f2 | sort | uniq -c`
+- compilers:    
+  `Lexical analysis | Parsing | Semantic analysis | Optimization | Code generation`
+- video processing:
+  `resize | blur | sharpen | colorCorrect | compress`
+- text mining:    
+  `downcase | tokenise | stemming | stopWords | tfIdf | sort | infoGain | cluster | classify`
+
 **Experience:**  
 I’ve seen students reinvent compilers as one giant class. Then they
 realize debugging lexing vs parsing is impossible. Breaking into
 filters clarifies bugs and allows reuse.
+
+- but pipe and filter is one way street
+  - poor choice for interactive GUIs where users can perform operations in any order at all.
 
 ---
 
@@ -203,11 +234,7 @@ Both layered, easy to teach, widely deployed.
 - **Edge logic**: Cloudflare Workers near the user.  
 - **Hybrid rendering**: Next.js mixes SSR, CSR, ISR.
 
-**Voice of Experience:**  
-Jamstack felt magical: instant sites. But a student team once built a
-social app on it. As users grew, dynamic interactions (chats, feeds)
-broke the model. Jamstack excels for content-heavy sites, but fails
-for real-time collaboration.
+
 
 ---
 
@@ -226,9 +253,8 @@ career, I’ve seen every pattern both shine and backfire. Knowing when
    microservices.  
 4. Why does space-based architecture struggle with state divergence?  
 5. When should managers distrust agents? Give an example.  
-6. Why is Pipe-Filter still relevant in 2025?  
-7. What trade-offs exist between Jamstack and serverless?  
-8. Can you recall a system you used that embodied one of these
+6. Why is Pipe-Filter still relevant in 2025?   
+7. Can you recall a system you used that embodied one of these
    patterns? How did it succeed or fail?  
 
 ---
