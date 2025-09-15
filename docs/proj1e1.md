@@ -17,10 +17,17 @@ maintain alien code; use SE + AI; establish on-line profile.
 (For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
 
 
-# Design Proj2
+# Projec1 (final part) = Design your Proj2
 
-Write a management-level pamphlet describing your project. For samples, see https://github.com/Kii4ka/CSC510_Software_Engineering_Posters_Spring2025/discussions.
+Based on the rest of this work, 
+write a management-level pamphlet describing your project. For samples, see https://github.com/Kii4ka/CSC510_Software_Engineering_Posters_Spring2025/discussions.
 
+Your project should be either:
+
+- Something related to food delivery
+- Or somethign releated to tool support for requirements discussions with LLMs  (and a tiny part of the food delivery system would be the example case study)
+- Or somethign releated to tool support for groups debating options using  LLMs  (and requirements engineering  would be the example case study)
+ 
 Submit as a pdf to your repo in a directory proj1e.
 
 For examples of these posters, see [here](https://github.com/Kii4ka/CSC510_Software_Engineering_Posters_Spring2025/discussions). 
