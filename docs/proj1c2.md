@@ -20,7 +20,7 @@ maintain alien code; use SE + AI; establish on-line profile.
  
 
 ## Project 1c2  
-**Due:** Thursday, Sept 11, 12:00PM (Noon)
+**Due:** Thursday, Sept 18, 12:00PM (Noon)
 
 **Task:** Grade Project 1b1 of a randomly assigned team.  
 
