@@ -142,14 +142,14 @@ And here's the kicker: LLMs don't just make random mistakes. They reproduce bugs
 **What Programmers Actually Do**
 The "AI will replace programmers" narrative also misses something fundamental about what programming work actually involves. Microsoft's own research shows that coding is only 17% of a developer's day. The other 83% is debugging (22%), meetings, handling interruptions, mentoring others, answering emails, and testing.[^12]
 
-Even if AI could write perfect code - which it demonstrably cannot - it's solving less than a fifth of what programmers actually do. The rest requires human judgment, domain knowledge, and the ability to handle unexpected situations. You know, like the CrowdStrike incident of July 2024, where experienced programmers had to figure out what went wrong and fix it.
+Even if AI could write perfect code - which it demonstrably cannot - it's solving less than a fifth of what programmers actually do. The rest requires human judgment, domain knowledge, and the ability to handle unexpected situations. You know, like the CrowdStrike incident of July 2024, where a single faulty software update crashed 8.5 million Windows systems worldwide, disrupting airlines, banks, and hospitals.[^13] When something like that happens, you need experienced programmers who can quickly understand what went wrong and figure out how to fix it.
 
 **The Real Risk**
 So when Nadella implies that AI code generation is inherently good, he's glossing over some serious problems. AI generates a lot of code quickly, but much of it is wrong, buggy, or inappropriate. The acceptance rates tell the story - even at Microsoft, developers reject most of what AI suggests.
 
 The danger isn't that AI will replace programmers. The danger is that we'll trust it too much, accept too many of its suggestions, and end up with systems that look like they work but fail in subtle, hard-to-debug ways. That's not progress - that's technical debt with a shiny AI wrapper.
 
----
+ 
 
 ## References
 
@@ -166,3 +166,15 @@ The danger isn't that AI will replace programmers. The danger is that we'll trus
 [^6]: Tabachnyk, M. & Nikolov, S. (2022). ML-Enhanced Code Completion Improves Developer Productivity. Google Research. https://research.google/blog/ml-enhanced-code-completion-improves-developer-productivity/
 
 [^7]: Zeff, M. (2025, April 29). Microsoft CEO says up to 30% of the company's code was written by AI. TechCrunch. https://techcrunch.com/2025/04/29/microsoft-ceo-says-up-to-30-of-the-companys-code-was-written-by-ai/
+
+[^8]: Johnson, B. & Menzies, T. (2024). AI Over-Hype: A Dangerous Threat (and How to Fix It). IEEE Software, 41(6), 131-138.
+
+[^9]: Kabir, S., Udo-Imeh, D. N., Kou, B., & Zhang, T. (2024). Is stack overflow obsolete? An empirical study of the characteristics of ChatGPT answers to stack overflow questions. Proceedings of the CHI Conference on Human Factors in Computing Systems, 1-17.
+
+[^10]: Yetistiren, B., Ozsoy, I., & Tuzun, E. (2022). Assessing the quality of GitHub copilot's code generation. Proceedings of the 18th International Conference on Predictive Models and Data Analytics in Software Engineering, 62-71.
+
+[^11]: Jesse, K., Ahmed, T., Devanbu, P., & Morgan, E. (2023). Large language models and simple, stupid bugs. Proceedings of the IEEE/ACM 20th International Conference on Mining Software Repositories, 563-575.
+
+[^12]: Meyer, A. N., Barr, E. T., Bird, C., & Zimmermann, T. (2021). Today was a good day: The daily life of software developers. IEEE Transactions on Software Engineering, 47(5), 863-880.
+
+[^13]: 2024 CrowdStrike-related IT outages. (2025). Wikipedia. https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages
