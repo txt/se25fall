@@ -26,8 +26,8 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Sep01 | Mon: Labor Day (no lecture)<br>Wed: [Prompting](docs/prompting.md) | [1a1](docs/proj1a1.md): Tues<br>[1a2](docs/proj1a2.md): Thurs |   |
 | Sep08 | [process](docs/process.md) :: [cobol](docs/cobol.md): Mon<br> [architecture](docs/arch.md) :: Wed  | [1b1](docs/proj1b1.md): Mon <br> [1b2](docs/proj1b2.md): Thurs  |  [4](docs/review4.md)  |
 | Sep15 | [30percent](docs/30percent.md) :: [models](docs/models.md): Mond  | [1c1](docs/proj1c1.md): Mon <br> [1c2](docs/proj1c2.md): Thurs |   |
-| Sep22 |   | [1d1](docs/proj1d1.md): Mon <br> [1d2](docs/proj1d2.md): Thurs  |   |
-| Sep29 |   | Thurs: Proj1 |   |
+| Sep22 |   | [1d1](docs/proj1d1.md): Mon <br> [1d2](docs/proj1d2.md): Thurs  |    |
+| Sep29 |   | Thurs: [1e1](proj1e1.md) |   |
 | Oct06 |   |   |   |
 | Oct13 | Mon : Fall Break (no lecture) |   |   |
 | Oct20 | Wed: no lecture |   |   |
