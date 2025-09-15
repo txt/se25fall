@@ -25,7 +25,7 @@ write a management-level pamphlet describing your project. For samples, see http
 Your project should be either:
 
 - Something related to food delivery
-- Or somethign releated to tool support for requirements discussions with LLMs  (and a tiny part of the food delivery system would be the example case study)
+- Or something releated to tool support for requirements discussions with LLMs  (and a tiny part of the food delivery system would be the example case study)
   - For this kind of project, reflect on everything that went right/wrong in Proj1. How can you encourage productive behavior? How can you help the harder parts?
     What tool support could avoid the errors your made?
 - Or something releated to tool support for groups debating options using  LLMs  (and requirements engineering  would be the example case study)
