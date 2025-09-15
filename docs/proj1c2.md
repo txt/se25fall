@@ -22,7 +22,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 ## Project 1c2  
 **Due:** Thursday, Sept 18, 12:00PM (Noon)
 
-**Task:** Grade Project 1b1 of a randomly assigned team.  
+**Task:** Grade Project 1c1 of a randomly assigned team.  
 
 **Evaluation Form:** [Google Form Link](https://forms.gle/r3e9VDx3P3xE11dm9)  
 
@@ -34,7 +34,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 ---
 
 ### What to Do
-- Review the **Project 1b1** of a randomly assigned team.  
+- Review the **Project 1c1** of a randomly assigned team.  
 - The GitHub link to grade will be shared with your group in your **private Discord channel**.  
 - Score each of the 3 deliverables as:  
   - **0** → Incomplete, major issues  
