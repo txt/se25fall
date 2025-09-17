@@ -19,8 +19,15 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 # Why Most AI Startups Are BAD Businesses
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OYlQyPo-L4g?si=VGmkKCMie5qtPlKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+YouTube video: [link](https://youtu.be/OYlQyPo-L4g?si=uMQu4Rc3lQ69Q5rM)
 
+> " It has never been easier to launch apps.
+People who couldn't write a single line
+of code six months ago are now launching
+AI apps and raising VC rounds. But when
+you look under the hood at the actual
+economics of those apps, the picture
+changes dramatically. "
 
 Summary, with Fact-Check Corrections
 
