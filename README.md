@@ -21,13 +21,13 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 | 📅 Week of... | 🎓 Lecture | 🛠️ Submission <br>(due at noon) | 📝 Review |
 |:-------------:|:----------:|:---------------------------:|:---------:|
-| Aug18 | Mon: No class<br>Wed: [hello](docs/hello.md) |   | [1](docs/review1.md) |
-| Aug25 | Mon: [LLM prompting](https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing)<br>Wed: [RE](docs/re.md) \| [RAG-ing](docs/rag.md) |   | [2](docs/review2.md) \| [3](docs/review3.md) |
-| Sep01 | Mon: Labor Day (no lecture)<br>Wed: [Prompting](docs/prompting.md) | [1a1](docs/proj1a1.md): Tues<br>[1a2](docs/proj1a2.md): Thurs |   |
-| Sep08 | [process](docs/process.md) :: [cobol](docs/cobol.md): Mon<br> [architecture](docs/arch.md) :: Wed  | [1b1](docs/proj1b1.md): Mon <br> [1b2](docs/proj1b2.md): Thurs  |  [4](docs/review4.md)  |
-| Sep15 | [30percent](docs/30percent.md) :: [models](docs/models.md): Mon <br>[recording](https://ncsu.zoom.us/rec/share/R2NtK0ImiMymNWezjH7Abe4I2hNibX_3L6uUHNdHa6zgCKRjB7VWH9j84r9stZH_.WUHI4R6cce_QAURZ) | [1c1](docs/proj1c1.md): Mon <br> [1c2](docs/proj1c2.md): Thurs |   |
-| Sep22 |   | [1d1](docs/proj1d1.md): Mon <br> [1d2](docs/proj1d2.md): Thurs  |    |
-| Sep29 |   |  [1e1](docs/proj1e1.md) : Mon <br>  [1e2](docs/proj1e2.md): Thurs |   |
+| Aug18 | Mon: No class<br>Wed: [hello](docs/lectures/lec1-hello.md) |   | [1](docs/reviews/review1.md) |
+| Aug25 | Mon: [LLM prompting](https://docs.google.com/presentation/d/1ohh4t_059uBW854Ypc8uLZ724s2KEXBGaP1v33K07N8/edit?usp=sharing)<br>Wed: [RE](docs/lectures/lec3-re.md) \| [RAG-ing](docs/lectures/lec3-rag.md) |   | [2](docs/reviews/review2.md) \| [3](docs/reviews/review3.md) |
+| Sep01 | Mon: Labor Day (no lecture)<br>Wed: [Prompting](docs/lectures/lec4-prompting.md) | [1a1](docs/projects/proj1/proj1a1.md): Tues<br>[1a2](docs/projects/proj1/proj1a2.md): Thurs |   |
+| Sep08 | [process](docs/lectures/lec5-process.md) :: [cobol](docs/lectures/lec5-cobol.md): Mon<br> [architecture](docs/lectures/lec6-arch.md) :: Wed  | [1b1](docs/projects/proj1/proj1b1.md): Mon <br> [1b2](docs/projects/proj1/proj1b2.md): Thurs  |  [4](docs/reviews/review4.md) \| [5](docs/reviews/review5.md) |
+| Sep15 | [30percent](docs/lectures/lec7-30percent.md) :: [models](docs/lectures/lec7-models.md): Mon <br>[recording](https://ncsu.zoom.us/rec/share/R2NtK0ImiMymNWezjH7Abe4I2hNibX_3L6uUHNdHa6zgCKRjB7VWH9j84r9stZH_.WUHI4R6cce_QAURZ) | [1c1](docs/projects/proj1/proj1c1.md): Mon <br> [1c2](docs/projects/proj1/proj1c2.md): Thurs |   |
+| Sep22 |   | [1d1](docs/projects/proj1/proj1d1.md): Mon <br> [1d2](docs/projects/proj1/proj1d2.md): Thurs  |    |
+| Sep29 |   |  [1e1](docs/projects/proj1/proj1e1.md) : Mon <br>  [1e2](docs/projects/proj1/proj1e2.md): Thurs |   |
 | Oct06 |   |   |   |
 | Oct13 | Mon : Fall Break (no lecture) |   |   |
 | Oct20 | Wed: no lecture |   |   |
