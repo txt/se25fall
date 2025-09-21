@@ -1,0 +1,58 @@
+<p align="center">
+  <a href="https://github.com/txt/se25fall/blob/main/README.md#top"><img src="https://img.shields.io/badge/Home-%23ff5733?style=flat-square&logo=home&logoColor=white" /></a>
+  <a href="/docs/syllabus.md#top"><img src="https://img.shields.io/badge/Syllabus-%230055ff?style=flat-square&logo=openai&logoColor=white" /></a>
+  <a href="https://docs.google.com/spreadsheets/d/1E7H6IiFEV0WIooE1biPB7VVrdaEtBh6yXC-2nrwPKCY/edit?gid=0#gid=0"><img src="https://img.shields.io/badge/Teams1-%23ffd700?style=flat-square&logo=users&logoColor=white" /></a>
+  <a href="https://docs.google.com/spreadsheets/d/1i0fNqKea0LzqmB-h8gtOrnF0MM-qt560goU4QkRw8BA/edit?usp=sharing"><img src="https://img.shields.io/badge/Teams2-%23ffcc00?style=flat-square&logo=users&logoColor=white" /></a>
+  <a href="https://moodle-courses2527.wolfware.ncsu.edu/course/view.php?id=4690&bp=s"><img src="https://img.shields.io/badge/One-%23dc143c?style=flat-square&logo=moodle&logoColor=white" /></a>
+  <a href="https://moodle-courses2527.wolfware.ncsu.edu/course/view.php?id=4691&bp=s"><img src="https://img.shields.io/badge/Two-%23b22222?style=flat-square&logo=moodle&logoColor=white" /></a>
+  <a href="https://discord.gg/YnAw7uZxAD"><img src="https://img.shields.io/badge/Chat-%23008080?style=flat-square&logo=discord&logoColor=white" /></a>
+  <a href="https://ncsu.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=7b1bbb56-937c-42a1-96b4-b33e0134710f"><img src="https://img.shields.io/badge/Vids-%23ffa500?style=flat-square&logo=youtube&logoColor=white" /></a>
+  <a href="/LICENSE.md"><img src="https://img.shields.io/badge/©%20timm%202025-%234b4b4b?style=flat-square&logoColor=white" /></a></p>
+<h1 align="center">:cyclone: CSC510: Software Engineering<br>NC State, Fall '25</h1>
+<p align="center"><em>Q1: does <a href="https://x.com/karpathy/status/1886192184808149383?lang=en">vibe code</a> == <a href="https://docs.google.com/presentation/d/1O6fZa0MbuNPVfbQV0eENzuYL-2YdIr-LRawhC92gSJE/present?slide=2">pain maintain</a>?</em><br>
+<em> Q2: How much could/should AI change this "standard model"?</em><br>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/acde700e-1d4d-4002-94a2-1d8aa08914e2"></p>
+<p align="center"><b>This subject:</b> work in groups; write <b>quality</b> code;
+maintain alien code; use SE + AI; establish on-line profile.
+(For more on above pic, see Fig3 of <a href="https://doi.org/10.1109/TSE.2023.3339383">Long et.al, TSE'23</a>.)</p>
+
+
+ 
+
+## Project 1d2  
+**Due:** Thursday, Sept 25, 12:00PM (Noon)
+
+**Task:** Grade Project 1d1 of a randomly assigned team.  
+
+**Evaluation Form:** [Google Form Link](https://forms.gle/x8MKX21HKW3KMQjV9)  
+
+⚠️ **IMPORTANT:** Each group must submit only **ONE FORM**. If multiple group members submit the same form, marks will be deducted from that team's final score.  
+
+---
+⚠️ **IMPORTANT:** You must paste the exact GitHub link shared with your group on Discord for evaluation. Submitting the wrong link will result in a score of 0 for the evaluation component.
+
+---
+
+### What to Do
+- Review the **Project 1d1** of a randomly assigned team.  
+- The GitHub link to grade will be shared with your group in your **private Discord channel**.  
+- Score each of the 3 deliverables as:  
+  - **0** → Incomplete, major issues  
+  - **1** → Needs improvement, some issues  
+  - **2** → Well-done
+  - **2** → Exceptionally great job (please write the comment if you feel it is exceptional)
+- If there are issues
+  -  A **short description/justification** for each score you assign
+  -  Otherwise, leave the "issues" field blank.
+
+
+---
+
+### What to Hand In (using the Google Form)
+- Your **Group ID**  
+- Your **Section Number**  
+- The **GitHub link** of the project you are evaluating  
+- Your **scores (0/1/2/Exceptional Work)** for the 6 deliverables
+- If there are issues
+  -  A **short description/justification** for each score you assign
+  -  Otherwise, leave the "issues" field blank.
