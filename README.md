@@ -26,7 +26,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Sep01 | Mon: Labor Day (no lecture)<br>Wed: [Prompting](docs/lectures/lec4-prompting.md) | [1a1](docs/projects/proj1/proj1a1.md): Tues<br>[1a2](docs/projects/proj1/proj1a2.md): Thurs |   |
 | Sep08 | [process](docs/lectures/lec5-process.md) :: [cobol](docs/lectures/lec5-cobol.md): Mon<br> [architecture](docs/lectures/lec6-arch.md) :: Wed  | [1b1](docs/projects/proj1/proj1b1.md): Mon <br> [1b2](docs/projects/proj1/proj1b2.md): Thurs  |  [4](docs/reviews/review4.md) \| [5](docs/reviews/review5.md) |
 | Sep15 | [30percent](docs/lectures/lec7-30percent.md) :: [models](docs/lectures/lec7-models.md): Mon <br>[recording](https://ncsu.zoom.us/rec/share/R2NtK0ImiMymNWezjH7Abe4I2hNibX_3L6uUHNdHa6zgCKRjB7VWH9j84r9stZH_.WUHI4R6cce_QAURZ) | [1c1](docs/projects/proj1/proj1c1.md): Mon <br> [1c2](docs/projects/proj1/proj1c2.md): Thurs | [6,7](docs/reviews/review67.md)  |
-| Sep22 | [exercise](https://docs.google.com/document/d/1qkFp_VcnU1Qh07AmqlUzgYOdlI1JAAOggJSfG8xAOSg/edit?tab=t.0)   | [1d1](docs/projects/proj1/proj1d1.md): Mon <br> [1d2](docs/projects/proj1/proj1d2.md): Thurs  |    |
+| Sep22 | Mon: [exercise](https://docs.google.com/document/d/1qkFp_VcnU1Qh07AmqlUzgYOdlI1JAAOggJSfG8xAOSg/edit?tab=t.0) <br>Wed:[SBSE](docs/lectures/lec8-SBSE.md)  | [1d1](docs/projects/proj1/proj1d1.md): Mon <br> [1d2](docs/projects/proj1/proj1d2.md): Thurs  |    |
 | Sep29 | No lecture (Monday)  |  [1e1](docs/projects/proj1/proj1e1.md) : Mon <br>  [1e2](docs/projects/proj1/proj1e2.md): Thurs |   |
 | Oct06 |   |   |   |
 | Oct13 | Mon : Fall Break (no lecture) |   |   |
