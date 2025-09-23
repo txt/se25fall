@@ -19,6 +19,10 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 # Projec1 (final part) = Design your Proj2
 
+**Due**: Monday, Sept 29  
+**What**: Design your Proj2
+**What to do**:  
+
 Based on the rest of this work, 
 write a management-level pamphlet describing your project. For samples, see https://github.com/Kii4ka/CSC510_Software_Engineering_Posters_Spring2025/discussions.
 
