@@ -52,7 +52,9 @@ Project 3:
 - Projects 2 and 3 will be assessed in live demo sessions with the tutor/grader.
   - Inputs to those demons are defined below but two improtant deliverables will be
     - your 1 page poster
-    - your 2-5 minute demo video embedded itno 
+    - your 2-5 minute demo video embedded itno
+- Milestones:
+  - Milestones need not be user level. Sometimes, most milestones are systems goals that mean nothing to the end user by enable capabilities that, in time, will lead to impressive demonstratable functionality   
 
 
 We ask students for help scheduling all these demo sessions. Our graders/tutors are students with their own exams and assignments to complete. Hence, they might suggest demo times outside normal working hours (evenings, weekends). Please do them the courtesy of considering those times. That said, if those proposed times are inconvenient, you can, should, and must ask for other times.
@@ -272,19 +274,32 @@ Each poster must:
 - Use a  **small fonts** (text may be as small as 4 to 6 points).
 - Be submitted as a **PDF file**.
 - Avoid **vast amounts of white space**.
+-  Be exciting
+    - Not be silly (so exciting, but professional)
+    - Be a standard page size (e.g., letter or A4).
+    - Avoid vast amounts of white space.
 - Include the following:
   - **Screenshots of the running system**.
   - **URLs/QR codes**:
     - To the repository.
     - To your discussion forum. Note that this forum may be private (but accessible to CSC510 tutors and lecturers)
     - To a live demo (how you host the demo is up to you).
-  - For project 2: **Sell the software**:
-    - Highlight what is bettre now that this code was written 
-  - **Propose a better version (Version i+1):**
     - Include **3–5 implementation milestones** to improve Version i+1.
-    - Milestones must demonstrate a **possible implementation plan** with clear goals.
-    - Some milestones may be explored in parallel.
-  - **Boast your test cases**:
+        - Milestones must demonstrate a **possible implementation plan** with clear goals.  
+    - Have a clear mission statement paragraph. The why (the chalelnge you arerepsonding too) and the what (you will build) and the *so what (benefits of this sstem)
+  e.g. "Online content can be emotionally overwhelming our app helps make sense of it. Sentiment Analyzer Pro lets users analyze the emotional tone of text, images, news, speech, and even YouTube comments. Whether you're tracking brand sentiment, filtering negativity, or just staying informed, the app makes emotional insights fast and accessible. With a Chrome extension and improved Ul, it's now easier than ever to understand how content feels not just what it says."
+  - List the stakeholders (e.g Admin, Staff, Customer. Who else?). Maybe as part of the mission statement?
+  - Include at least 8 milestones cases (4 for October, a further 4 planned for "release2" in Novermber).
+  - Show a group number
+  - Show group member names
+  - Show icons describing your proposed tech stack
+  - Include a screen snaps of the  system (if you are some cli thing, then this will be simple: just a snap of some proposed call to some tool, with with some text printed out-
+- Be ambitious. Dull milestones will lose you marks in Proj2
+- Not be too ambitious (hey, be ware, you have to code this).
+- For project 2: **Sell the software**:
+    - Highlight what is bettre now that this code was written 
+    - **Propose a better version (Version i+1):**
+- **Boast your test cases**:
     - E.g., "One group listed 130+ test cases, showcasing their ability to make changes while maintaining old functionality."
 
 
