@@ -208,6 +208,7 @@ These datasets allow researchers and practitioners to model and evaluate optimiz
 
 
 **💰 Challenges:**
+
 👉 **Labeling is expensive** → each evaluation = long test runs, costly experiments, or human judgment.  
 👉 **Explainability is essential** → adoption only happens if engineers & managers can *see why* a decision makes sense.  
 
