@@ -279,21 +279,20 @@ Each poster must:
     - Be a standard page size (e.g., letter or A4).
     - Avoid vast amounts of white space.
 - Include the following:
-  - **Screenshots of the running system**.
   - **URLs/QR codes**:
     - To the repository.
     - To your discussion forum. Note that this forum may be private (but accessible to CSC510 tutors and lecturers)
     - To a live demo (how you host the demo is up to you).
-    - Include **3–5 implementation milestones** to improve Version i+1.
-        - Milestones must demonstrate a **possible implementation plan** with clear goals.  
-    - Have a clear mission statement paragraph. The why (the chalelnge you arerepsonding too) and the what (you will build) and the *so what (benefits of this sstem)
-  e.g. "Online content can be emotionally overwhelming our app helps make sense of it. Sentiment Analyzer Pro lets users analyze the emotional tone of text, images, news, speech, and even YouTube comments. Whether you're tracking brand sentiment, filtering negativity, or just staying informed, the app makes emotional insights fast and accessible. With a Chrome extension and improved Ul, it's now easier than ever to understand how content feels not just what it says."
+  - Include **3–5 implementation milestones** to improve Version i+1.
+      - Milestones must demonstrate a **possible implementation plan** with clear goals.  
+  - Have a clear mission statement paragraph. The why (the chalelnge you arerepsonding too) and the what (you will build) and the *so what (benefits of this sstem)
+e.g. "Online content can be emotionally overwhelming our app helps make sense of it. Sentiment Analyzer Pro lets users analyze the emotional tone of text, images, news, speech, and even YouTube comments. Whether you're tracking brand sentiment, filtering negativity, or just staying informed, the app makes emotional insights fast and accessible. With a Chrome extension and improved Ul, it's now easier than ever to understand how content feels not just what it says."
   - List the stakeholders (e.g Admin, Staff, Customer. Who else?). Maybe as part of the mission statement?
   - Include at least 8 milestones cases (4 for October, a further 4 planned for "release2" in Novermber).
   - Show a group number
   - Show group member names
   - Show icons describing your proposed tech stack
-  - Include a screen snaps of the  system (if you are some cli thing, then this will be simple: just a snap of some proposed call to some tool, with with some text printed out-
+  - Include small screen snap(s) of the  system (if you are some cli thing, then this will be simple: just a snap of some proposed call to some tool, with with some text printed out-
 - Be ambitious. Dull milestones will lose you marks in Proj2
 - Not be too ambitious (hey, be ware, you have to code this).
 - For project 2: **Sell the software**:
