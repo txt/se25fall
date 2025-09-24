@@ -105,7 +105,7 @@ Submit a **single PDF file** containing:
 4. For Project2 only: fill in the following two  Rubrics:
 
 
-Software Sustainability Evaluation self-assessment table (project2 only):
+### Software Sustainability Evaluation self-assessment table (project2 only):
 
 
 | Category                         | Question                                                                                                                                                                                                                                                                                                                      | Yes | No | Evidence |
