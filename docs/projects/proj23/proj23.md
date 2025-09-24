@@ -66,6 +66,24 @@ they might  suggest demo times outside of normal working hours
 those times. That said, if those proposed times are inconvenient,
 **you can, should, and must ask for other times**.
 
+## Grading Criteria
+
+
+### Project 2:
+
+
+- **Demo:** 5 marks
+- **Rubric Compliance:** 8 marks (see above)
+- **Poster:** 2 marks
+
+
+### Project 3:
+
+
+- **Demo:** 21 marks
+- **Poster:** 2 marks
+
+
 ## What to Submit
 
 Submit a **single PDF file** containing:
@@ -84,10 +102,10 @@ Submit a **single PDF file** containing:
    - **Demonstrate parallel work**, showing merged pull requests.
    - **Each team member should add at least 30 new test cases, for a total of 100 new test cases** (or more)covering both nominal and off-nominal scenarios (expected and problematic cases).
    - A **2-5 minute demo**, embeedded in your repo's README file, that shows off your project.
-4. For Project2 only: fill in this  Rubric:
+4. For Project2 only: fill in the following two  Rubrics:
 
 
-Software Sustainability Evaluation self-assessment table:
+Software Sustainability Evaluation self-assessment table (project2 only):
 
 
 | Category                         | Question                                                                                                                                                                                                                                                                                                                      | Yes | No | Evidence |
@@ -180,7 +198,7 @@ Software Sustainability Evaluation self-assessment table:
 |Question 16.3| Do you make timely announcements of the deprecation of components, APIs, etc.?| ✅   | ❌  |          |
 
 
-### Repository Rubric
+### Repository Rubric (projec2 only)
 
 
 - The project repo **MUST** have a branch called `MAIN`. Groups will be assessed via their commit history (seen under "Insights") in `MAIN`.
@@ -283,22 +301,6 @@ Each poster must:
 - React in the Discussions Forum to the posters you like so we can identify the best ones! 👍👎
 
 
-## Grading Criteria
-
-
-### Project 2:
-
-
-- **Demo:** 5 marks
-- **Rubric Compliance:** 8 marks (see below)
-- **Poster:** 2 marks
-
-
-### Project 3:
-
-
-- **Demo:** 21 marks
-- **Poster:** 2 marks
 
 
 ## Ways to Lose Points
@@ -308,25 +310,5 @@ Each poster must:
 - Your poster **fails to effectively sell the project**. Specifically:
   - Within the **first 15 seconds** of reading, the poster **does not clearly explain** what the project is about.
   - The poster **does not make a compelling case** for why this technology stack is interesting (e.g., "Select this project to learn about Kubernetes").
+- You have too few test cases.
  
-____________________________
-
-# 📢 Project 3 Updates
-
-## Demo Duration
-- 20 minutes
-
-## Demo Plan
-- We will provide some questions beforehand to guide your demo.
-
-## Group Communication
-- Please use Discord channels for group discussions—this makes it easier for us to track participation and collaboration.
-
-## Grading Adjustments
-- Individual marks will be adjusted based on effort.
-
-## New Deliverable Component
-- An individual questionnaire about group work will be added (link to be shared later).
-
-
-
