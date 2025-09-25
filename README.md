@@ -32,11 +32,11 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Oct13 | Mon : Fall Break (no lecture) |   |   |
 | Oct20 | Wed: no lecture |   |   |
 | Oct27 |   |   |   |
-| Nov03 |   | Thurs: Proj2 |   |
+| Nov03 |   | Thurs: [Proj2](docs/projects/proj23/proj23.md) |   |
 | Nov10 |   | Demo to tutor |   |
 | Nov17 |   |   |   |
 | Nov24 | Wed: Thanksgiving (no lecture) |   |   |
 | Dec01 |   |   |   |
-| Dec08 | Mon: last lecture | Mon: Proj3<br>Demo to tutor |   |
+| Dec08 | Mon: last lecture | Mon: [Proj3](docs/projects/proj23/proj23.md) <br>Demo to tutor |   |
 
 </div>
