@@ -306,7 +306,7 @@ e.g. "Online content can be emotionally overwhelming our app helps make sense of
 
 
 - Submit your work to **Moodle** (1 poster) **AND**
-- Post your poster to the following shared file: [Project 1](https://drive.google.com/drive/folders/1x3VmG4jpnQCv1dEQoA3tQ9Zlf2KQ40Kh?usp=sharing) - [Project 2](https://drive.google.com/drive/folders/1ueWw4PO8PFUWQxxDbtx1LyinhJQ4kS_C?usp=sharing) - [Project 3](https://drive.google.com/drive/folders/1dGGQNCWC3BakD-nUZn5vPecPdm0KAhXA?usp=sharing).
+- Post your poster to the following shared file: [Project 2](https://drive.google.com/drive/folders/1ueWw4PO8PFUWQxxDbtx1LyinhJQ4kS_C?usp=sharing) - [Project 3](https://drive.google.com/drive/folders/1dGGQNCWC3BakD-nUZn5vPecPdm0KAhXA?usp=sharing).
 
 
 💬 **Get Involved!**
