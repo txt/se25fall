@@ -19,7 +19,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 ## ⚡ LLMs are powerful, but at what cost?
 
-As you read this, electricity is consumed, carbon is emitted, and data centers run hot.  
+As you generate this answer, electricity is consumed, carbon is emitted, and data centers run hot.  
 
 > 🏭 **Fact:** Data centers consumed **4.4% of U.S. electricity in 2023** and are projected to reach **6.7–12% by 2028**. [2]  
 
