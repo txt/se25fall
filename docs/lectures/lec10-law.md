@@ -324,60 +324,60 @@ class UsageLimits:
 
 ### Question 1: Fair Use Risk Assessment
 
-**(a) Define "fair use" in copyright law and explain why it matters to ML engineers building training pipelines. (1 mark)**
+(a) Define "fair use" in copyright law and explain why it matters to ML engineers building training pipelines. (1 mark)
 
-**(b) List the four fair use factors and provide an SE-specific example of how each factor might be evaluated for a training pipeline that uses copyrighted technical documentation to train a code completion model. (2 marks)**
+(b) List the four fair use factors and provide an SE-specific example of how each factor might be evaluated for a training pipeline that uses copyrighted technical documentation to train a code completion model. (2 marks)
 
-**(c) You're designing a new ML system that will train on copyrighted code repositories. Conduct a fair use risk assessment by analyzing all four factors, then recommend specific architectural decisions that would strengthen your fair use defense. Consider data sourcing, processing pipeline, storage, and output controls. (3 marks)**
+(c) You're designing a new ML system that will train on copyrighted code repositories. Conduct a fair use risk assessment by analyzing all four factors, then recommend specific architectural decisions that would strengthen your fair use defense. Consider data sourcing, processing pipeline, storage, and output controls. (3 marks)
 
 ---
 
 ### Question 2: Transformative Purpose in System Design
 
-**(a) Define "transformative purpose" in the context of ML training systems. (1 mark)**
+(a) Define "transformative purpose" in the context of ML training systems. (1 mark)
 
-**(b) Explain why both judges concluded that statistical analysis for model training constitutes transformative use. Describe the technical difference between how original copyrighted works function versus how ML training processes them. (2 marks)**
+(b) Explain why both judges concluded that statistical analysis for model training constitutes transformative use. Describe the technical difference between how original copyrighted works function versus how ML training processes them. (2 marks)
 
-**(c) Design two different ML systems: one for (A) a RAG system that retrieves and displays copyrighted technical documentation, and (B) a model trained on the same documentation that generates new technical explanations. Compare their transformative purpose profiles, evaluate which has stronger fair use protection, and propose architectural modifications to strengthen the weaker system's legal position. (3 marks)**
+(c) Design two different ML systems: one for (A) a RAG system that retrieves and displays copyrighted technical documentation, and (B) a model trained on the same documentation that generates new technical explanations. Compare their transformative purpose profiles, evaluate which has stronger fair use protection, and propose architectural modifications to strengthen the weaker system's legal position. (3 marks)
 
 ---
 
 ### Question 3: Data Provenance Engineering
 
-**(a) Define "data provenance" in ML engineering and explain what "pirated books" means in the context of training datasets. (1 mark)**
+(a) Define "data provenance" in ML engineering and explain what "pirated books" means in the context of training datasets. (1 mark)
 
-**(b) Compare Judge Alsup's and Judge Chhabria's positions on using datasets containing pirated content. Explain Alsup's distinction between "transient training use" versus "persistent storage" and why this matters for pipeline architecture. (2 marks)**
+(b) Compare Judge Alsup's and Judge Chhabria's positions on using datasets containing pirated content. Explain Alsup's distinction between "transient training use" versus "persistent storage" and why this matters for pipeline architecture. (2 marks)
 
-**(c) Your team has access to a large dataset (Books3) with uncertain provenance that would significantly improve your model. Design a decision framework that evaluates: (i) risks of using the dataset, (ii) alternative approaches, (iii) architectural patterns that minimize legal exposure if you proceed, and (iv) documentation requirements. Justify your recommendations using principles from both court decisions. (3 marks)**
+(c) Your team has access to a large dataset (Books3) with uncertain provenance that would significantly improve your model. Design a decision framework that evaluates: (i) risks of using the dataset, (ii) alternative approaches, (iii) architectural patterns that minimize legal exposure if you proceed, and (iv) documentation requirements. Justify your recommendations using principles from both court decisions. (3 marks)
 
 ---
 
 ### Question 4: Output Filtering and Market Harm
 
-**(a) Define "market harm" as a fair use factor and explain what "output filtering" means in ML systems. (1 mark)**
+(a) Define "market harm" as a fair use factor and explain what "output filtering" means in ML systems. (1 mark)
 
-**(b) Explain how Meta's output filtering system helped defeat the "lost sales" market harm argument in Kadrey. What technical capabilities did Meta demonstrate, and why were they legally significant? (2 marks)**
+(b) Explain how Meta's output filtering system helped defeat the "lost sales" market harm argument in Kadrey. What technical capabilities did Meta demonstrate, and why were they legally significant? (2 marks)
 
-**(c) Design an output filtering system for an LLM-based creative writing assistant. Your design should address: (i) detecting verbatim reproduction from training data, (ii) preventing substantial copying while allowing useful outputs, (iii) logging and monitoring, and (iv) balancing legal protection with product functionality. Include pseudocode for key components and explain how your system provides legal protection. (3 marks)**
+(c) Design an output filtering system for an LLM-based creative writing assistant. Your design should address: (i) detecting verbatim reproduction from training data, (ii) preventing substantial copying while allowing useful outputs, (iii) logging and monitoring, and (iv) balancing legal protection with product functionality. Include pseudocode for key components and explain how your system provides legal protection. (3 marks)
 
 ---
 
 ### Question 5: Market Dilution Risk in Product Design
 
-**(a) Define the "market dilution theory" introduced by Judge Chhabria and explain why it represents a novel copyright concern for software engineers. (1 mark)**
+(a) Define the "market dilution theory" introduced by Judge Chhabria and explain why it represents a novel copyright concern for software engineers. (1 mark)
 
-**(b) Explain Judge Chhabria's hypothesis about differential impact: which types of content and creators face higher versus lower dilution risk? Provide SE examples of products that would fall into each risk category. (2 marks)**
+(b) Explain Judge Chhabria's hypothesis about differential impact: which types of content and creators face higher versus lower dilution risk? Provide SE examples of products that would fall into each risk category. (2 marks)
 
-**(c) Your company wants to build a content generation API that could be used for various purposes. Design a product architecture and business model that: (i) provides value to users, (ii) mitigates market dilution liability, (iii) implements technical controls, and (iv) includes appropriate usage policies. Compare a "high-risk" implementation versus your "legally-defensible" design, explaining specific technical and policy differences. Evaluate whether your approach fully addresses dilution concerns or whether residual risk remains. (3 marks)**
+(c) Your company wants to build a content generation API that could be used for various purposes. Design a product architecture and business model that: (i) provides value to users, (ii) mitigates market dilution liability, (iii) implements technical controls, and (iv) includes appropriate usage policies. Compare a "high-risk" implementation versus your "legally-defensible" design, explaining specific technical and policy differences. Evaluate whether your approach fully addresses dilution concerns or whether residual risk remains. (3 marks)
 
 ---
 
 ### Question 6: Building Legally-Defensible ML Systems
 
-**(a) Define what makes an ML training system's architecture "legally defensible" based on the Bartz and Kadrey decisions. (1 mark)**
+(a) Define what makes an ML training system's architecture "legally defensible" based on the Bartz and Kadrey decisions. (1 mark)
 
-**(b) Describe three specific engineering practices that reduce copyright liability in ML development: one related to data acquisition, one to system architecture, and one to output controls. Explain the legal principle each practice addresses. (2 marks)**
+(b) Describe three specific engineering practices that reduce copyright liability in ML development: one related to data acquisition, one to system architecture, and one to output controls. Explain the legal principle each practice addresses. (2 marks)
 
-**(c) You're the technical lead for a new GenAI project. Create a comprehensive engineering compliance plan that addresses: (i) training data sourcing and validation strategy, (ii) pipeline architecture decisions that support fair use defense, (iii) output control systems, (iv) monitoring and documentation requirements, (v) product features that minimize dilution risk, and (vi) tradeoffs between legal safety and model performance. Your plan should synthesize lessons from both court cases and anticipate future legal developments. (3 marks)**
+(c) You're the technical lead for a new GenAI project. Create a comprehensive engineering compliance plan that addresses: (i) training data sourcing and validation strategy, (ii) pipeline architecture decisions that support fair use defense, (iii) output control systems, (iv) monitoring and documentation requirements, (v) product features that minimize dilution risk, and (vi) tradeoffs between legal safety and model performance. Your plan should synthesize lessons from both court cases and anticipate future legal developments. (3 marks)
 
 
