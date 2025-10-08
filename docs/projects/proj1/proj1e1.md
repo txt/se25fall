@@ -20,7 +20,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 # Projec1 (final part) = Design your Proj2
 
 **Due**: Monday, Sept 29  
-**What**: Design your Proj2
+**What**: Design your Proj2 
 **What to do**:  
 
 Based on the rest of this work, 
@@ -34,8 +34,12 @@ Your project should be either:
     What tool support could avoid the errors your made?
 - Or something releated to tool support for groups debating options using  LLMs  (and requirements engineering  would be the example case study)
   - This would be a generatilization of the requirements tooling. When teams discuss stuff, what problems do they have? How to solve those problems?
- 
-Submit as a pdf to your repo in a directory proj1e.
+
+**🗂️ Where to Submit:**  
+- Submit your poster **as a PDF** to your group repo in a directory named **`proj1e`**.  
+
+- **🔗 Shared Drive (for viewing only):**  
+<https://drive.google.com/drive/folders/105kZA4sMmWsgRxLlSP7cI23rQmGsI1MB?usp=share_link>
 
 For examples of these posters, see [here](https://github.com/Kii4ka/CSC510_Software_Engineering_Posters_Spring2025/discussions). 
 
