@@ -51,29 +51,6 @@ This document has review questions related to (a)legal issues and
 
 **(c) [Evaluate - 3 marks]** Meta successfully defended against copyright claims partly due to their output filtering system. Evaluate the tradeoffs between aggressive filtering (high legal protection, potentially worse outputs) versus minimal filtering (better outputs, higher legal risk). Propose a filtering strategy that balances these concerns, and critique whether technical filters alone provide sufficient legal protection or if other controls are necessary.
 
-
-### Question 4: Testing with Lightweight Models
-
-**(a) [Remember - 1 mark]** Explain what "lightweight modeling" means in software testing and name two types of lightweight models discussed in lecture.
-
-**(b) [Apply - 2 marks]** You're testing a phone number validation system that accepts area codes 200-999 and rejects 000-199. Write a grammar with weighted rules that generates 70% valid numbers and 30% invalid numbers for testing edge cases. Show your grammar notation and explain how weights bias test generation.
-
-**(c) [Analyze - 3 marks]** Compare grammar-based fuzzing versus state machine testing for the following systems: (A) a URL parser, (B) an elevator control system, (C) a database query optimizer. For each system, analyze which lightweight modeling approach is more appropriate and explain your reasoning based on system characteristics (stateful vs stateless, input structure, failure modes).
-
-
-### Question 5: Fault vs Failure and Testing Strategy
-
-**(a) [Remember - 1 mark]** Define "fault" and "failure" in software engineering and explain why the distinction matters.
-
-**(b) [Understand - 2 marks]** Explain this paradox using the Fenton & Neil causal model: System A has extensive testing, finds 500 pre-release faults, and experiences 10 post-release failures. System B has minimal testing, finds 20 pre-release faults, and experiences 200 post-release failures. Why don't pre-release faults predict post-release failures?
-
-**(c) [Evaluate/Create - 3 marks]** Your startup has limited testing resources. You must choose between: (Strategy 1) High test coverage with basic assertions, or (Strategy 2) Lower coverage but mutation testing with strong test quality. Evaluate both approaches considering: (i) fault detection capability, (ii) development velocity, (iii) maintenance burden, and (iv) post-release failure risk. Justify which strategy you'd choose and under what circumstances you might choose differently. Design a hybrid approach that combines strengths of both strategies within resource constraints.
-
-------------
-Yes, absolutely! There's plenty of material from the **oct8-covered portions** to generate Bloom's taxonomy review questions. Let me create questions based on what was actually presented:
-
----
-
 ## Review Questions: Testing Fundamentals (Bloom's Taxonomy)
 
 
