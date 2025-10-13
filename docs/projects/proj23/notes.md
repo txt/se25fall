@@ -24,15 +24,13 @@ to design revisions.
 
 This page offers those notes.
 
-Note that NONE of the comments here will be used to grade your work.
+> Note that NONE of the comments here will be used to grade your work.
 Repeat, none, no, zero, zip, nada. So think of these as ideas blowing
 by in the wind-- which you can ignore.
 
 That said, I found them insightful. See what you think.
 
-> Note that **NONE** of the comments here will be used to grade
-your work. Rpeat, none, no, zero, zip, nada. So think of these as
-ideas blowing by in the wind-- which you can ignore.
+ 
 
 ## Analysis Methods
 
