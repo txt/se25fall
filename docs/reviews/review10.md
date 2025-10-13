@@ -99,21 +99,4 @@ This document has review questions related to (a)legal issues and
 **(c) [Analyze - 3 marks]** The lecture mentioned NASA testing the Juno spacecraft's flight guidance system with minimal domain knowledge. Given a state machine you've sketched from documentation, analyze what test patterns you should look for: (i) What makes loops potentially problematic? (ii) What are dead ends and why do they matter? (iii) How would you generate a test suite that covers all transitions at least once? (iv) The lecture mentioned "test cases need not loop more than once"—explain the reasoning and when this heuristic might be insufficient.
 
 
-### Question 6: Search-Based Software Engineering and Testing Economics
-
-**(a) [Remember - 1 mark]** Explain the "great secret" mentioned in lecture: why are X values (configuration choices) cheap to collect while Y values (performance goals) are expensive?
-
-**(b) [Understand - 2 marks]** Using the used car analogy from lecture: You can observe car color, brand, doors, and mileage (X values) by walking around a lot. But determining miles-per-gallon requires driving for hours (Y value). Explain how this economic asymmetry applies to software testing, using an example like database configuration testing where X = buffer sizes/security protocols and Y = query speed/memory usage.
-
-**(c) [Create - 3 marks]** Design an active learning strategy for testing a system with 50 binary configuration options (2^50 = 1 quadrillion combinations) where each test execution takes 10 minutes. Your approach should: (i) start with a small initial sample, (ii) use test results to guide selection of next configurations to test, (iii) stop after a reasonable budget (e.g., 40 evaluations), and (iv) achieve "99% of optimal" performance. Explain your selection criteria and stopping condition. How does this differ from random testing or exhaustive testing?
-
-
-### Question 7: Real-World Testing Challenges
-
-**(a) [Remember - 1 mark]** Describe the LexisNexis testing challenge mentioned in lecture: Why didn't they collect line numbers from regression test failures?
-
-**(b) [Understand - 2 marks]** The lecture explained that at LexisNexis, "the line number is where the bug surfaces, but not where it's caused" due to complex interconnected services. A Philippine team performs "blame" assignment to determine which programmer should fix each bug. Explain why blame assignment is non-trivial in large distributed systems and what information the Philippine team likely uses instead of line numbers.
-
-**(c) [Analyze - 3 marks]** Compare three testing scenarios: (A) a 1000-line Python script with clear stack traces, (B) LexisNexis's microservices with delayed/cascading failures, (C) NASA's Juno spacecraft with minimal domain knowledge. For each, analyze: What testing strategy is most appropriate (unit/integration/system/black-box/white-box)? What information helps with fault localization? What are the primary challenges? How would you approach each differently?
-
 
