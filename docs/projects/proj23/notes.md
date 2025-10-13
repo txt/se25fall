@@ -18,10 +18,23 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 ## Notes on Proj2
 
-> This page offers some LLM-generated notes
-on your projects. Note that **NONE** of the comments here will be used to
-grade your work. Rpeat, none, no, zero, zip, nada. So think of these
-as ideas blowing by in the wind-- which you can ignore.
+Dr. Rieder showed me a set of prompts for exploring high level
+design concepts. The prompts are interesting since they lead naturally
+to design revisions.
+
+This page offers those notes.
+
+Note that NONE of the comments here will be used to grade your work.
+Repeat, none, no, zero, zip, nada. So think of these as ideas blowing
+by in the wind-- which you can ignore.
+
+That said, I found them insightful. See what you think.
+
+> Note that **NONE** of the comments here will be used to grade
+your work. Rpeat, none, no, zero, zip, nada. So think of these as
+ideas blowing by in the wind-- which you can ignore.
+
+## Analysis Methods
 
 I gave claude.ai access to all your posters then I asked it to sort
 the projects on two axes:
