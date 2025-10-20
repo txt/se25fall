@@ -29,7 +29,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Sep22 | Mon: [exercise](https://docs.google.com/document/d/1qkFp_VcnU1Qh07AmqlUzgYOdlI1JAAOggJSfG8xAOSg/edit?tab=t.0) <br>Wed:[SBSE](docs/lectures/lec8-SBSE.md)  | [1d1](docs/projects/proj1/proj1d1.md): Mon <br> [1d2](docs/projects/proj1/proj1d2.md): Thurs  |  [8](docs/reviews/review8.md)  |
 | Sep29 | No lecture (Monday) <br>Wed:[GreenAI](docs/lectures/lec9-GreenAI.md)  |  [1e1](docs/projects/proj1/proj1e1.md) : Thurs | [9](docs/reviews/review9.md)  |
 | Oct06 | Mon: [law](docs/lectures/lec10-law.md)<br>Wed: [testing](docs/lectures/lect11-test.pdf)  |   | [10](docs/reviews/review10.md)  |
-| Oct13 | Mon : Fall Break (no lecture) <br>[notes on project](docs/projects/proj23/notes.md) |   |   |
+| Oct13 | Mon : Fall Break (no lecture) <br>[notes on project](docs/projects/proj23/notes.md) |   | no new review<br> questions this week  |
 | Oct20 | Wed: no lecture |   |   |
 | Oct27 |   |   |   |
 | Nov03 |   | Thurs: [Proj2](docs/projects/proj23/proj23.md) |   |
