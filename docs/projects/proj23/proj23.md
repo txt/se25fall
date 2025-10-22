@@ -177,7 +177,7 @@ Submit a **single PDF file** containing:
 |Question 13.2| Does your website state how many projects and users are associated with your project?| ✅   | ❌  |          |
 |Question 13.3| Do you provide success stories on your website?| ✅   | ❌  |          |
 |Question 13.4| Do you list your important partners and collaborators on your website?| ✅   | ❌  |          |
-|Question 13.5| Do you list your project's publications on your website or link to a resource where these are available?| ✅   | ❌  |          |
+|~Question 13.5~| ~Do you list your project's publications on your website or link to a resource where these are available?~ | ✅   | ❌  |          |
 |Question 13.6| Do you list third-party publications that refer to your software on your website or link to a resource where these are available?| ✅   | ❌  |          |
 |Question 13.7| Can users subscribe to notifications to changes to your source code repository?| ✅   | ❌  |          |
 |Question 13.8| If your software is developed as an open source project (and, not just a project developing open source software), do you have a governance model?| ✅   | ❌  |          |
