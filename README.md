@@ -31,7 +31,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Oct06 | Mon: [law](docs/lectures/lec10-law.md)<br>Wed: [testing](docs/lectures/lect11-test.pdf)  |   | [10](docs/reviews/review10.md)  |
 | Oct13 | Mon : Fall Break (no lecture) <br>[notes on project](docs/projects/proj23/notes.md) |   | no new review<br> questions this week  |
 | Oct20 | Wed: lecture! definitely! |   |   |
-| Oct27 |   |   |   |
+| Oct27 | [patterns](docs/lectures/lect12-patterns.md)  |   |   |
 | Nov03 |   | Thurs: [Proj2](docs/projects/proj23/proj23.md) |   |
 | Nov10 |   | Demo to tutor |   |
 | Nov17 |   |   |   |
