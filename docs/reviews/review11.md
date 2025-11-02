@@ -18,134 +18,110 @@ maintain alien code; use SE + AI; establish on-line profile.
 
 
 
-## **Question 1: Fault vs Failure**
+## 🟦 Background Notes (for Question 4: Tarantula Fault Localization)
 
-**(a) [1 mark]**
-Define “fault” and “failure” and explain the key difference between them.
+To understand Question 4, recall how Tarantula visualizes testing outcomes.
 
-**(b) [2 marks]**
-Using the Fenton & Neil causal model, explain how a system with extensive pre-release testing could show many pre-release faults but few post-release failures. Sketch the causal factors involved.
+Tarantula (Jones et al., ICSE 2002) assigns **colors and suspiciousness scores**
+to each line/block of code using data from passed and failed test cases.
 
-**(c) [3 marks]**
-A startup releases software with minimal testing, observes few reported bugs in the first month, and concludes their code quality is excellent. Critique this reasoning using concepts from reliability engineering. What alternative explanations might account for the low bug reports? 
+### 🔹 Figure 3 (from the paper) – Key Ideas
 
----
+Figure 3 shows a visualization like this:
 
-## **Question 2: Coverage Metrics**
+| Code Region | Passed Tests | Failed Tests | Color / Suspiciousness |
+|-------------|--------------|--------------|--------------------------|
+| Region A    | Many         | 0            | **Bright Green** (safe) |
+| Region B    | 0            | Many         | **Bright Red** (likely bug) |
+| Region C    | Some         | Some         | **Orange / Yellow** (uncertain, “confusion zone”) |
 
-**(a) [1 mark]**
-For the following code, explain why one test achieving 100% line coverage might still have 50% branch coverage:
+- Each statement/block is colored from **green → yellow → red**.
+- Color is based on ratio:  
+  **Suspiciousness = (failed/total_failed) / (failed/total_failed + passed/total_passed)**
+- **Figure 3 visually shows a code tree with:**
+  - **Green paths:** always passed tests → “good code”  
+  - **Red paths:** always failed tests → “bug hotspots”  
+  - **Orange region between them:** where results are mixed → *most informative for future testing*
 
-```python
-def func(x):
-    if x > 0:
-        return x * 2
-    return x
-```
+### 🔹 How Tim Described This in Class (Transcript Reference)
 
-**(b) [2 marks]**
-Write a function with 2 if-statements where achieving 100% branch coverage requires 4 tests, but 100% line coverage requires only 2 tests. Show your test cases.
+> “Imagine the code as a big tree. As tests run, branches light up green when tests pass, red when they fail.  
+> The interesting part? Not the pure red, not the pure green — but that *zone of confusion* where half tests pass, half fail. That's where you learn the most.”
 
-**(c) [3 marks]**
-Research shows statement coverage best predicts mutation kills (Gopinath 2014), yet coverage alone poorly correlates with test effectiveness (Inozemtseva & Holmes 2014). Reconcile these findings. When is coverage useful and when is it misleading? 
+### 🔹 Why This Matters
 
----
+- Bright red = likely where bug manifests → candidate for **repair**  
+- Bright green = safe regions → can copy code from here (plastic surgery repair)  
+- Orange (mixed) = best place for **more testing**, contrast learning, fault localization
 
-## **Question 3: Mutation Testing**
-
-**(a) [1 mark]**
-What is a “mutation operator,” and list three types (AOR, ROR, CR, etc.) with examples.
-
-**(b) [2 marks]**
-Given this code:
-
-```python
-def discount(price, rate):
-    if price > 100:
-        return price - (price * rate)
-    return price
-```
-
-Generate 3 mutants using different operators and explain whether your test suite `[discount(50, 0.1), discount(150, 0.2)]` kills each mutant.
-
-**(c) [3 marks]**
-A test suite has 90% line coverage but only 60% mutation score. Another has 70% coverage but 85% mutation score. Which indicates higher quality testing? Justify your reasoning considering what each metric measures and their practical implications for fault detection. 
+### **1. Fault vs Failure**
+(a) Define *fault* and *failure*.  
+(b) Why can many pre-release faults lead to few post-release failures?  
+(c) A startup gets no bug reports and declares success. Critique.
 
 ---
 
-## **Question 4: Test Case Prioritization**
-
-**(a) [1 mark]**
-Define APFD (Average Percentage of Faults Detected) and explain why it’s more informative than simply measuring “time to find first fault.”
-
-**(b) [2 marks]**
-You have 4 tests: A (passed 10 runs ago, execution time 5 s), B (failed yesterday, 10 s), C (new test, 2 s), D (passed yesterday, 15 s). Apply the Elbaum heuristic to prioritize these tests. Show your reasoning.
-
-**(c) [3 marks]**
-Ling et al. (2022) found optimal TCP strategies differ for open-source vs closed-source projects (diversity-based optimal for closed-source, history-based for open-source). Propose three hypotheses explaining why this difference exists. Design an experiment to test one hypothesis. 
+### **2. V-Diagram & Testing Effort**
+(a) Describe the V-diagram (4 stages per side).  
+(b) Why is coding only 1/6 of effort while testing is 1/2 (Brooks)?  
+(c) If you must cut 20% schedule time, which phase(s) do you reduce, and why?
 
 ---
 
-## **Question 5: Delta Debugging**
-
-**(a) [1 mark]**
-Explain what “1-minimal” means in the context of delta debugging’s `ddmin` algorithm.
-
-**(b) [2 marks]**
-You have a 16-character input `"ABCDEFGHIJKLMNOP"` that crashes a program. Walk through the first 3 steps of `ddmin` assuming removing `"ABCDEFGH"` still crashes, but removing `"IJKLMNOP"` passes. What does `ddmin` try next?
-
-**(c) [3 marks]**
-The “oracle problem” requires distinguishing the target failure from other failures. Design a test oracle for a compiler that should detect “segmentation fault” as the target failure while ignoring “syntax error” and “type error.” Show code and explain how it handles ambiguous cases. 
+### **3. Coverage Metrics**
+(a) Define statement coverage and branch coverage.  
+(b) Give an example where 100% coverage still misses a bug.  
+(c) How does mutation testing address this limitation?
 
 ---
 
-## **Question 6: Black-Box Testing**
-
-**(a) [1 mark]**
-Write a simple grammar (in any notation) that generates arithmetic expressions with numbers 1–9 and operators `+`, `–`, `*`.
-
-**(b) [2 marks]**
-Extend your grammar with probability weights such that `+` is chosen 50% of the time, while `–` and `*` are each chosen 25%. Show Python code implementing weighted random selection.
-
-**(c) [3 marks]**
-Coverage-guided fuzzing automatically reweights grammar rules to explore uncovered code paths. Compare this to manual weighting (where domain experts specify weights). Under what circumstances would each approach be more effective? Consider factors like domain knowledge availability, code complexity, and testing budget. 
+### **4. Tarantula Fault Localization**
+(a) What does Tarantula compute for each line of code?  
+(b) Why is the orange “half-pass/half-fail” region most valuable?  
+(c) If Region A is 100% failing and Region B is 50/50, which do you:
+ - test more?  
+ - repair first? Explain.
 
 ---
 
-## **Question 7: Formal Verification**
-
-**(a) [1 mark]**
-What is the difference between formal verification and traditional testing, and why might formal verification provide stronger correctness guarantees?
-
-**(b) [2 marks]**
-AWS rewrote their authorization engine in Dafny rather than verifying the existing Java code. Explain two technical reasons why rewriting might be more practical (consider proof brittleness, legacy code complexity, tool limitations).
-
-**(c) [3 marks]**
-The AuthV2 project performed 10¹⁵ shadow tests despite having formally verified code. Explain the relationship between proof and testing: what errors does each approach catch, why are both necessary, and what does this tell us about the role of specifications in formal methods? 
+### **5. Regression Testing & APFD**
+(a) What is regression testing?  
+(b) What does APFD measure?  
+(c) CI tests take 6 hours. Propose a prioritization strategy.
 
 ---
 
-## **Question 8: ARIMA Forecasting**
-
-**(a) [1 mark]**
-Describe the three components of ARIMA (AutoRegressive, Integrated, Moving Average) in the context of time-series forecasting.
-
-**(b) [2 marks]**
-A project has these weekly issue counts for 4 weeks: [10, 15, 12, 18]. Using a simple moving average (MA(2)), forecast the next week. Then explain how ARIMA’s “integrated” component would handle a non-stationary trend.
-
-**(c) [3 marks]**
-Research found issue counts predict bugs as accurately as bug history itself. Evaluate the practical implications for organizations: what does this enable, what are the risks/limitations, and under what conditions might this approach fail (project maturity, issue quality, labeling accuracy). 
+### **6. Grammar-Based Fuzzing**
+(a) What is grammar-based fuzzing?  
+(b) Give an example (e.g., US phone number grammar).  
+(c) How does *coverage-guided fuzzing* improve it?
 
 ---
 
-## **Question 9: Active Learning (TERMINATOR)**
+### **7. Delta Debugging**
+(a) What is the objective of delta debugging (ddmin)?  
+(b) How does ddmin shrink failing input?  
+(c) How would you reduce a 1000-line failing test case to a minimal set?
 
-**(a) [1 mark]**
-Explain the difference between “uncertainty sampling” and “certainty sampling” in active learning.
+---
 
-**(b) [2 marks]**
-TERMINATOR uses uncertainty sampling early (|LR| < 30 failures) then switches to certainty sampling. Explain the rationale for this adaptive strategy. What would go wrong if it used only uncertainty sampling throughout?
+### **8. Metamorphic Testing**
+(a) Define metamorphic testing.  
+(b) Give one metamorphic relation example.  
+(c) Why is it useful when no test oracle exists (e.g., ML systems)?
 
-**(c) [3 marks]**
-TERMINATOR frames test prioritization as a “Total Recall” problem. Evaluate this framing: what assumptions does it make about the testing goal, how does this differ from traditional coverage-based approaches, and when might this framing be inappropriate (i.e., when is finding all failures quickly not the right objective)? 
+---
+
+### **9. Automatic Program Repair**
+(a) What is automatic program repair?  
+(b) What does “bugs are social animals” mean?  
+(c) Explain the plastic surgery hypothesis. What is one risk?
+
+---
+
+### **10. Non-Functional Testing (Availability)**
+(a) Define availability testing.  
+(b) Give one example where security conflicts with availability.  
+(c) Design a simple test to measure cloud service availability under CPU spikes.
+
 
