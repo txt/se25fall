@@ -25,7 +25,15 @@ To understand Question 4, recall how Tarantula visualizes testing outcomes.
 Tarantula (Jones et al., ICSE 2002) assigns **colors and suspiciousness scores**
 to each line/block of code using data from passed and failed test cases.
 
-### 🔹 Figure 3 (from the paper) – Key Ideas
+### 🔹 How Tim Described Taranula
+
+> “Imagine the code as a big tree. As tests run, branches light up green when tests pass, red when they fail.  
+> The interesting part? Not the pure red, not the pure green — but that *zone of confusion* where half tests pass, half fail. That's where you learn the most.”
+
+
+### 🔹 Figure 3 (from the 2002 Tarantula  paper) – Key Ideas
+
+<img width="571" height="405" alt="image" src="https://github.com/user-attachments/assets/b35a33f6-7ba3-4a9b-a8c3-c815bd6c0aa2" />
 
 Figure 3 shows a visualization like this:
 
@@ -43,16 +51,20 @@ Figure 3 shows a visualization like this:
   - **Red paths:** always failed tests → “bug hotspots”  
   - **Orange region between them:** where results are mixed → *most informative for future testing*
 
-### 🔹 How Tim Described This in Class (Transcript Reference)
+Here is Tarantual applied to a 4K of code:
 
-> “Imagine the code as a big tree. As tests run, branches light up green when tests pass, red when they fail.  
-> The interesting part? Not the pure red, not the pure green — but that *zone of confusion* where half tests pass, half fail. That's where you learn the most.”
+<img width="1050" height="844" alt="image" src="https://github.com/user-attachments/assets/7a57b3da-6a65-4434-ab86-f1a71e7a2836" />
+
 
 ### 🔹 Why This Matters
 
 - Bright red = likely where bug manifests → candidate for **repair**  
 - Bright green = safe regions → can copy code from here (plastic surgery repair)  
 - Orange (mixed) = best place for **more testing**, contrast learning, fault localization
+
+## Review Questions
+
+Questions a,b,c are worth 1,2,3 marks.
 
 ### **1. Fault vs Failure**
 (a) Define *fault* and *failure*.  
