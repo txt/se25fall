@@ -62,6 +62,8 @@ Here is Tarantual applied to a 4K of code:
 - Bright green = safe regions → can copy code from here (plastic surgery repair)  
 - Orange (mixed) = best place for **more testing**, contrast learning, fault localization
 
+---
+
 ## Review Questions
 
 Questions a,b,c are worth 1,2,3 marks.
@@ -71,21 +73,21 @@ Questions a,b,c are worth 1,2,3 marks.
 (b) Why can many pre-release faults lead to few post-release failures?  
 (c) A startup gets no bug reports and declares success. Critique.
 
----
+ 
 
 ### **2. V-Diagram & Testing Effort**
 (a) Describe the V-diagram (4 stages per side).  
 (b) Why is coding only 1/6 of effort while testing is 1/2 (Brooks)?  
 (c) If you must cut 20% schedule time, which phase(s) do you reduce, and why?
 
----
+ 
 
 ### **3. Coverage Metrics**
 (a) Define statement coverage and branch coverage.  
 (b) Give an example where 100% coverage still misses a bug.  
 (c) How does mutation testing address this limitation?
 
----
+ 
 
 ### **4. Tarantula Fault Localization**
 (a) What does Tarantula compute for each line of code?  
@@ -94,42 +96,42 @@ Questions a,b,c are worth 1,2,3 marks.
  - test more?  
  - repair first? Explain.
 
----
+ 
 
 ### **5. Regression Testing & APFD**
 (a) What is regression testing?  
 (b) What does APFD measure?  
 (c) CI tests take 6 hours. Propose a prioritization strategy.
 
----
+ 
 
 ### **6. Grammar-Based Fuzzing**
 (a) What is grammar-based fuzzing?  
 (b) Give an example (e.g., US phone number grammar).  
 (c) How does *coverage-guided fuzzing* improve it?
 
----
+ 
 
 ### **7. Delta Debugging**
 (a) What is the objective of delta debugging (ddmin)?  
 (b) How does ddmin shrink failing input?  
 (c) How would you reduce a 1000-line failing test case to a minimal set?
 
----
+ 
 
 ### **8. Metamorphic Testing**
 (a) Define metamorphic testing.  
 (b) Give one metamorphic relation example.  
 (c) Why is it useful when no test oracle exists (e.g., ML systems)?
 
----
+ 
 
 ### **9. Automatic Program Repair**
 (a) What is automatic program repair?  
 (b) What does “bugs are social animals” mean?  
 (c) Explain the plastic surgery hypothesis. What is one risk?
 
----
+ 
 
 ### **10. Non-Functional Testing (Availability)**
 (a) Define availability testing.  
