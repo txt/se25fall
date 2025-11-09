@@ -1,0 +1,1430 @@
+\begin{frame}{Introduction: Why Test?}
+\protect\phantomsection\label{introduction-why-test}
+\begin{itemize}
+\tightlist
+\item
+  Testing checks code correctness and prevents regressions
+\item
+  Good manners for team: don't commit breaking changes
+\item
+  Multi-stakeholder systems have competing requirements
+\item
+  Functional vs non-functional requirements
+\item
+  ``Program testing shows presence of bugs, hopelessly inadequate for
+  showing absence'' - Dijkstra
+\end{itemize}
+
+\textbf{Discussion:} Toronto CS department information system - good if
+parents can track children, but good if students maintain privacy. How
+do you test for both?
+\end{frame}
+
+\begin{frame}{The V-Diagram: Software Lifecycle}
+\protect\phantomsection\label{the-v-diagram-software-lifecycle}
+\begin{itemize}
+\tightlist
+\item
+  Planning down to coding
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Planning = requirements → design → implementation
+  \end{itemize}
+\item
+  Coding across to testing
+\item
+  Then upwards to more and more complex tesing
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Testing = unit test→ integration → system test → acceptance testing
+  \end{itemize}
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Verification: ``building the system right''
+\item
+  Validation: ``building the right system''
+\end{itemize}
+
+\hfill\break
+
+\begin{itemize}
+\tightlist
+\item
+  Brooks, \emph{Mythical Man Month}: 1/3 planning, 1/6 coding, 1/4 unit
+  test, 1/4 system test
+\item
+  More time in testing than coding
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fault vs Failure (Fenton \& Neil)}
+\protect\phantomsection\label{fault-vs-failure-fenton-neil}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fault}: incorrect step/process/definition in code
+\item
+  \textbf{Failure}: when something actually goes wrong
+\item
+  Key insight: pre-release faults != post-release failures
+\end{itemize}
+
+\textbf{Discussion Question:} How can a system with \emph{few}
+pre-release faults have \emph{many} post-release failures? And vice
+versa?
+
+\begin{itemize}
+\tightlist
+\item
+  Answer: Untested systems show few faults (none found!) but fail
+  heavily in production
+\item
+  Well-tested systems expose many faults pre-release, resulting in fewer
+  failures post-release
+\item
+  Usage patterns, defect detection capability, design effort all matter
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Testing Types: Concrete Examples}
+\protect\phantomsection\label{testing-types-concrete-examples}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Unit testing}: Test
+  \texttt{calculateDiscount(price,\ percentage)} function in isolation
+\item
+  \textbf{Integration testing}: Test checkout service calling payment
+  gateway API
+\item
+  \textbf{System testing}: End-to-end purchase flow from cart to
+  confirmation email
+\item
+  \textbf{Acceptance testing}: Customer validates system meets contract
+  requirements
+\item
+  \textbf{Alpha testing}: Internal QA team uses prototype before release
+\item
+  \textbf{Beta testing}: 1000 external users try new mobile app version
+\item
+  \textbf{A/B testgs}: split some population in half
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Grpup A gets ``it''
+  \item
+    Group B does not
+  \item
+    Collect data, apply stats to check if ``it'' worked.
+  \end{itemize}
+\item
+  \textbf{Regression testing}: Re-run all tests after adding shopping
+  cart feature
+
+  \begin{itemize}
+  \tightlist
+  \item
+    warning: slow, Voluminous
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Black-Box Testing: Grammar-Based Generation}
+\protect\phantomsection\label{black-box-testing-grammar-based-generation}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{US\_PHONE\_GRAMMAR }\OperatorTok{=}\NormalTok{ \{}
+    \StringTok{"\textless{}start\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}phone{-}number\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}phone{-}number\textgreater{}"}\NormalTok{: [}\StringTok{"(\textless{}area\textgreater{})\textless{}exchange\textgreater{}{-}\textless{}line\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}area\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}lead{-}digit\textgreater{}\textless{}digit\textgreater{}\textless{}digit\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}exchange\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}lead{-}digit\textgreater{}\textless{}digit\textgreater{}\textless{}digit\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}line\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}digit\textgreater{}\textless{}digit\textgreater{}\textless{}digit\textgreater{}\textless{}digit\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}lead{-}digit\textgreater{}"}\NormalTok{: [}\StringTok{"2"}\NormalTok{,}\StringTok{"3"}\NormalTok{,}\StringTok{"4"}\NormalTok{,}\StringTok{"5"}\NormalTok{,}\StringTok{"6"}\NormalTok{,}\StringTok{"7"}\NormalTok{,}\StringTok{"8"}\NormalTok{,}\StringTok{"9"}\NormalTok{],}
+    \StringTok{"\textless{}digit\textgreater{}"}\NormalTok{: [}\StringTok{"0"}\NormalTok{,}\StringTok{"1"}\NormalTok{,}\StringTok{"2"}\NormalTok{,}\StringTok{"3"}\NormalTok{,}\StringTok{"4"}\NormalTok{,}\StringTok{"5"}\NormalTok{,}\StringTok{"6"}\NormalTok{,}\StringTok{"7"}\NormalTok{,}\StringTok{"8"}\NormalTok{,}\StringTok{"9"}\NormalTok{]}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Generates: \texttt{(692)449-5179}, \texttt{(519)230-7422}, etc.
+\end{frame}
+
+\begin{frame}[fragile]{Black-Box: Random Generation from Grammars}
+\protect\phantomsection\label{black-box-random-generation-from-grammars}
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ random}
+
+\KeywordTok{def}\NormalTok{ generate(grammar, rule, depth}\OperatorTok{=}\DecValTok{3}\NormalTok{):}
+    \ControlFlowTok{if}\NormalTok{ depth }\OperatorTok{==} \DecValTok{0} \KeywordTok{or}\NormalTok{ rule }\KeywordTok{not} \KeywordTok{in}\NormalTok{ grammar:}
+        \ControlFlowTok{return}\NormalTok{ random.choice(grammar.get(rule, [rule]))}
+\NormalTok{    expansion }\OperatorTok{=}\NormalTok{ random.choice(grammar[rule])}
+    \ControlFlowTok{return} \StringTok{""}\NormalTok{.join(generate(grammar, r, depth}\OperatorTok{{-}}\DecValTok{1}\NormalTok{) }
+                   \ControlFlowTok{for}\NormalTok{ r }\KeywordTok{in}\NormalTok{ expansion)}
+
+\CommentTok{\# Generate 5 random phone numbers}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+    \BuiltInTok{print}\NormalTok{(generate(US\_PHONE\_GRAMMAR, }\StringTok{"\textless{}start\textgreater{}"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Uniform random sampling from grammar rules.
+\end{frame}
+
+\begin{frame}[fragile]{Black-Box: Manual Weighting}
+\protect\phantomsection\label{black-box-manual-weighting}
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Weight grammar to prefer certain area codes}
+\NormalTok{WEIGHTED\_GRAMMAR }\OperatorTok{=}\NormalTok{ \{}
+    \StringTok{"\textless{}start\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}phone{-}number\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}phone{-}number\textgreater{}"}\NormalTok{: [}\StringTok{"(\textless{}area\textgreater{})\textless{}exchange\textgreater{}{-}\textless{}line\textgreater{}"}\NormalTok{],}
+    \StringTok{"\textless{}area\textgreater{}"}\NormalTok{: [}
+\NormalTok{        (}\StringTok{"919"}\NormalTok{, }\FloatTok{0.5}\NormalTok{),           }\CommentTok{\# 50\% weight {-} local area}
+\NormalTok{        (}\StringTok{"212"}\NormalTok{, }\FloatTok{0.3}\NormalTok{),           }\CommentTok{\# 30\% weight {-} NYC}
+\NormalTok{        (}\StringTok{"\textless{}random{-}area\textgreater{}"}\NormalTok{, }\FloatTok{0.2}\NormalTok{)  }\CommentTok{\# 20\% other}
+\NormalTok{    ],}
+    \StringTok{"\textless{}random{-}area\textgreater{}"}\NormalTok{: [}\StringTok{"\textless{}lead{-}digit\textgreater{}\textless{}digit\textgreater{}\textless{}digit\textgreater{}"}\NormalTok{],}
+    \CommentTok{\# ... rest of grammar}
+\NormalTok{\}}
+
+\KeywordTok{def}\NormalTok{ weighted\_choice(options):}
+\NormalTok{    choices, weights }\OperatorTok{=} \BuiltInTok{zip}\NormalTok{(}\OperatorTok{*}\NormalTok{options)}
+    \ControlFlowTok{return}\NormalTok{ random.choices(choices, weights)[}\DecValTok{0}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Black-Box: Automatic Reweighting
+(Coverage-Guided)}
+\protect\phantomsection\label{black-box-automatic-reweighting-coverage-guided}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ coverage\_guided\_fuzzing(grammar, test\_fn, iterations}\OperatorTok{=}\DecValTok{100}\NormalTok{):}
+\NormalTok{    covered\_branches }\OperatorTok{=} \BuiltInTok{set}\NormalTok{()}
+    
+    \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(iterations):}
+        \CommentTok{\# Generate input}
+\NormalTok{        test\_input }\OperatorTok{=}\NormalTok{ generate(grammar, }\StringTok{"\textless{}start\textgreater{}"}\NormalTok{)}
+        
+        \CommentTok{\# Run test, track coverage}
+\NormalTok{        new\_branches }\OperatorTok{=}\NormalTok{ test\_fn(test\_input)}
+        
+        \CommentTok{\# Increase weight for rules that hit new branches}
+        \ControlFlowTok{if}\NormalTok{ new\_branches }\OperatorTok{{-}}\NormalTok{ covered\_branches:}
+\NormalTok{            increase\_weight\_for(rules\_used\_in(test\_input))}
+\NormalTok{            covered\_branches.update(new\_branches)}
+\end{Highlighting}
+\end{Shaded}
+
+Automatically biases generation toward unexplored code paths.
+\end{frame}
+
+\begin{frame}[fragile]{White-Box: Doodling State Machines}
+\protect\phantomsection\label{white-box-doodling-state-machines}
+Reading documentation to infer state transitions:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Elevator Door States (inferred }\ImportTok{from}\NormalTok{ docs):}
+\OperatorTok{{-}}\NormalTok{ CLOSED }\OperatorTok{{-}\textgreater{}}\NormalTok{ OPENING (on button press)}
+\OperatorTok{{-}}\NormalTok{ OPENING }\OperatorTok{{-}\textgreater{}}\NormalTok{ OPEN (after }\DecValTok{2}\NormalTok{ seconds)}
+\OperatorTok{{-}}\NormalTok{ OPEN }\OperatorTok{{-}\textgreater{}}\NormalTok{ CLOSING (after }\DecValTok{5}\NormalTok{ second timeout OR button)}
+\OperatorTok{{-}}\NormalTok{ CLOSING }\OperatorTok{{-}\textgreater{}}\NormalTok{ OPEN (}\ControlFlowTok{if}\NormalTok{ obstruction detected)}
+\OperatorTok{{-}}\NormalTok{ CLOSING }\OperatorTok{{-}\textgreater{}}\NormalTok{ CLOSED (after }\DecValTok{2}\NormalTok{ seconds)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Discussion:} Draw a state diagram. What test cases cover all
+transitions? What if door stays OPEN between floors 3 and 7 - is this a
+violation?
+\end{frame}
+
+\begin{frame}[fragile]{Coverage Metrics: The Differences}
+\protect\phantomsection\label{coverage-metrics-the-differences}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ example(x, y):}
+\NormalTok{    a }\OperatorTok{=}\NormalTok{ x }\OperatorTok{+}\NormalTok{ y          }\CommentTok{\# Line }
+    \ControlFlowTok{if}\NormalTok{ x }\OperatorTok{\textgreater{}} \DecValTok{0}\NormalTok{:          }\CommentTok{\# Line 2}
+\NormalTok{        b }\OperatorTok{=}\NormalTok{ a }\OperatorTok{*} \DecValTok{2}      \CommentTok{\# Line 3}
+    \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{        b }\OperatorTok{=}\NormalTok{ a }\OperatorTok{*} \DecValTok{3}      \CommentTok{\# Line 4}
+    
+    \ControlFlowTok{if}\NormalTok{ y }\OperatorTok{\textgreater{}} \DecValTok{0}\NormalTok{:          }\CommentTok{\# Line 5}
+\NormalTok{        c }\OperatorTok{=}\NormalTok{ b }\OperatorTok{+}\NormalTok{ a      }\CommentTok{\# Line 6}
+    \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{        c }\OperatorTok{=}\NormalTok{ b }\OperatorTok{{-}}\NormalTok{ a      }\CommentTok{\# Line 7}
+    
+    \ControlFlowTok{return}\NormalTok{ c           }\CommentTok{\# Line 8}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Coverage Examples}
+\protect\phantomsection\label{coverage-examples}
+\textbf{Test 1:} \texttt{example(1,\ 1)} - Lines covered: 1,2,3,5,6,8
+(6/8 = 75\% line coverage) - Branches: T,T (2/4 = 50\% branch coverage)
+
+\textbf{Test 2:} \texttt{example(-1,\ -1)} - Lines: 1,2,4,5,7,8 (6/8 =
+75\% line coverage) - Branches: F,F (2/4 = 50\% branch coverage)
+
+\textbf{Both tests:} 100\% line, 100\% branch
+
+\textbf{But:} Never tested \texttt{x\textgreater{}0} AND
+\texttt{y\textless{}0} interaction (du-path from line 3 to line 7
+uncovered)
+\end{frame}
+
+\begin{frame}{Problems with Coverage Metrics}
+\protect\phantomsection\label{problems-with-coverage-metrics}
+\begin{itemize}
+\tightlist
+\item
+  Gopinath et al.~(2014): Statement coverage best predicts mutation
+  kills, not branch/path
+\item
+  Inozemtseva \& Holmes (2014): Coverage not strongly correlated with
+  test suite effectiveness
+\item
+  Kochhar et al.~(2015): Real bugs in large systems - coverage helps but
+  insufficient
+\end{itemize}
+
+\textbf{Key findings:}
+
+\begin{itemize}
+\tightlist
+\item
+  100\% coverage still misses logic errors
+\item
+  Concurrency bugs evade coverage metrics
+\item
+  Complex component interactions not captured
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Mutation Testing: Operators}
+\protect\phantomsection\label{mutation-testing-operators}
+\textbf{Original Code:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ calculate\_discount(price, rate):}
+    \ControlFlowTok{if}\NormalTok{ price }\OperatorTok{\textgreater{}} \DecValTok{100}\NormalTok{:}
+\NormalTok{        discount }\OperatorTok{=}\NormalTok{ price }\OperatorTok{*}\NormalTok{ rate}
+        \ControlFlowTok{return}\NormalTok{ price }\OperatorTok{{-}}\NormalTok{ discount}
+    \ControlFlowTok{return}\NormalTok{ price}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{AOR (Arithmetic):} \texttt{discount\ =\ price\ /\ rate} (changed
+\texttt{*} to \texttt{/})
+
+\textbf{ROR (Relational):} \texttt{if\ price\ \textgreater{}=\ 100:}
+(changed \texttt{\textgreater{}} to \texttt{\textgreater{}=})
+
+\textbf{CR (Constant):} \texttt{if\ price\ \textgreater{}\ 50:} (changed
+\texttt{100} to \texttt{50})
+\end{frame}
+
+\begin{frame}[fragile]{Mutation Testing: Genetic Programming}
+\protect\phantomsection\label{mutation-testing-genetic-programming}
+Beyond point mutations - swap entire code blocks:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Original}
+\KeywordTok{def}\NormalTok{ process(data):}
+    \ControlFlowTok{if}\NormalTok{ validate(data):}
+\NormalTok{        result }\OperatorTok{=}\NormalTok{ transform(data)}
+        \ControlFlowTok{return}\NormalTok{ result}
+    \ControlFlowTok{return} \VariableTok{None}
+
+\CommentTok{\# Mutant (swapped if/else)}
+\KeywordTok{def}\NormalTok{ process(data):}
+    \ControlFlowTok{if}\NormalTok{ validate(data):}
+        \ControlFlowTok{return} \VariableTok{None}
+\NormalTok{    result }\OperatorTok{=}\NormalTok{ transform(data)}
+    \ControlFlowTok{return}\NormalTok{ result}
+\end{Highlighting}
+\end{Shaded}
+
+Crossover: Take branches from two passing variants, combine them, see if
+combined version still passes.
+
+Killed mutant = the test suite detects the fault - i.e.~at least one
+test fails when run against the mutated program.
+\end{frame}
+
+\begin{frame}{Mutation Score Interpretation}
+\protect\phantomsection\label{mutation-score-interpretation}
+Mutation Score = (Killed Mutants / Total Mutants) * 100
+
+Example: 100 mutants generated, 70 killed -\textgreater{} 70\% score
+
+\textbf{What survives?}
+
+\begin{itemize}
+\tightlist
+\item
+  Equivalent mutants (semantically identical)
+\item
+  Untested edge cases
+\item
+  Weak test assertions
+\end{itemize}
+
+Better indicator than coverage: test \emph{quality} not just
+\emph{quantity}.
+\end{frame}
+
+\begin{frame}{Regression Testing \& Test Prioritization}
+\protect\phantomsection\label{regression-testing-test-prioritization}
+\begin{itemize}
+\tightlist
+\item
+  Elbaum, Rothermel, Penix (FSE 2014): ``Techniques for improving
+  regression testing in continuous integration''
+\item
+  Large test suites: 3-5 hours (cloud) to 30 hours (local)
+\item
+  Slow feedback kills CI/CD agility
+\end{itemize}
+
+\textbf{APFD (Average Percentage of Faults Detected):}
+
+\begin{itemize}
+\tightlist
+\item
+  Measures how quickly tests find faults
+\item
+  Higher APFD = faults found earlier
+\item
+  Cost-aware variant: APFDc weights by test execution time
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Elbaum's Prioritization Heuristic (2014)}
+\protect\phantomsection\label{elbaums-prioritization-heuristic-2014}
+Study on continuous integration environments:
+
+Prioritize tests that:
+
+\begin{enumerate}
+\tightlist
+\item
+  Failed recently
+\item
+  Haven't been tested for a while (long time since last run)
+\item
+  Are new functionality
+\end{enumerate}
+
+\textbf{Result:} For very large suites, catches 50\% of failures within
+first hour (vs 3-5 hours for full run)
+
+Works well when test history available and failures cluster.
+\end{frame}
+
+\begin{frame}{Open vs Closed Source: The Strategies}
+\protect\phantomsection\label{open-vs-closed-source-the-strategies}
+\textbf{Ling, Agrawal, Menzies (TSE 2022):} ``How Different is Test Case
+Prioritization for Open and Closed Source Projects?''
+
+\textbf{Strategies compared:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{A2 (Optimal/Omniscient):} Actually knows where bugs are
+
+  \begin{itemize}
+  \tightlist
+  \item
+    all results baselined against A2
+  \end{itemize}
+\item
+  \textbf{D1 (Diversity):} Maximize coverage of different code regions
+\item
+  \textbf{B1 (History - fail rate):} Run tests with highest historical
+  failure rate
+\item
+  \textbf{B3 (History - recency):} Run tests that failed most recently
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Open vs Closed Results}
+\protect\phantomsection\label{open-vs-closed-results}
+\textbf{Closed-source projects:}
+
+\begin{itemize}
+\tightlist
+\item
+  D1 performs as well as A2
+\item
+  Diversity-based selection optimal
+\end{itemize}
+
+\textbf{Open-source projects:}
+
+\begin{itemize}
+\tightlist
+\item
+  B1, B3 perform as well as A2
+\item
+  History-based selection optimal
+\end{itemize}
+
+\textbf{Key insight:} Test case prioritization strategies that work best
+for industrial closed-source can work \emph{worse} for open-source (and
+vice versa)
+
+Context matters: release cadence, developer distribution, test
+characteristics differ.
+\end{frame}
+
+\begin{frame}[fragile]{All-Pairs Testing Example}
+\protect\phantomsection\label{all-pairs-testing-example}
+Five inputs: (2, 2, 2, 7, 10) values each
+
+Full combinatorial: 2×2×2×7×10 = 560 tests
+
+All-pairs generates only 68 tests:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{) (}\DecValTok{2}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{) (}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{3}\NormalTok{) (}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{4}\NormalTok{)}
+\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{5}\NormalTok{) (}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{6}\NormalTok{) (}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{7}\NormalTok{) (}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{8}\NormalTok{)}
+\NormalTok{...}
+\end{Highlighting}
+\end{Shaded}
+
+Every pair of values appears together in at least one test.
+
+Dramatic reduction with high coverage of 2-way interactions.
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: The ddmin Algorithm}
+\protect\phantomsection\label{delta-debugging-the-ddmin-algorithm}
+\textbf{Zeller's Implementation (Fig 1 from TSE 2002):} Reduce `inp' to
+a 1-minimal failing subset, using the outcome of 'test(inp,
+*test\_args)`, which should be 'PASS', `FAIL', or `UNRESOLVED'.
+
+Systematically shrink input until nothing smaller still fails.
+
+\fontsize{5}{6}\selectfont
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ ddmin(test: Callable, inp: Sequence[Any], }\OperatorTok{*}\NormalTok{test\_args) }\OperatorTok{{-}\textgreater{}}\NormalTok{ Sequences:}
+    \ControlFlowTok{assert}\NormalTok{ test(inp, }\OperatorTok{*}\NormalTok{test\_args) }\OperatorTok{!=}\NormalTok{ PASS}
+\NormalTok{    n }\OperatorTok{=} \DecValTok{2}  \CommentTok{\# Initial granularity}
+    \ControlFlowTok{while} \BuiltInTok{len}\NormalTok{(inp) }\OperatorTok{\textgreater{}=} \DecValTok{2}\NormalTok{:}
+\NormalTok{        subset\_length: }\BuiltInTok{int} \OperatorTok{=} \BuiltInTok{int}\NormalTok{(}\BuiltInTok{len}\NormalTok{(inp) }\OperatorTok{/}\NormalTok{ n)}
+\NormalTok{        some\_complement\_is\_failing: }\BuiltInTok{bool} \OperatorTok{=} \VariableTok{False}
+\NormalTok{        start }\OperatorTok{=} \DecValTok{0}
+        \ControlFlowTok{while}\NormalTok{ start }\OperatorTok{\textless{}} \BuiltInTok{len}\NormalTok{(inp):}
+            \CommentTok{\# Cut out inp[start:start + subset\_length]}
+\NormalTok{            complement: Sequence[Any] }\OperatorTok{=}\NormalTok{ inp[:start] }\OperatorTok{+}\NormalTok{ inp[start }\OperatorTok{+}\NormalTok{ subset\_length:]}
+            \ControlFlowTok{if}\NormalTok{ test(complement, }\OperatorTok{*}\NormalTok{test\_args) }\OperatorTok{==}\NormalTok{ FAIL:}
+\NormalTok{                inp }\OperatorTok{=}\NormalTok{ complement}
+\NormalTok{                n }\OperatorTok{=} \BuiltInTok{max}\NormalTok{(n }\OperatorTok{{-}} \DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{)}
+\NormalTok{                some\_complement\_is\_failing }\OperatorTok{=} \VariableTok{True}
+                \ControlFlowTok{break}
+\NormalTok{            start }\OperatorTok{+=}\NormalTok{ subset\_length}
+        \ControlFlowTok{if} \KeywordTok{not}\NormalTok{ some\_complement\_is\_failing:}
+            \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{==} \BuiltInTok{len}\NormalTok{(inp): }\ControlFlowTok{break}
+\NormalTok{            n }\OperatorTok{=} \BuiltInTok{min}\NormalTok{(n }\OperatorTok{*} \DecValTok{2}\NormalTok{, }\BuiltInTok{len}\NormalTok{(inp))}
+    \ControlFlowTok{return}\NormalTok{ inp}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: The Oracle Problem}
+\protect\phantomsection\label{delta-debugging-the-oracle-problem}
+\textbf{Zeller's Test Function (Fig 2 from TSE 2002):} Run collected
+function with `args'. Return PASS if no exception occurred, FAIL if the
+collected exception occurred, UNRESOLVED if some other exception
+occurred.
+
+\fontsize{5}{6}\selectfont
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ test(}\VariableTok{self}\NormalTok{, args: Dict[}\BuiltInTok{str}\NormalTok{, Any]) }\OperatorTok{{-}\textgreater{}} \BuiltInTok{str}\NormalTok{:}
+    \ControlFlowTok{try}\NormalTok{:}
+\NormalTok{        result }\OperatorTok{=} \VariableTok{self}\NormalTok{.call(args)}
+    \ControlFlowTok{except} \PreprocessorTok{Exception} \ImportTok{as}\NormalTok{ exc:}
+        \VariableTok{self}\NormalTok{.last\_exception }\OperatorTok{=}\NormalTok{ exc}
+        \ControlFlowTok{if}\NormalTok{ (}\BuiltInTok{type}\NormalTok{(exc) }\OperatorTok{==} \BuiltInTok{type}\NormalTok{(}\VariableTok{self}\NormalTok{.exception()) }\KeywordTok{and}
+            \BuiltInTok{str}\NormalTok{(exc) }\OperatorTok{==} \BuiltInTok{str}\NormalTok{(}\VariableTok{self}\NormalTok{.exception())):}
+            \ControlFlowTok{return}\NormalTok{ FAIL}
+        \ControlFlowTok{else}\NormalTok{:}
+            \ControlFlowTok{return}\NormalTok{ UNRESOLVED  }\CommentTok{\# Some other failure}
+    \VariableTok{self}\NormalTok{.last\_result }\OperatorTok{=}\NormalTok{ result}
+    \ControlFlowTok{return}\NormalTok{ PASS}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Key:} Compare exception \textbf{type AND message} to distinguish
+target failure from syntax errors.
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Complete SQL Example}
+\protect\phantomsection\label{delta-debugging-complete-sql-example}
+\textbf{Initial Scenario:} Grammar-generated SQL query crashes server
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{{-}{-} Original 847{-}character query (simplified for slides)}
+\KeywordTok{SELECT}\NormalTok{ users.}\KeywordTok{id}\NormalTok{, users.name, users.email, products.title}
+\KeywordTok{FROM}\NormalTok{ users }\KeywordTok{LEFT} \KeywordTok{JOIN}\NormalTok{ products }\KeywordTok{ON}\NormalTok{ users.}\KeywordTok{id} \OperatorTok{=}\NormalTok{ products.user\_id}
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+  \KeywordTok{AND}\NormalTok{ products.price }\OperatorTok{\textless{}} \DecValTok{100} \KeywordTok{OR}\NormalTok{ products.stock }\OperatorTok{\textgreater{}} \DecValTok{0}
+\KeywordTok{ORDER} \KeywordTok{BY}\NormalTok{ users.name, products.title }\KeywordTok{LIMIT} \DecValTok{50}\NormalTok{ OFFSET }\DecValTok{10}\NormalTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Crash signature:}
+\texttt{SIGSEGV\ at\ address\ 0x0000,\ stack\ trace:\ query\_parser.c:1247}
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Step-by-Step}
+\protect\phantomsection\label{delta-debugging-step-by-step}
+\textbf{Initial setup:}
+
+\begin{itemize}
+\tightlist
+\item
+  Baseline: empty string (passes - no crash)
+\item
+  Full input: 847 chars (fails with SIGSEGV)
+\item
+  Goal: find minimal subset that crashes
+\end{itemize}
+
+\textbf{Iteration 1:} Try removing first half (424 chars)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{{-}{-} Remove chars 0{-}423, keep 424{-}846}
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+  \KeywordTok{AND}\NormalTok{ products.price }\OperatorTok{\textless{}} \DecValTok{100} \KeywordTok{OR}\NormalTok{ products.stock }\OperatorTok{\textgreater{}} \DecValTok{0}
+\KeywordTok{ORDER} \KeywordTok{BY}\NormalTok{ users.name, products.title }\KeywordTok{LIMIT} \DecValTok{50}\NormalTok{ OFFSET }\DecValTok{10}\NormalTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} UNRESOLVED (syntax error: ``WHERE without FROM'') -
+ddmin tries other half
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Iteration 2}
+\protect\phantomsection\label{delta-debugging-iteration-2}
+\textbf{Try removing second half (chars 424-846)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT}\NormalTok{ users.}\KeywordTok{id}\NormalTok{, users.name, users.email, products.title}
+\KeywordTok{FROM}\NormalTok{ users }\KeywordTok{LEFT} \KeywordTok{JOIN}\NormalTok{ products }\KeywordTok{ON}\NormalTok{ users.}\KeywordTok{id} \OperatorTok{=}\NormalTok{ products.user\_id}
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} FAIL (SIGSEGV at query\_parser.c:1247) - Same crash!
+Keep this smaller input (423 chars) - Reduced by 50\%
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Iteration 3}
+\protect\phantomsection\label{delta-debugging-iteration-3}
+\textbf{Now work with 423-char input, try removing first half}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} UNRESOLVED (syntax error)
+
+\textbf{Try removing second half:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT}\NormalTok{ users.}\KeywordTok{id}\NormalTok{, users.name, users.email, products.title}
+\KeywordTok{FROM}\NormalTok{ users }\KeywordTok{LEFT} \KeywordTok{JOIN}\NormalTok{ products }\KeywordTok{ON}\NormalTok{ users.}\KeywordTok{id} \OperatorTok{=}\NormalTok{ products.user\_id}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} PASS (no crash) - Neither half crashes alone
+--\textgreater{} increase granularity
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Iteration 4}
+\protect\phantomsection\label{delta-debugging-iteration-4}
+\textbf{Try quarters instead. Remove first quarter:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{name, users.email, products.title}
+\KeywordTok{FROM}\NormalTok{ users }\KeywordTok{LEFT} \KeywordTok{JOIN}\NormalTok{ products }\KeywordTok{ON}\NormalTok{ users.}\KeywordTok{id} \OperatorTok{=}\NormalTok{ products.user\_id}
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} UNRESOLVED
+
+\textbf{Try removing second quarter:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT}\NormalTok{ users.}\KeywordTok{id}\NormalTok{, users.}
+\KeywordTok{FROM}\NormalTok{ users }\KeywordTok{LEFT} \KeywordTok{JOIN}\NormalTok{ products }\KeywordTok{ON}\NormalTok{ users.}\KeywordTok{id} \OperatorTok{=}\NormalTok{ products.user\_id}
+\KeywordTok{WHERE}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1} \KeywordTok{OR} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{AND}\NormalTok{ users.created }\OperatorTok{\textgreater{}} \StringTok{\textquotesingle{}2020{-}01{-}01\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} UNRESOLVED
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Iterations 5-8}
+\protect\phantomsection\label{delta-debugging-iterations-5-8}
+\textbf{After trying various quarters, narrow down to the WHERE clause:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT} \OperatorTok{*} \KeywordTok{FROM}\NormalTok{ users }\KeywordTok{WHERE} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{OR}\NormalTok{ users.active }\OperatorTok{=} \DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} FAIL (crashes!) - Now 54 characters
+
+\textbf{Continue reducing\ldots{}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT} \OperatorTok{*} \KeywordTok{FROM}\NormalTok{ users }\KeywordTok{WHERE} \DecValTok{1}\OperatorTok{=}\DecValTok{1} \KeywordTok{OR} \DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} FAIL - 35 characters
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT} \OperatorTok{*} \KeywordTok{FROM}\NormalTok{ users }\KeywordTok{WHERE} \DecValTok{1}\OperatorTok{=}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Result:} FAIL - 31 characters
+\end{frame}
+
+\begin{frame}[fragile]{Delta Debugging: Final Result}
+\protect\phantomsection\label{delta-debugging-final-result}
+\textbf{After \textasciitilde15 iterations (each taking \textasciitilde5
+seconds to test):}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{SELECT} \OperatorTok{*} \KeywordTok{FROM}\NormalTok{ users }\KeywordTok{WHERE} \DecValTok{1}\OperatorTok{=}\DecValTok{1}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Final minimal input:}
+
+\begin{itemize}
+\tightlist
+\item
+  31 characters (from 847)
+\item
+  96\% reduction
+\item
+  Still produces identical crash signature
+\item
+  1-minimal: removing any single character causes PASS or UNRESOLVED
+\end{itemize}
+
+\textbf{Key insight revealed:} Server crashes on trivial tautology
+\texttt{WHERE\ 1=1}
+
+\begin{itemize}
+\tightlist
+\item
+  Development team can no longer dismiss as ``unrealistic''
+\item
+  Bug is obviously critical
+\end{itemize}
+
+Reference: Zeller \& Hildebrandt (TSE 2002): ``Simplifying and isolating
+failure-inducing input''
+\end{frame}
+
+\begin{frame}[fragile]{Fault Localization: Tarantula}
+\protect\phantomsection\label{fault-localization-tarantula}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ suspiciousness(passed, failed, total\_passed, total\_failed):}
+    \CommentTok{"""Tarantula heuristic"""}
+    \ControlFlowTok{if}\NormalTok{ passed }\OperatorTok{+}\NormalTok{ failed }\OperatorTok{==} \DecValTok{0}\NormalTok{:}
+        \ControlFlowTok{return} \DecValTok{0}
+    
+\NormalTok{    passed\_ratio }\OperatorTok{=}\NormalTok{ passed }\OperatorTok{/}\NormalTok{ total\_passed }\ControlFlowTok{if}\NormalTok{ total\_passed }\OperatorTok{\textgreater{}} \DecValTok{0} \ControlFlowTok{else} \DecValTok{0}
+\NormalTok{    failed\_ratio }\OperatorTok{=}\NormalTok{ failed }\OperatorTok{/}\NormalTok{ total\_failed }\ControlFlowTok{if}\NormalTok{ total\_failed }\OperatorTok{\textgreater{}} \DecValTok{0} \ControlFlowTok{else} \DecValTok{0}
+    
+    \ControlFlowTok{return}\NormalTok{ failed\_ratio }\OperatorTok{/}\NormalTok{ (passed\_ratio }\OperatorTok{+}\NormalTok{ failed\_ratio)}
+\end{Highlighting}
+\end{Shaded}
+
+For each statement: track how many passing/failing tests execute it.
+
+Higher suspiciousness → more likely to contain fault.
+\end{frame}
+
+\begin{frame}[fragile]{Fault Localization: Ochiai}
+\protect\phantomsection\label{fault-localization-ochiai}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ ochiai(passed, failed, total\_failed):}
+    \CommentTok{"""Ochiai heuristic {-} often more effective"""}
+    \ImportTok{import}\NormalTok{ math}
+    \ControlFlowTok{if}\NormalTok{ failed }\OperatorTok{==} \DecValTok{0}\NormalTok{:}
+        \ControlFlowTok{return} \DecValTok{0}
+    
+    \ControlFlowTok{return}\NormalTok{ failed }\OperatorTok{/}\NormalTok{ math.sqrt(total\_failed }\OperatorTok{*}\NormalTok{ (failed }\OperatorTok{+}\NormalTok{ passed))}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Alternative heuristics:} - \textbf{Jaccard:}
+\texttt{failed\ /\ (total\_failed\ +\ passed)} - \textbf{Dstar:}
+\texttt{failed\^{}2\ /\ (passed\ +\ (total\_failed\ -\ failed))}
+
+Reference: Jones, Harrold, Stasko (ICSE 2002): ``Visualization of test
+information to assist fault localization''
+\end{frame}
+
+\begin{frame}{Automated Program Repair: GenProg}
+\protect\phantomsection\label{automated-program-repair-genprog}
+\begin{enumerate}
+\tightlist
+\item
+  Run tests, identify failing tests
+\item
+  Use fault localization (e.g., Tarantula) to find suspicious code
+  regions
+\item
+  Apply genetic programming \emph{only} in suspicious regions:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Mutation:} Change operator, swap statement, delete line
+  \item
+    \textbf{Crossover:} Swap code blocks between variants
+  \end{itemize}
+\item
+  Evaluate: does mutated code pass all tests?
+\item
+  Repeat until repair found or budget exhausted
+\end{enumerate}
+
+\textbf{Key insight:} Don't search entire program space - localize
+first, then repair.
+
+Reference: Le Goues et al.~(TSE 2012): ``GenProg: A generic method for
+automatic software repair''
+\end{frame}
+
+\begin{frame}{Metamorphic Testing Example}
+\protect\phantomsection\label{metamorphic-testing-example}
+Testing a hotel booking site without complete specification:
+
+\textbf{Query 1:} ``Hotels in Sydney'' → 1,671 results
+
+\textbf{Metamorphic Relation:} Filtering should not increase results
+
+\textbf{Query 2:} ``Hotels in Sydney, 4-star or higher'' → 423 results
+
+\textbf{Check:} results(Q2) within results(Q1)
+
+If Q2 returned 1,800 results ==\textgreater{} \textbf{BUG DETECTED}
+
+Reference: Zhou, Tse, Witheridge (TSE 2019): ``Metamorphic Robustness
+Testing: Exposing Hidden Defects in Citation Statistics''
+\end{frame}
+
+\begin{frame}[fragile]{Symbolic Execution: BigTest}
+\protect\phantomsection\label{symbolic-execution-bigtest}
+\textbf{Problem:} Testing big data analytics on gigabytes of data
+
+\textbf{Naive approach:} Need tests for all data combinations
+
+\textbf{BigTest insight:} Only need to cover code branches, not data
+combinations
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ analyze\_sales(records):}
+\NormalTok{    total }\OperatorTok{=} \DecValTok{0}
+    \ControlFlowTok{for}\NormalTok{ record }\KeywordTok{in}\NormalTok{ records:}
+        \ControlFlowTok{if}\NormalTok{ record.amount }\OperatorTok{\textgreater{}} \DecValTok{1000}\NormalTok{:      }\CommentTok{\# Branch 1}
+\NormalTok{            total }\OperatorTok{+=}\NormalTok{ record.amount }\OperatorTok{*} \FloatTok{0.9}
+        \ControlFlowTok{else}\NormalTok{:                          }\CommentTok{\# Branch 2}
+\NormalTok{            total }\OperatorTok{+=}\NormalTok{ record.amount}
+    \ControlFlowTok{return}\NormalTok{ total}
+\end{Highlighting}
+\end{Shaded}
+
+Need only 2 test inputs: one with amount\textgreater1000, one with
+amount \textless= 1000.
+
+Reference: Marinescu \& Cadar (ICSE 2013)
+\end{frame}
+
+\begin{frame}[fragile]{Formal Methods: Product Lines}
+\protect\phantomsection\label{formal-methods-product-lines}
+\textbf{Problem:} Which Linux kernel configurations are valid?
+
+Feature model with 4000 variables, 300,000 constraints.
+
+\textbf{Solution:} Express as CNF (Conjunctive Normal Form), use SAT
+solver
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ pycosat}
+
+\CommentTok{\# Example: 5 variables, 3 constraints}
+\NormalTok{cnf }\OperatorTok{=}\NormalTok{ [[}\DecValTok{1}\NormalTok{, }\OperatorTok{{-}}\DecValTok{5}\NormalTok{, }\DecValTok{4}\NormalTok{],           }\CommentTok{\# x1 OR NOT x5 OR x4}
+\NormalTok{       [}\OperatorTok{{-}}\DecValTok{1}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{],        }\CommentTok{\# NOT x1 OR x5 OR x3 OR x4}
+\NormalTok{       [}\OperatorTok{{-}}\DecValTok{3}\NormalTok{, }\OperatorTok{{-}}\DecValTok{4}\NormalTok{]]             }\CommentTok{\# NOT x3 OR NOT x4}
+
+\NormalTok{solution }\OperatorTok{=}\NormalTok{ pycosat.solve(cnf)}
+\BuiltInTok{print}\NormalTok{(solution)  }\CommentTok{\# [1, {-}2, {-}3, {-}4, 5]}
+\end{Highlighting}
+\end{Shaded}
+
+Each solution = valid configuration. Can enumerate all solutions via
+\texttt{itersolve}.
+\end{frame}
+
+\begin{frame}[fragile]{Formal Methods: Optimization}
+\protect\phantomsection\label{formal-methods-optimization}
+\textbf{Minimal install problem:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Add costs to each package}
+\NormalTok{costs }\OperatorTok{=}\NormalTok{ \{}\DecValTok{1}\NormalTok{: }\DecValTok{100}\NormalTok{, }\DecValTok{2}\NormalTok{: }\DecValTok{50}\NormalTok{, }\DecValTok{3}\NormalTok{: }\DecValTok{200}\NormalTok{, }\DecValTok{4}\NormalTok{: }\DecValTok{150}\NormalTok{, }\DecValTok{5}\NormalTok{: }\DecValTok{75}\NormalTok{\}}
+
+\NormalTok{solutions }\OperatorTok{=}\NormalTok{ []}
+\ControlFlowTok{for}\NormalTok{ sol }\KeywordTok{in}\NormalTok{ pycosat.itersolve(cnf):}
+\NormalTok{    cost }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(costs[}\BuiltInTok{abs}\NormalTok{(x)] }\ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ sol }\ControlFlowTok{if}\NormalTok{ x }\OperatorTok{\textgreater{}} \DecValTok{0}\NormalTok{)}
+\NormalTok{    solutions.append((cost, sol))}
+
+\NormalTok{minimal }\OperatorTok{=} \BuiltInTok{min}\NormalTok{(solutions, key}\OperatorTok{=}\KeywordTok{lambda}\NormalTok{ x: x[}\DecValTok{0}\NormalTok{])}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"Cheapest install: }\SpecialCharTok{\{}\NormalTok{minimal}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{User preferences:} If user dislikes solution, negate it and add
+as constraint. Future solutions avoid that configuration.
+
+Reference: Lerner et al.~(FSE 2008): ``Opium: Optimal Package
+Install/Uninstall Manager''
+\end{frame}
+
+\begin{frame}{AWS AuthV2: Formal Verification at Scale}
+\protect\phantomsection\label{aws-authv2-formal-verification-at-scale}
+\textbf{Challenge:} 1 billion requests/second authorization engine.
+Changes risk security/availability.
+
+\textbf{Approach (4-year effort):}
+
+\begin{enumerate}
+\tightlist
+\item
+  Reverse-engineer formal spec from AuthV1 (Java) in Dafny
+\item
+  Write verified implementation in Dafny, prove correct vs spec
+\item
+  Custom compiler to idiomatic Java (DafnyLite)
+\item
+  Shadow testing: 10\^{}15 production requests
+\end{enumerate}
+
+\textbf{Result:} 3x faster, proved correct, increased development
+agility
+
+\textbf{Key lesson:} Rewrite in verification-aware language beats
+verifying legacy code.
+\end{frame}
+
+\begin{frame}{AuthV2: Why Shadow Testing?}
+\protect\phantomsection\label{authv2-why-shadow-testing}
+\textbf{Question:} If code is formally verified, why test with 10\^{}15
+samples?
+
+\textbf{Answer:}
+
+\begin{itemize}
+\tightlist
+\item
+  Formal proof: implementation matches \textbf{specification}
+\item
+  Testing: specification matches \textbf{intended behavior}
+\item
+  Found 7 specification errors missed by proof
+\item
+  Specification != Requirements
+\end{itemize}
+
+Proof connects impl ==\textgreater{} spec. Testing connects spec
+==\textgreater{} reality.
+
+Reference: Amazon Science (2024): ``Formally verified cloud-scale
+authorization''
+\end{frame}
+
+\begin{frame}{ARIMA Forecasting: Issues ==\textgreater{} Bugs}
+\protect\phantomsection\label{arima-forecasting-issues-bugs}
+\textbf{Study (832 projects):} Can raw issue counts predict
+bug/enhancement workload?
+
+\textbf{ARIMA model:} AutoRegressive Integrated Moving Average
+
+\begin{itemize}
+\tightlist
+\item
+  AR: current value depends on past values
+\item
+  I: differencing to make stationary
+\item
+  MA: current value depends on past errors
+\end{itemize}
+
+\textbf{Methodology:}
+
+\begin{itemize}
+\tightlist
+\item
+  Rolling window: train on 20 weeks, forecast 4 weeks
+\item
+  Slide forward by 1 week, repeat
+\item
+  Metric: MAE (Mean Absolute Error)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{ARIMA Results: Surprising Finding}
+\protect\phantomsection\label{arima-results-surprising-finding}
+\textbf{RQ1:} Do issues/bugs/enhancements show temporal trends?
+\textbf{YES} (low MAE)
+
+\textbf{RQ2:} Are trends correlated? \textbf{YES} (moderate positive
+correlation)
+
+\textbf{RQ3:} Can issues forecast bugs/enhancements? \textbf{YES} (low
+MAE)
+
+\textbf{RQ4:} As accurate as using bug history? \textbf{YES}
+(statistically similar)
+
+\textbf{Practical implication:} Skip labeling effort. Use easily
+collected issue counts to forecast workload.
+
+Reference: Krishna et al.~(arXiv 2017): ``What is the Connection Between
+Issues, Bugs, and Enhancements? (Lessons Learned from 800+ Software
+Projects)''
+\end{frame}
+
+\begin{frame}{TERMINATOR: Active Learning for TCP}
+\protect\phantomsection\label{terminator-active-learning-for-tcp}
+(TCP= test case priorization.)
+
+\textbf{Problem:} UI test suites take 3-30 hours. Black-box only (no
+coverage).
+
+\textbf{Approach:} Frame as Total Recall problem
+
+\begin{itemize}
+\tightlist
+\item
+  Find all failures (positives) with minimum cost (running tests)
+\item
+  Use Active Learning with SVM
+\end{itemize}
+
+\textbf{Features:}
+
+\begin{itemize}
+\tightlist
+\item
+  Text: TF from test descriptions
+\item
+  History: past pass/fail/skip rates
+\item
+  Hybrid: text + history (best)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{TERMINATOR Algorithm}
+\protect\phantomsection\label{terminator-algorithm}
+\begin{enumerate}
+\tightlist
+\item
+  Start with empty executed set L, empty failed set LR
+\item
+  While tests remain:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If \textbar LR\textbar{} \textless{} 30: Uncertainty sampling (near
+    SVM boundary)
+  \item
+    If \textbar LR\textbar{} \textgreater= 30: Certainty sampling
+    (confident failures)
+  \item
+    Select batch of 10 tests
+  \item
+    Execute batch, update L and LR
+  \item
+    If failures found: train/update SVM
+  \item
+    Use aggressive undersampling for balance
+  \end{itemize}
+\item
+  Continue until all tests run or budget exhausted
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{TERMINATOR Results}
+\protect\phantomsection\label{terminator-results}
+\textbf{Performance:}
+
+\begin{itemize}
+\tightlist
+\item
+  Hybrid features achieved \textasciitilde75\% of optimal (A2)
+\item
+  Found 60\% of failures in 20\% of test time
+\item
+  Next best method: \textasciitilde30\% failures in 20\% time
+\item
+  Computational overhead: 0.33\% of total test time
+\end{itemize}
+
+\textbf{Key insight:} Dynamic adaptation via active learning beats
+static prioritization.
+
+\textbf{Comparison:} Simple history methods beat complex text-only
+methods, but active learning hybrid beats both.
+
+Reference: Bertolino et al.~(FSE 2020): ``Learning-to-rank vs
+ranking-to-learn''
+\end{frame}
+
+\begin{frame}{Non-Functional Requirements: Testing Challenges}
+\protect\phantomsection\label{non-functional-requirements-testing-challenges}
+How do you test for:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Maintainability?} --\textgreater{} Years of observation needed
+\item
+  \textbf{Usability?} --\textgreater{} Subjective, user studies required
+\item
+  \textbf{Security?} --\textgreater{} Adversarial thinking, penetration
+  testing
+\item
+  \textbf{Performance?} --\textgreater{} Load testing, profiling
+\item
+  \textbf{Scalability?} --\textgreater{} Simulate production-scale
+  traffic
+\item
+  \textbf{Availability?} --\textgreater{} Chaos engineering, fault
+  injection
+\end{itemize}
+
+Trade-offs common: security vs usability, performance vs
+maintainability.
+\end{frame}
+
+\begin{frame}{Context Switching Costs}
+\protect\phantomsection\label{context-switching-costs}
+\textbf{Weinberg (1992):} Context switching between projects is
+expensive
+
+\textbf{Modern reality:} Agile teams, multiple simultaneous projects
+
+\textbf{Cost factors:}
+
+\begin{itemize}
+\tightlist
+\item
+  Mental context rebuild: 15-30 minutes per switch
+\item
+  Tool/environment switching
+\item
+  Re-familiarization with codebase
+\end{itemize}
+
+\textbf{Forecasting helps:} Predict upcoming bug/enhancement spikes,
+staff proactively, minimize thrashing.
+\end{frame}
+
+\begin{frame}{TDD in Practice: The Reality}
+\protect\phantomsection\label{tdd-in-practice-the-reality}
+TDD= test driven development
+
+\begin{itemize}
+\tightlist
+\item
+  write (a few) tests before (a little) coding
+\item
+  intially tests fail (red)
+\item
+  repeat: fix tests till all green
+
+  \begin{itemize}
+  \tightlist
+  \item
+    then write some more tests
+  \end{itemize}
+\item
+  sometimes, pause and reogranize
+\item
+  mantra: red, green, refactor
+\end{itemize}
+
+\textbf{Karac \& Turhan (2018):} ``What Do We Really Know about TDD?''
+
+\textbf{Findings:}
+
+\begin{itemize}
+\tightlist
+\item
+  Only 12\% of projects claiming TDD actually write tests first
+\item
+  GitHub study: 0.8\% truly TDD
+\item
+  No clear evidence for higher velocity or quality
+\item
+  TDD hard to define rigorously
+\item
+  Success confounded with better tools (IDEs, languages)
+\end{itemize}
+
+\textbf{Discussion:} Is TDD itself the benefit, or is it proxy for other
+good practices (small functions, clear interfaces, refactoring
+discipline)?
+\end{frame}
+
+\begin{frame}{Take-Home Messages}
+\protect\phantomsection\label{take-home-messages}
+\begin{itemize}
+\tightlist
+\item
+  Coverage necessary but insufficient - use mutation testing
+\item
+  Test prioritization strategies are context-dependent
+\item
+  Active learning effective for large black-box test suites
+\item
+  Delta debugging automates input minimization
+\item
+  Formal verification increasingly practical at scale (but needs testing
+  too)
+\item
+  Issue trends forecast workload without expensive labeling
+\item
+  Symbolic execution enables white-box testing of data-intensive systems
+\item
+  TDD effectiveness debatable; good testing habits matter more
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question 1: Fault vs Failure}
+\protect\phantomsection\label{question-1-fault-vs-failure}
+\textbf{(a) {[}1 mark{]}} Define ``fault'' and ``failure'' and explain
+the key difference between them.
+
+\textbf{(b) {[}2 marks{]}} Using the Fenton \& Neil causal model,
+explain how a system with extensive pre-release testing could show many
+pre-release faults but few post-release failures. Sketch the causal
+factors involved.
+
+\textbf{(c) {[}3 marks{]}} A startup releases software with minimal
+testing, observes few reported bugs in the first month, and concludes
+their code quality is excellent. Critique this reasoning using concepts
+from reliability engineering. What alternative explanations might
+account for the low bug reports?
+\end{frame}
+
+\begin{frame}[fragile]{Question 2: Coverage Metrics}
+\protect\phantomsection\label{question-2-coverage-metrics}
+\textbf{(a) {[}1 mark{]}} For the following code, explain why one test
+achieving 100\% line coverage might still have 50\% branch coverage:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ func(x):}
+    \ControlFlowTok{if}\NormalTok{ x }\OperatorTok{\textgreater{}} \DecValTok{0}\NormalTok{:}
+        \ControlFlowTok{return}\NormalTok{ x }\OperatorTok{*} \DecValTok{2}
+    \ControlFlowTok{return}\NormalTok{ x}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{(b) {[}2 marks{]}} Write a function with 2 if-statements where
+achieving 100\% branch coverage requires 4 tests, but 100\% line
+coverage requires only 2 tests. Show your test cases.
+
+\textbf{(c) {[}3 marks{]}} Research shows statement coverage best
+predicts mutation kills (Gopinath 2014), yet coverage alone poorly
+correlates with test effectiveness (Inozemtseva \& Holmes 2014).
+Reconcile these findings. When is coverage useful and when is it
+misleading?
+\end{frame}
+
+\begin{frame}[fragile]{Question 3: Mutation Testing}
+\protect\phantomsection\label{question-3-mutation-testing}
+\textbf{(a) {[}1 mark{]}} What is a ``mutation operator'' and list three
+types (AOR, ROR, CR, etc.) with examples.
+
+\textbf{(b) {[}2 marks{]}} Given this code:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ discount(price, rate):}
+    \ControlFlowTok{if}\NormalTok{ price }\OperatorTok{\textgreater{}} \DecValTok{100}\NormalTok{:}
+        \ControlFlowTok{return}\NormalTok{ price }\OperatorTok{{-}}\NormalTok{ (price }\OperatorTok{*}\NormalTok{ rate)}
+    \ControlFlowTok{return}\NormalTok{ price}
+\end{Highlighting}
+\end{Shaded}
+
+Generate 3 mutants using different operators and explain whether your
+test suite \texttt{{[}discount(50,\ 0.1),\ discount(150,\ 0.2){]}} kills
+each mutant.
+
+\textbf{(c) {[}3 marks{]}} A test suite has 90\% line coverage but only
+60\% mutation score. Another has 70\% coverage but 85\% mutation score.
+Which indicates higher quality testing? Justify your reasoning
+considering what each metric measures and their practical implications
+for fault detection.
+\end{frame}
+
+\begin{frame}{Question 4: Test Case Prioritization}
+\protect\phantomsection\label{question-4-test-case-prioritization}
+\textbf{(a) {[}1 mark{]}} Define APFD (Average Percentage of Faults
+Detected) and explain why it's more informative than simply measuring
+``time to find first fault.''
+
+\textbf{(b) {[}2 marks{]}} You have 4 tests: A (passed 10 runs ago,
+execution time 5s), B (failed yesterday, 10s), C (new test, 2s), D
+(passed yesterday, 15s). Apply the Elbaum heuristic to prioritize these
+tests. Show your reasoning.
+
+\textbf{(c) {[}3 marks{]}} Ling et al.~(2022) found optimal TCP
+strategies differ for open-source vs closed-source projects
+(diversity-based optimal for closed-source, history-based for
+open-source). Propose three hypotheses explaining why this difference
+exists. Design an experiment to test one hypothesis.
+\end{frame}
+
+\begin{frame}{Question 5: Delta Debugging}
+\protect\phantomsection\label{question-5-delta-debugging}
+\textbf{(a) {[}1 mark{]}} Explain what ``1-minimal'' means in the
+context of delta debugging's ddmin algorithm.
+
+\textbf{(b) {[}2 marks{]}} You have a 16-character input
+``ABCDEFGHIJKLMNOP'' that crashes a program. Walk through the first 3
+steps of ddmin assuming: removing ``ABCDEFGH'' still crashes, but
+removing ``IJKLMNOP'' passes. What does ddmin try next?
+
+\textbf{(c) {[}3 marks{]}} The ``oracle problem'' requires
+distinguishing the target failure from other failures. Design a test
+oracle for a compiler that should detect ``segmentation fault'' as the
+target failure while ignoring ``syntax error'' and ``type error''. Show
+code and explain how it handles ambiguous cases.
+\end{frame}
+
+\begin{frame}{Question 6: Black-Box Testing}
+\protect\phantomsection\label{question-6-black-box-testing}
+\textbf{(a) {[}1 mark{]}} Write a simple grammar (in any notation) that
+generates arithmetic expressions with numbers 1-9 and operators +, -, *.
+
+\textbf{(b) {[}2 marks{]}} Extend your grammar with probability weights
+such that + is chosen 50\% of the time, while - and * are each chosen
+25\%. Show Python code implementing weighted random selection.
+
+\textbf{(c) {[}3 marks{]}} Coverage-guided fuzzing automatically
+reweights grammar rules to explore uncovered code paths. Compare this to
+manual weighting (where domain experts specify weights). Under what
+circumstances would each approach be more effective? Consider factors
+like: domain knowledge availability, code complexity, and testing
+budget.
+\end{frame}
+
+\begin{frame}{Question 7: Formal Verification}
+\protect\phantomsection\label{question-7-formal-verification}
+\textbf{(a) {[}1 mark{]}} What is the difference between formal
+verification and traditional testing, and why might formal verification
+provide stronger correctness guarantees?
+
+\textbf{(b) {[}2 marks{]}} AWS rewrote their authorization engine in
+Dafny rather than verifying the existing Java code. Explain two
+technical reasons why rewriting might be more practical. Consider proof
+brittleness, legacy code complexity, and verification tool limitations.
+
+\textbf{(c) {[}3 marks{]}} The AuthV2 project performed 10\^{}15 shadow
+tests despite having formally verified code. Explain the relationship
+between proof and testing: what errors does each approach catch, why are
+both necessary, and what does this tell us about the role of
+specifications in formal methods?
+\end{frame}
+
+\begin{frame}{Question 8: ARIMA Forecasting}
+\protect\phantomsection\label{question-8-arima-forecasting}
+\textbf{(a) {[}1 mark{]}} Describe the three components of ARIMA
+(AutoRegressive, Integrated, Moving Average) in the context of time
+series forecasting.
+
+\textbf{(b) {[}2 marks{]}} A project has these weekly issue counts for 4
+weeks: {[}10, 15, 12, 18{]}. Using a simple moving average (MA(2)),
+forecast the next week. Then explain how ARIMA's ``integrated''
+component would handle a non-stationary trend.
+
+\textbf{(c) {[}3 marks{]}} Research found issue counts predict bugs as
+accurately as bug history itself. Evaluate the practical implications
+for organizations: what does this enable, what are the
+risks/limitations, and under what conditions might this approach fail?
+Consider factors like project maturity, issue quality, and labeling
+accuracy.
+\end{frame}
+
+\begin{frame}{Question 9: Active Learning (TERMINATOR)}
+\protect\phantomsection\label{question-9-active-learning-terminator}
+\textbf{(a) {[}1 mark{]}} Explain the difference between ``uncertainty
+sampling'' and ``certainty sampling'' in active learning.
+
+\textbf{(b) {[}2 marks{]}} TERMINATOR uses uncertainty sampling early
+(\textbar LR\textbar{} \textless{} 30 failures) then switches to
+certainty sampling. Explain the rationale for this adaptive strategy.
+What would go wrong if it used only uncertainty sampling throughout?
+
+\textbf{(c) {[}3 marks{]}} TERMINATOR frames test prioritization as a
+``Total Recall'' problem. Evaluate this framing: what assumptions does
+it make about the testing goal, how does this differ from traditional
+coverage-based approaches, and when might this framing be inappropriate
+(i.e., when is finding \emph{all} failures quickly not the right
+objective)?
+\end{frame}
