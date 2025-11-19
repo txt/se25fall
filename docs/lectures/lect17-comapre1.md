@@ -46,8 +46,13 @@ sublst1(L,Sub):-
  
 ```
 
-## 1. What is Multiple Dispatch?
-**Goal:** Show how Julia chooses methods based on the types of *all* arguments, not just the first one.
+## Julia
+
+A langauge to weave together multiple types.
+
+Wny? [The modular and feature toggle architectures of Google Chrome](https://link.springer.com/article/10.1007/s10664-018-9639-0)
+
+I look at this and I see we need better ways to initially build systems, then weave them together in all manner of mysterious ways.
 
 Most languages:
 - OOP dispatches based on the object before the dot.
@@ -59,7 +64,7 @@ Most languages:
 
 ---
 
-## 2. Defining Multiple Methods for One Function
+### Defining Multiple Methods for One Function
 
 ```julia
 area(x::Int) = x^2
@@ -70,7 +75,7 @@ Both are methods of `area`.
 
 ---
 
-## 3. Dispatch on Two Arguments
+### Dispatch on Two Arguments
 
 ```julia
 combine(a::Int, b::Int) = a + b
@@ -90,7 +95,7 @@ combine("ha",3)        # "hahaha"
 
 ---
 
-## 4. Dispatch Using a Type Hierarchy
+### Dispatch Using a Type Hierarchy
 
 ```julia
 abstract type Shape end
@@ -111,7 +116,7 @@ intersect(Circle(1), Square(2))
 
 ---
 
-## 5. Why SE People Should Care
+### Why SE People Should Care
 
 - Add new *types* without editing old *functions*.
 - Add new *functions* without changing type definitions.
@@ -119,7 +124,7 @@ intersect(Circle(1), Square(2))
 
 ---
 
-## 6. Small Example: Tiny Math DSL
+### Small Example: Tiny Math DSL
 
 ```julia
 struct Num x::Float64 end
@@ -139,6 +144,6 @@ add(Num(10), Vec([1,2,3]))
 
 ---
 
-## 7. Key Idea (One Sentence)
+###  Key Idea (One Sentence)
 
 **In Julia, a function is a name shared by many method definitions, and dispatch chooses the method by checking the types of all arguments.**
