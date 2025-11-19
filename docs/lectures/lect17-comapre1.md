@@ -52,6 +52,11 @@ A langauge to weave together multiple types.
 
 Wny? [The modular and feature toggle architectures of Google Chrome](https://link.springer.com/article/10.1007/s10664-018-9639-0)
 
+To supprt A/B testing, need "feature toggles" that can switch on/off parts of the systems. In practice: "parts" are everywhere:
+
+<img width="726" height="556" alt="image" src="https://github.com/user-attachments/assets/3021024f-777f-499f-ade1-42e09f9bf6d3" />
+
+
 I look at this and I see we need better ways to initially build systems, then weave them together in all manner of mysterious ways.
 
 Most languages:
