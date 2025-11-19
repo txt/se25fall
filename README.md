@@ -32,7 +32,7 @@ maintain alien code; use SE + AI; establish on-line profile.
 | Oct13 | Mon : Fall Break (no lecture) <br>[notes on project](docs/projects/proj23/notes.md) |   | no new review<br> questions this week  |
 | Oct20 | Wed: lecture! definitely! |   |   |
 | Oct27 | [patterns](docs/lectures/lect12-patterns.md)  |   | [11](docs/reviews/review11.md)   |
-| Nov03 | [oo estimation](docs/lectures/lect13-est.pdf)<br>[closures](docs/lectures/lect15-closures.md)<br> [compare](docs/lectures/lect16-compare.md) | Thurs: [Proj2](docs/projects/proj23/proj23.md) |  [12](docs/reviews/review12.md) |
+| Nov03 | [oo estimation](docs/lectures/lect13-est.pdf)<br>[closures](docs/lectures/lect15-closures.md)<br> [compare](docs/lectures/lect16-compare.md)<br>[compare1](docs/lectures/lect17-comapre1.md) | Thurs: [Proj2](docs/projects/proj23/proj23.md) |  [12](docs/reviews/review12.md) |
 | Nov10 |   | Demo to tutor |   |
 | Nov17 |    |   |   |
 | Nov24 | Wed: Thanksgiving (no lecture) |   |   |
